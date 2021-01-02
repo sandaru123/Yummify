@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start of startup page -->
+<div data-role="page" id="foo">
+
+	<div data-role="header">
+		<h1>Foo</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>I'm first in the source order so I'm shown as the page.</p>
+		<p>View internal page called <a href="#bar">bar</a></p>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Start of 2nd startup Page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <div>
+            <a href="#login" class="ui-btn ui-corner-all">Login</a>
+            <a href="#signup" class="ui-btn ui-corner-all">Signup</a>
+            <p> <a href="#bar">Browse as guest</a></p>
+        </div>
+	</div><!-- /content -->
+
+	
+</div><!-- /page -->
+
+<!-- Start of Login -->
+<div data-role="page" id="login">
+
+	<div data-role="header">
+		<h1>Login</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <div>
+            <form>
+                    <input type="email" data-clear-btn="true" name="email-2" id="email-2" value="" placeholder="Email">
+                    <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="Password">
+            </form>
+            <a href="" class="ui-btn ui-corner-all">Login</a>
+            <a href="" class="ui-btn ui-corner-all">Forgot Password</a>
+            <a href="#signup" class="ui-btn ui-corner-all">Create an Account</a>
+        </div>
+	</div><!-- /content -->
+
+	
+</div><!-- /page -->
+
+<!-- Start of Signup -->
+<div data-role="page" id="signup">
+
+	<div data-role="header">
+		<h1>signup</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <div>
+            <form>
+                    <input type="text" data-clear-btn="true" name="NameSignup" id="NameSignup" value="" placeholder="Name">    
+                    <input type="email" data-clear-btn="true" name="emailSignup" id="emailSignup" value="" placeholder="Email">
+                    <input type="password" data-clear-btn="true" name="passwordSignup" id="passwordSignup" value="" autocomplete="off" placeholder="Password">
+                    <input type="password" data-clear-btn="true" name="con_passwordSignup" id="con_passwordSignup" value="" autocomplete="off" placeholder="Confirm Password">
+            </form>
+            <a href="#login" class="ui-btn ui-corner-all">Register</a>
+            <a href="#login" class="ui-btn ui-corner-all">Signin</a>
+        </div>
+	</div><!-- /content -->
+
+	
+</div><!-- /pagee -->
+</body>
+ 
+</html>
