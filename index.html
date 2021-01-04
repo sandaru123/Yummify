@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <script src="jquery.min.js"></script>
+    <script src="Script.js"></script>
+    
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="Card.css" />
     <title>Document</title>
 </head>
+<!-- <style>
+    .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  
+  }
+  .card {
+    display: inline-block;
+  }
+</style> -->
 <body>
     <!-- Start of startup page -->
 <div data-role="page" id="foo">
@@ -57,7 +75,7 @@
                     <input type="email" data-clear-btn="true" name="email-2" id="email-2" value="" placeholder="Email">
                     <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="Password">
             </form>
-            <a href="" class="ui-btn ui-corner-all">Login</a>
+            <a href="#homepage" class="ui-btn ui-corner-all">Login</a>
             <a href="" class="ui-btn ui-corner-all">Forgot Password</a>
             <a href="#signup" class="ui-btn ui-corner-all">Create an Account</a>
         </div>
@@ -88,7 +106,95 @@
 
 	
 </div><!-- /page -->
+
+<!-- Start of homepage -->
+<div data-role="page" id="homepage">
+
+	<div data-role="header">
+		<h1>homepage</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <div class="">
+            <h4>Catagories</h4>
+            <ul class="hs">
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+            </ul>
+            
+        </div>
+        <div class="">
+            <h4>Promotons Today</h4>
+            <ul class="hs">
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+            </ul>
+            
+        </div>
+        <div class="">
+            <h4>Popular Items</h4>
+            <ul class="hs">
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+              <li class="itemCard">test</li>
+            </ul>
+            
+        </div>
+	</div><!-- /content -->
+
+	
+</div><!-- /page -->
+
+<!-- Start of Products -->
+<div data-role="page" id="Products" >
+
+	<div data-role="header">
+		<h1>Products</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+        <div class="ui-grid-b ui-responsive">
+            <div class="ui-block-a" id="exampleBlockA">
+                  <div class="ui-body ui-body-a ui-corner-all">
+                    <h3>Heading</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec. Donec semper mattis eros, nec condimentum ante sollicitudin quis. Etiam orci sem, porttitor ut tellus nec, blandit posuere urna. Proin a arcu non lacus pretium faucibus. Aliquam sed est porttitor, ullamcorper urna nec, vehicula lorem. Cras porttitor est lorem, non venenatis diam convallis congue.</p>
+                      </div>
+            </div>
+            <div class="ui-block-b" id="exampleBlockB">
+                  <div class="ui-body ui-body-a ui-corner-all">
+                    <h3>Heading</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec. Donec semper mattis eros, nec condimentum ante sollicitudin quis. Etiam orci sem, porttitor ut tellus nec, blandit posuere urna. Proin a arcu non lacus pretium faucibus. Aliquam sed est porttitor, ullamcorper urna nec, vehicula lorem. Cras porttitor est lorem, non venenatis diam convallis congue.</p>
+                      </div>
+            </div>
+            <div class="ui-block-c" id="exampleBlockC">
+                  <div class="ui-body ui-body-a ui-corner-all">
+                    <h3>Heading</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec. Donec semper mattis eros, nec condimentum ante sollicitudin quis. Etiam orci sem, porttitor ut tellus nec, blandit posuere urna. Proin a arcu non lacus pretium faucibus. Aliquam sed est porttitor, ullamcorper urna nec, vehicula lorem. Cras porttitor est lorem, non venenatis diam convallis congue.</p>
+                      </div>
+            </div>
+           </div>
+	</div><!-- /content -->
+
+	
+</div><!-- /page -->
+
+
+
 <!-- updating branch -->
 </body>
- 
+<script src="CardScript.js"></script>
+<script>
+    //  createCards();
+</script>
 </html>
