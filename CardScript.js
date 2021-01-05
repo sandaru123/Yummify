@@ -9,11 +9,11 @@ function createCards() {
 		tag,
 		
 		// the cards, in this example in an array
-		imagename = ["Image1", "Image2", "Image3"],
-		imagesource = ["./images/image1.jpg", "./images/image2.jpg", "./images/image3.jpg"],
-		titlecard = ["Image!", "Image!", "Image!"],
-		titleimage = ["Title", "Title", "Title"],
-		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3..."];
+		imagename = ["Image1", "Image2", "Image3","Image3"],
+		imagesource = ["Images/burgers.jpg", "./images/image2.jpg", "./images/image3.jpg", "./images/image3.jpg"],
+		titlecard = ["Image!", "Image!", "Image!","Image!"],
+		titleimage = ["Title", "Title", "Title","Title"],
+		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...","Lorem ipsum part 3..."];
  
 	// emptying the current grid
 	exampleBlockA.empty();
@@ -21,7 +21,7 @@ function createCards() {
 	exampleBlockC.empty();
  
 	// the loop to get the values from the arrays
-	for (i = 0; i < 3; i = i + 1) {
+	for (i = 0; i < imagename.length; i = i + 1) {
 		tag = '<div class="card" id="card' + i + '">'; // start building the tag for the card
 		if (imagename[i] !== null && imagesource[i] !== null) {
 			tag = tag + '<div class="card-image"><img alt="' + imagename[i] + '" src="' + imagesource[i] + '" />'; // insert imagesource and imagename if they exists
@@ -49,11 +49,12 @@ function createCards() {
 			When you create new block for every card you would get
 			an interface that is lined like a table.
 		*/
-		if (i < (i+1 / 3)) {
+
+		if (i < (imagename.length / 3)) {
 			exampleBlockA.append(tag);
-		} else if (i < ((i+1 / 3) * 2)) {
+		} else if (i < ((imagename.length / 3) * 2)) {
 			exampleBlockB.append(tag);
-		} else if (i <= ((i+1 / 3) * 3)) {
+		} else if (i <= ((imagename.length / 3) * 3)) {
 			exampleBlockC.append(tag);
 		}
 		

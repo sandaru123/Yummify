@@ -9,6 +9,8 @@
     margin-left: 7.5px;
     overflow: hidden;
     border-radius: 3px;
+    height: 181px;
+
   }
   .card h1 {
     margin: 0px;
@@ -58,3 +60,5 @@
       background-color: #CCCCCC;
   } 
 
+
+ 

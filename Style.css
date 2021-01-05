@@ -1,19 +1,27 @@
 :root {
     --gutter: 20px;
   }
-  
-  
-  
   .hs {
     display: grid;
     grid-gap: calc(var(--gutter) / 2);
-    grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
-    grid-template-rows: minmax(150px, 1fr);
-    
     overflow-x: scroll;
     scroll-snap-type: x proximity;
     padding-bottom: calc(.75 * var(--gutter));
     margin-bottom: calc(-.25 * var(--gutter));
+  }
+
+  .categories_homepage{
+    /* grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2)); */
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: minmax(146px, 1fr);
+  }
+  .promotions_homepage{
+    grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
+  }
+  .popular_homepage{
+    grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
   }
   
   
@@ -21,6 +29,7 @@
   
   html,
   body {
+    font-family: 'Fira Sans';font-size: 22px;
     height: 100%;
   }
   
@@ -39,8 +48,13 @@
   h2,
   h3 {
     margin: 0;
+    font-family: 'Fira Sans';
   }
   
+  .headers{
+    background:#33D9B2;
+  }
+
   .app {
     width: 375px;
     height: 667px;
@@ -75,5 +89,135 @@
 .md-card-bg .md-card-subtitle {
     margin-top: 10px;
 }
+
+
+.categories_homepage{
+  /* grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2)); */
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: minmax(146px, 1fr);
+}
+.promotions_homepage{
+  grid-template-columns: repeat(6, 359px);
+  grid-template-rows: minmax(268px, 1fr);
+}
+.popular_homepage{
+  grid-template-columns: repeat(6, 359px);
+  grid-template-rows: minmax(268px, 1fr);
+}
+
+.fontTitle{
+    font-size: 24px;
+}
+
+/* .product_details_Img{
+  height: 510px;
+  object-fit: cover;
+} */
+
+
+/* iPhone landscape */
+@media (orientation: landscape) and (max-device-width : 812px){
+  /* .ui-block-a {
+  background-color: lightblue;
+   } */
+   .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
+    width: 33%;
+    }
+    .product_details_Img{
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+  /* iPhone portrait */
+  @media (orientation: portrait) and (max-device-width : 414px){
+  .ui-block-a{
+  background-color: lightgreen;
+   }
+
+   .product_details_Img{
+    height: 208px;
+    object-fit: cover;
+  }
+
+
+  /* homepage cards media queries */
+  .categories_homepage{
+    /* grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2)); */
+    grid-template-columns: repeat(6, 110px);
+    grid-template-rows: minmax(82px, 1fr);
+  }
+  .promotions_homepage{
+    grid-template-columns: repeat(6, 248px);
+    grid-template-rows: minmax(171px, 1fr);
+  }
+  .popular_homepage{
+    grid-template-columns: repeat(6, 248px);
+    grid-template-rows: minmax(171px, 1fr);
+  }
+  }
+
+   /* ipad landscape */
+   @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape){
+   .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
+    width: 30%;
+    }
+    .product_details_Img{
+      height: 510px;
+      object-fit: cover;
+    }
+
+
+    /* homepage cards media queries */
+    .categories_homepage{
+      /* grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2)); */
+      grid-template-columns: repeat(6, 200px);
+      grid-template-rows: minmax(146px, 1fr);
+    }
+    .promotions_homepage{
+      grid-template-columns: repeat(6, 359px);
+      grid-template-rows: minmax(268px, 1fr);
+    }
+    .popular_homepage{
+      grid-template-columns: repeat(6, 359px);
+      grid-template-rows: minmax(268px, 1fr);
+    }
+
+    .fontTitle{
+        font-size: 24px;
+    }
+    
+  }
+  /* ipad portrait */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+  .ui-block-a{
+  background-color: lightgreen;
+   }
+   .product_details_Img{
+    height: 510px;
+    object-fit: cover;
+  }
+
+  .fontTitle{
+    font-size: 24px;
+  }
+
+
+  /* homepage cards media queries */
+  .categories_homepage{
+    /* grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2)); */
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: minmax(146px, 1fr);
+  }
+  .promotions_homepage{
+    grid-template-columns: repeat(6, 359px);
+    grid-template-rows: minmax(268px, 1fr);
+  }
+  .popular_homepage{
+    grid-template-columns: repeat(6, 359px);
+    grid-template-rows: minmax(268px, 1fr);
+  }
+  }
+
+ 
 
 

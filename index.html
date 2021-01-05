@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <script src="jquery.min.js"></script>
     <script src="Script.js"></script>
     
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
     <link rel="stylesheet" href="Style.css" />
     <link rel="stylesheet" href="Card.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+        </style>
     <title>Document</title>
 </head>
-<!-- <style>
-    .scrolling-wrapper-flexbox {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  
-  }
-  .card {
-    display: inline-block;
-  }
-</style> -->
 <body>
+    
+    <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="a" id="mypanel">
+                <ul data-role="listview">
+                    <li data-icon="delete"><a href="#homepage" data-rel="close">Close menu</a></li>
+                        <li><a href="#panel-fixed-page2">Accordion</a></li>
+                        <li><a href="#panel-fixed-page2">Ajax Navigation</a></li>
+                        <li><a href="#panel-fixed-page2">Autocomplete</a></li>
+                        <li><a href="#panel-fixed-page2">Buttons</a></li>
+                        <li><a href="#panel-fixed-page2">Checkboxes</a></li>
+                        <li><a href="#panel-fixed-page2">Collapsibles</a></li>
+                </ul>
+            </div><!-- /panel -->
+
+
+
+
     <!-- Start of startup page -->
 <div data-role="page" id="foo">
 
-	<div data-role="header">
+	<div class="header" data-role="header">
 		<h1>Foo</h1>
 	</div><!-- /header -->
 
@@ -47,7 +64,7 @@
 <!-- Start of 2nd startup Page -->
 <div data-role="page" id="bar">
 
-	<div data-role="header">
+	<div class="header" data-role="header">
 		<h1>Bar</h1>
 	</div><!-- /header -->
 
@@ -65,7 +82,7 @@
 <!-- Start of Login -->
 <div data-role="page" id="login">
 
-	<div data-role="header">
+	<div class="header" data-role="header">
 		<h1>Login</h1>
 	</div><!-- /header -->
 
@@ -87,7 +104,7 @@
 <!-- Start of Signup -->
 <div data-role="page" id="signup">
 
-	<div data-role="header">
+	<div class="header" data-role="header">
 		<h1>signup</h1>
 	</div><!-- /header -->
 
@@ -109,79 +126,71 @@
 
 <!-- Start of homepage -->
 <div data-role="page" id="homepage">
-
-	<div data-role="header">
-		<h1>homepage</h1>
-	</div><!-- /header -->
-
+	<div class="headers" data-role="header">
+        <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span></h1>
+        <a href="#mypanel" data-icon="bars" class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext" data-display="overlay" style="background: #33D9B2; size: 19px;">Menu</a>
+    </div><!-- /header -->
+    <div style="height: 47px; background: #33D9B2;">
+        <i class=""></i>
+    </div>
+    
 	<div role="main" class="ui-content">
         <div class="">
-            <h4>Catagories</h4>
-            <ul class="hs">
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
+            <h4 class="fontTitle">Catagories</h4>
+            <ul class="hs categories_homepage">
+              <li class="itemCard categories_homepage" style="background-image: url('Images/burgers.jpg');background-size: contain;" >Burgers</li>
+              <li class="itemCard" style="background-image: url('Images/desserts.jpg'); background-size: contain;">Desserts</li>
+              <li class="itemCard" style="background-image: url('Images/indian.jpg'); background-size: contain;">Indian</li>
+              <li class="itemCard" style="background-image: url('Images/rice and curry.jpg'); background-size: contain;">Rice and curry</li>
+              <li class="itemCard" style="background-image: url('Images/drinks.jpg'); background-size: contain;">Drinks</li>
             </ul>
             
         </div>
         <div class="">
-            <h4>Promotons Today</h4>
-            <ul class="hs">
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
+            <h4 class="fontTitle">Promotons Today</h4>
+            <ul class="hs promotions_homepage">
+              <li class="itemCard" style="background-image: url('Images/promo\ 1.jpg');background-size: contain;"></li>
+              <li class="itemCard" style="background-image: url('Images/promo\ 2.jpg');background-size: contain;"></li>
+              <li class="itemCard" style="background-image: url('Images/promo\ 3.jpg');background-size: contain;"></li>
+              <li class="itemCard" style="background-image: url('Images/promo\ 4.jpg');background-size: contain;"></li>
+              <li class="itemCard" style="background-image: url('Images/promo\ 1.jpg');background-size: contain;"></li>
+              <li class="itemCard" style="background-image: url('Images/promo\ 2.jpg');background-size: contain;"></li>
             </ul>
             
         </div>
         <div class="">
-            <h4>Popular Items</h4>
-            <ul class="hs">
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
-              <li class="itemCard">test</li>
+            <h4 class="fontTitle">Popular Items</h4>
+            <ul class="hs popular_homepage">
+                <li class="itemCard" style="background-image: url('Images/rice\ and\ curry.jpg');background-size: contain;"></li>
+                <li class="itemCard" style="background-image: url('Images/vegetarian-meal.jpg');background-size: contain;"></li>
+                <li class="itemCard" style="background-image: url('Images/hambugers.jpg');background-size: contain;"></li>
+                <li class="itemCard" style="background-image: url('Images/indian.jpg 4.jpg');background-size: contain;"></li>
+                <li class="itemCard" style="background-image: url('Images/desserts.jpg');background-size: contain;"></li>
+                <li class="itemCard" style="background-image: url('Images/drinks.jpg');background-size: contain;"></li>
             </ul>
             
         </div>
 	</div><!-- /content -->
 
-	
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div><!-- /footer -->
 </div><!-- /page -->
 
 <!-- Start of Products -->
 <div data-role="page" id="Products" >
 
-	<div data-role="header">
+	<div class="header" data-role="header">
 		<h1>Products</h1>
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
         <div class="ui-grid-b ui-responsive">
             <div class="ui-block-a" id="exampleBlockA">
-                  <div class="ui-body ui-body-a ui-corner-all">
-                    <h3>Heading</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec. Donec semper mattis eros, nec condimentum ante sollicitudin quis. Etiam orci sem, porttitor ut tellus nec, blandit posuere urna. Proin a arcu non lacus pretium faucibus. Aliquam sed est porttitor, ullamcorper urna nec, vehicula lorem. Cras porttitor est lorem, non venenatis diam convallis congue.</p>
-                      </div>
             </div>
             <div class="ui-block-b" id="exampleBlockB">
-                  <div class="ui-body ui-body-a ui-corner-all">
-                    <h3>Heading</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec. Donec semper mattis eros, nec condimentum ante sollicitudin quis. Etiam orci sem, porttitor ut tellus nec, blandit posuere urna. Proin a arcu non lacus pretium faucibus. Aliquam sed est porttitor, ullamcorper urna nec, vehicula lorem. Cras porttitor est lorem, non venenatis diam convallis congue.</p>
-                      </div>
             </div>
             <div class="ui-block-c" id="exampleBlockC">
-                  <div class="ui-body ui-body-a ui-corner-all">
-                    <h3>Heading</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse accumsan blandit fermentum. Pellentesque cursus mauris purus, auctor commodo mi ullamcorper nec. Donec semper mattis eros, nec condimentum ante sollicitudin quis. Etiam orci sem, porttitor ut tellus nec, blandit posuere urna. Proin a arcu non lacus pretium faucibus. Aliquam sed est porttitor, ullamcorper urna nec, vehicula lorem. Cras porttitor est lorem, non venenatis diam convallis congue.</p>
-                      </div>
             </div>
            </div>
 	</div><!-- /content -->
@@ -192,9 +201,28 @@
 
 
 <!-- updating branch -->
+
+<!-- Start of product details -->
+<div data-role="page" id="productDetails">
+
+	<div class="headers" data-role="header">
+		<h1>product details</h1>
+	</div><!-- /header -->
+    <div>
+        <div>
+            <img class="product_details_Img" style="width: 100%;" src="https://www.citystateinfo.org/wp-content/uploads/butterchicken-recipe.jpg"></img>
+        </div>
+    </div>
+	<div role="main" class="ui-content">
+        
+	</div><!-- /content -->
+
+	
+</div><!-- /page -->
+
 </body>
 <script src="CardScript.js"></script>
 <script>
-    //  createCards();
+      createCards();
 </script>
 </html>
