@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <script src="JQuerryMobileAssets/jquery.min.js"></script>
     <script src="JQuerryMobileAssets/Script.js"></script>
-    
+
     <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -13,221 +14,252 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
     <link rel="stylesheet" href="JQuerryMobileAssets/Style.css" />
     <link rel="stylesheet" href="JQuerryMobileAssets/Card.css" />
-    <link rel="stylesheet" href="Styles/index.css"/>
+    <link rel="stylesheet" href="Styles/index.css" />
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
-    <script src="Bootstrap/js/bootstrap.min.js"></script>  
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
-        </style>
+    </style>
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="a" id="mypanel">
                 <ul data-role="listview">
-                    <li data-icon="delete"><a href="#homepage" data-rel="close">Close menu</a></li>
-                        <li><a href="#panel-fixed-page2">Accordion</a></li>
-                        <li><a href="#panel-fixed-page2">Ajax Navigation</a></li>
-                        <li><a href="#panel-fixed-page2">Autocomplete</a></li>
-                        <li><a href="#panel-fixed-page2">Buttons</a></li>
-                        <li><a href="#panel-fixed-page2">Checkboxes</a></li>
-                        <li><a href="#panel-fixed-page2">Collapsibles</a></li>
-                </ul>
+                        <li data-icon="delete"><a href="#homepage" data-rel="close">Close menu</a></li>
+                            <li><a href="#panel-fixed-page2">Accordion</a></li>
+                            <li><a href="#panel-fixed-page2">Ajax Navigation</a></li>
+                            <li><a href="#panel-fixed-page2">Autocomplete</a></li>
+                            <li><a href="#panel-fixed-page2">Buttons</a></li>
+                            <li><a href="#panel-fixed-page2">Checkboxes</a></li>
+                            <li><a href="#panel-fixed-page2">Collapsibles</a></li>
+                    </ul>
             </div><!-- /panel -->
 
 
 
 
     <!-- Start of startup page -->
-<div data-role="page" id="foo">
+    <div data-role="page" id="foo">
 
-	<div class="header" data-role="header">
-		<h1>Foo</h1>
-	</div><!-- /header -->
+        <div class="header" data-role="header">
+            <h1>Foo</h1>
+        </div><!-- /header -->
 
-	<div role="main" class="ui-content">
-		<p>I'm first in the source order so I'm shown as the page.</p>
-		<p>View internal page called <a href="#bar">bar</a></p>
-	</div><!-- /content -->
+        <div role="main" class="ui-content">
+            <p>I'm first in the source order so I'm shown as the page.</p>
+            <p>View internal page called <a href="#bar">bar</a></p>
+        </div><!-- /content -->
 
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
 
-<!-- Start of 2nd startup Page -->
-<div data-role="page" id="bar">
+    <!-- Start of 2nd startup Page -->
+    <div data-role="page" id="bar">
 
-	<div class="header" data-role="header">
-		<h1>Bar</h1>
-	</div><!-- /header -->
+        <div class="header" data-role="header">
+            <h1>Bar</h1>
+        </div><!-- /header -->
 
-	<div role="main" class="ui-content">
-        <div>
-            <a href="#login" class="ui-btn ui-corner-all">Login</a>
-            <a href="#signup" class="ui-btn ui-corner-all">Signup</a>
-            <p> <a href="#bar">Browse as guest</a></p>
-        </div>
-	</div><!-- /content -->
-
-	
-</div><!-- /page -->
-
-<!-- Start of Login -->
-<div data-role="page" id="login">
-
-	<div class="header" data-role="header">
-		<h1>Login</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-        <div>
-            <form>
-                    <input type="email" data-clear-btn="true" name="email-2" id="email-2" value="" placeholder="Email">
-                    <input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off" placeholder="Password">
-            </form>
-            <a href="#homepage" class="ui-btn ui-corner-all">Login</a>
-            <a href="" class="ui-btn ui-corner-all">Forgot Password</a>
-            <a href="#signup" class="ui-btn ui-corner-all">Create an Account</a>
-        </div>
-	</div><!-- /content -->
-
-	
-</div><!-- /page -->
-
-<!-- Start of Signup -->
-<div data-role="page" id="signup">
-
-	<div class="header" data-role="header">
-		<h1>signup</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-        <div>
-            <form>
-                    <input type="text" data-clear-btn="true" name="NameSignup" id="NameSignup" value="" placeholder="Name">    
-                    <input type="email" data-clear-btn="true" name="emailSignup" id="emailSignup" value="" placeholder="Email">
-                    <input type="password" data-clear-btn="true" name="passwordSignup" id="passwordSignup" value="" autocomplete="off" placeholder="Password">
-                    <input type="password" data-clear-btn="true" name="con_passwordSignup" id="con_passwordSignup" value="" autocomplete="off" placeholder="Confirm Password">
-            </form>
-            <a href="#login" class="ui-btn ui-corner-all">Register</a>
-            <a href="#login" class="ui-btn ui-corner-all">Signin</a>
-        </div>
-	</div><!-- /content -->
-
-	
-</div><!-- /page -->
-
-<!-- Start of homepage -->
-<div data-role="page" id="homepage">
-	<div class="headers" data-role="header">
-        <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span></h1>
-        <a href="#mypanel" data-icon="bars" class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext" data-display="overlay" style="background: #33D9B2; size: 19px;">Menu</a>
-    </div><!-- /header -->
-    <div style="height: 47px; background: #33D9B2;">
-        <i class=""></i>
-    </div>
-    
-	<div role="main" class="ui-content">
-        <div class="">
-            <h4 class="fontTitle">Catagories</h4>
-            <ul class="hs categories_homepage">
-              <li class="itemCard categories_homepage" style="background-image: url('Images/burgers.jpg');background-size: contain;" >Burgers</li>
-              <li class="itemCard" style="background-image: url('Images/desserts.jpg'); background-size: contain;">Desserts</li>
-              <li class="itemCard" style="background-image: url('Images/indian.jpg'); background-size: contain;">Indian</li>
-              <li class="itemCard" style="background-image: url('Images/rice and curry.jpg'); background-size: contain;">Rice and curry</li>
-              <li class="itemCard" style="background-image: url('Images/drinks.jpg'); background-size: contain;">Drinks</li>
-            </ul>
-            
-        </div>
-        <div class="">
-            <h4 class="fontTitle">Promotons Today</h4>
-            <ul class="hs promotions_homepage">
-              <li class="itemCard" style="background-image: url('Images/promo\ 1.jpg');background-size: contain;"></li>
-              <li class="itemCard" style="background-image: url('Images/promo\ 2.jpg');background-size: contain;"></li>
-              <li class="itemCard" style="background-image: url('Images/promo\ 3.jpg');background-size: contain;"></li>
-              <li class="itemCard" style="background-image: url('Images/promo\ 4.jpg');background-size: contain;"></li>
-              <li class="itemCard" style="background-image: url('Images/promo\ 1.jpg');background-size: contain;"></li>
-              <li class="itemCard" style="background-image: url('Images/promo\ 2.jpg');background-size: contain;"></li>
-            </ul>
-            
-        </div>
-        <div class="">
-            <h4 class="fontTitle">Popular Items</h4>
-            <ul class="hs popular_homepage">
-                <li class="itemCard" style="background-image: url('Images/rice\ and\ curry.jpg');background-size: contain;"></li>
-                <li class="itemCard" style="background-image: url('Images/vegetarian-meal.jpg');background-size: contain;"></li>
-                <li class="itemCard" style="background-image: url('Images/hambugers.jpg');background-size: contain;"></li>
-                <li class="itemCard" style="background-image: url('Images/indian.jpg 4.jpg');background-size: contain;"></li>
-                <li class="itemCard" style="background-image: url('Images/desserts.jpg');background-size: contain;"></li>
-                <li class="itemCard" style="background-image: url('Images/drinks.jpg');background-size: contain;"></li>
-            </ul>
-            
-        </div>
-	</div><!-- /content -->
-
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div><!-- /footer -->
-</div><!-- /page -->
-
-<!-- Start of Products -->
-<div data-role="page" id="Products" >
-
-	<div class="header" data-role="header">
-		<h1>Products</h1>
-	</div><!-- /header -->
-
-	<div role="main" class="ui-content">
-        <div class="ui-grid-b ui-responsive">
-            <div class="ui-block-a" id="exampleBlockA">
+        <div role="main" class="ui-content">
+            <div>
+                <a href="#login" class="ui-btn ui-corner-all">Login</a>
+                <a href="#signup" class="ui-btn ui-corner-all">Signup</a>
+                <p> <a href="#bar">Browse as guest</a></p>
             </div>
-            <div class="ui-block-b" id="exampleBlockB">
+        </div><!-- /content -->
+
+
+    </div><!-- /page -->
+
+    <!-- Start of Login -->
+    <div data-role="page" id="login">
+
+        <div class="header" data-role="header">
+            <h1>Login</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div>
+                <form>
+                        <input type="email" data-clear-btn="true" name="email-2" id="email-2" value=""
+                        placeholder="Email">
+                        <input type="password" data-clear-btn="true" name="password-2" id="password-2" value=""
+                        autocomplete="off" placeholder="Password">
+                </form>
+                <a href="#homepage" class="ui-btn ui-corner-all">Login</a>
+                <a href="" class="ui-btn ui-corner-all">Forgot Password</a>
+                <a href="#signup" class="ui-btn ui-corner-all">Create an Account</a>
             </div>
-            <div class="ui-block-c" id="exampleBlockC">
+        </div><!-- /content -->
+
+
+    </div><!-- /page -->
+
+    <!-- Start of Signup -->
+    <div data-role="page" id="signup">
+
+        <div class="header" data-role="header">
+            <h1>signup</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div>
+                <form>
+                    <input type="text" data-clear-btn="true" name="NameSignup" id="NameSignup" value=""
+                        placeholder="Name">
+                        <input type="email" data-clear-btn="true" name="emailSignup" id="emailSignup" value=""
+                        placeholder="Email">
+                        <input type="password" data-clear-btn="true" name="passwordSignup" id="passwordSignup" value=""
+                        autocomplete="off" placeholder="Password">
+                    <input type="password" data-clear-btn="true" name="con_passwordSignup" id="con_passwordSignup"
+                        value="" autocomplete="off" placeholder="Confirm Password">
+                </form>
+                <a href="#login" class="ui-btn ui-corner-all">Register</a>
+                <a href="#login" class="ui-btn ui-corner-all">Signin</a>
             </div>
-           </div>
-	</div><!-- /content -->
-
-	
-</div><!-- /page -->
+        </div><!-- /content -->
 
 
+    </div><!-- /page -->
 
-<!-- updating branch -->
-
-<!-- Start of product details -->
-<div data-role="page" id="productDetails">
-
-	<div class="headers" data-role="header">
-		<h1>product details</h1>
-	</div><!-- /header -->
-    <div>
-        <div>
-            <img class="product_details_Img" style="width: 100%;" src="https://www.citystateinfo.org/wp-content/uploads/butterchicken-recipe.jpg"></img>
+    <!-- Start of homepage -->
+    <div data-role="page" id="homepage">
+        <div class="headers" data-role="header">
+            <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span
+                    style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
+            </h1>
+            <a href="#mypanel" data-icon="bars" class="ui-nodisc-icon ui-alt-icon" data-iconpos="notext"
+                data-display="overlay" style="background: #33D9B2; size: 19px;">Menu</a>
+        </div><!-- /header -->
+        <div style="height: 47px; background: #33D9B2;">
+            <i class=""></i>
         </div>
-    </div>
-	<div role="main" class="ui-content">
-        
-	</div><!-- /content -->
 
-	
-</div><!-- /page -->
+        <div role="main" class="ui-content">
+            <div class="">
+                <h4 class="fontTitle">Catagories</h4>
+                <ul class="hs categories_homepage">
+                    <li class="itemCard categories_homepage"
+                        style="background-image: url('Images/burgers.jpg');background-size: contain;">Burgers</li>
+                    <li class="itemCard"
+                        style="background-image: url('Images/desserts.jpg'); background-size: contain;">Desserts</li>
+                    <li class="itemCard" style="background-image: url('Images/indian.jpg'); background-size: contain;">
+                        Indian</li>
+                    <li class="itemCard"
+                        style="background-image: url('Images/rice and curry.jpg'); background-size: contain;">Rice and
+                        curry</li>
+                    <li class="itemCard" style="background-image: url('Images/drinks.jpg'); background-size: contain;">
+                        Drinks</li>
+                </ul>
+
+            </div>
+            <div class="">
+                <h4 class="fontTitle">Promotons Today</h4>
+                <ul class="hs promotions_homepage">
+                    <li class="itemCard" style="background-image: url('Images/promo\ 1.jpg');background-size: contain;">
+                    </li>
+                    <li class="itemCard" style="background-image: url('Images/promo\ 2.jpg');background-size: contain;">
+                    </li>
+                    <li class="itemCard" style="background-image: url('Images/promo\ 3.jpg');background-size: contain;">
+                    </li>
+                    <li class="itemCard" style="background-image: url('Images/promo\ 4.jpg');background-size: contain;">
+                    </li>
+                    <li class="itemCard" style="background-image: url('Images/promo\ 1.jpg');background-size: contain;">
+                    </li>
+                    <li class="itemCard" style="background-image: url('Images/promo\ 2.jpg');background-size: contain;">
+                    </li>
+                </ul>
+
+            </div>
+            <div class="">
+                <h4 class="fontTitle">Popular Items</h4>
+                <ul class="hs popular_homepage">
+                    <li class="itemCard"
+                        style="background-image: url('Images/rice\ and\ curry.jpg');background-size: contain;"></li>
+                    <li class="itemCard"
+                        style="background-image: url('Images/vegetarian-meal.jpg');background-size: contain;"></li>
+                    <li class="itemCard"
+                        style="background-image: url('Images/hambugers.jpg');background-size: contain;"></li>
+                    <li class="itemCard"
+                        style="background-image: url('Images/indian.jpg 4.jpg');background-size: contain;"></li>
+                    <li class="itemCard" style="background-image: url('Images/desserts.jpg');background-size: contain;">
+                    </li>
+                    <li class="itemCard" style="background-image: url('Images/drinks.jpg');background-size: contain;">
+                    </li>
+                </ul>
+
+            </div>
+        </div><!-- /content -->
+
+        <div data-role="footer">
+            <h4>Page Footer</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <!-- Start of Products -->
+    <div data-role="page" id="Products">
+
+        <div class="header" data-role="header">
+            <h1>Products</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <div class="ui-grid-b ui-responsive">
+                <div class="ui-block-a" id="exampleBlockA">
+                </div>
+                <div class="ui-block-b" id="exampleBlockB">
+                </div>
+                <div class="ui-block-c" id="exampleBlockC">
+                </div>
+            </div>
+        </div><!-- /content -->
+
+
+    </div><!-- /page -->
+
+
+
+    <!-- updating branch -->
+
+    <!-- Start of product details -->
+    <div data-role="page" id="productDetails">
+
+        <div class="headers" data-role="header">
+            <h1>product details</h1>
+        </div><!-- /header -->
+        <div>
+            <div>
+                <img class="product_details_Img" style="width: 100%;"
+                    src="https://www.citystateinfo.org/wp-content/uploads/butterchicken-recipe.jpg"></img>
+            </div>
+        </div>
+        <div role="main" class="ui-content">
+
+        </div><!-- /content -->
+
+
+    </div><!-- /page -->
 
 </body>
 <script src="Scripts/CardScript.js"></script>
 <script>
-      createCards();
+    createCards();
 </script>
+
 </html>
