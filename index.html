@@ -37,7 +37,7 @@
 
 <body>
 
-    <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="a" id="mypanel">
+    <!-- <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="a" id="mypanel">
                 <ul data-role="listview">
                         <li data-icon="delete"><a href="#homepage" data-rel="close">Close menu</a></li>
                             <li><a href="#panel-fixed-page2">Accordion</a></li>
@@ -47,7 +47,8 @@
                             <li><a href="#panel-fixed-page2">Checkboxes</a></li>
                             <li><a href="#panel-fixed-page2">Collapsibles</a></li>
                     </ul>
-            </div><!-- /panel -->
+            </div> -->
+        <!-- /panel -->
 
 
 
@@ -89,22 +90,30 @@
 
     <!-- Start of Login -->
     <div data-role="page" id="login">
-
-        <div class="header" data-role="header">
-            <h1>Login</h1>
+        <div class="headers" data-role="header">
+            <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span
+                    style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
+            </h1>
         </div><!-- /header -->
-
+        <div style="height: 47px; background: #33D9B2;">
+            <i class=""></i><span>Signin</span>
+        </div>
+        <div class="loginLogo" >
+            <h1 style="font-family: 'Sonsie One', cursive;margin-left: auto; margin-right: auto; display: table;"><span style="font-size: 48px;">YUM</span><span
+                style="font-size: 48px; color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
+        </h1>
+        </div>
         <div role="main" class="ui-content">
+           
             <div>
-                <form>
-                        <input type="email" data-clear-btn="true" name="email-2" id="email-2" value=""
-                        placeholder="Email">
-                        <input type="password" data-clear-btn="true" name="password-2" id="password-2" value=""
-                        autocomplete="off" placeholder="Password">
+                <form class="form1">
+                        <input type="email" data-clear-btn="true" name="emailSignup" id="emailSignup" value="" placeholder="Email" class="text_box">
+                        <input type="password" data-clear-btn="true" name="password" id="password" value=""
+                        autocomplete="off" placeholder="Password" class="text_box">
                 </form>
-                <a href="#homepage" class="ui-btn ui-corner-all">Login</a>
-                <a href="" class="ui-btn ui-corner-all">Forgot Password</a>
-                <a href="#signup" class="ui-btn ui-corner-all">Create an Account</a>
+                <a href="#homepage" class="ui-btn ui-corner-all primary_but" >Login</a>
+                <a href="" class="ui-btn ui-corner-all secondary_but">Forgot Password</a>
+                <a href="#signup" class="ui-btn ui-corner-all secondary_but">Create an Account</a>
             </div>
         </div><!-- /content -->
 
@@ -113,10 +122,19 @@
 
     <!-- Start of Signup -->
     <div data-role="page" id="signup">
-
-        <div class="header" data-role="header">
-            <h1>signup</h1>
+        <div class="headers" data-role="header">
+            <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span
+                    style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
+            </h1>
         </div><!-- /header -->
+        <div style="height: 47px; background: #33D9B2;">
+            <i class=""></i><span>Signup</span>
+        </div>
+        <div class="loginLogo" >
+            <h1 style="font-family: 'Sonsie One', cursive;margin-left: auto; margin-right: auto; display: table;"><span style="font-size: 48px;">YUM</span><span
+                style="font-size: 48px; color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
+        </h1>
+        </div>
 
         <div role="main" class="ui-content">
             <div>

@@ -31,6 +31,7 @@
   body {
     font-family: 'Fira Sans';font-size: 22px;
     height: 100%;
+    background: white ;
   }
   
   body {
@@ -115,6 +116,42 @@
 } */
 
 
+
+.loginLogo{
+  margin: 119px auto 119px auto;
+}
+
+.primary_but{
+  width: 800px;
+  height: 61px;
+  background-color: #33D9B2;
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.secondary_but{
+  width: 800px;
+  height: 61px;
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.text_box{
+  height: 61px;
+}
+
+.form1{
+  width: 800px;
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
 /* iPhone landscape */
 @media (orientation: landscape) and (max-device-width : 812px){
   /* .ui-block-a {
@@ -127,6 +164,33 @@
       height: 250px;
       object-fit: cover;
     }
+
+    .loginLogo{
+      margin: 60px auto 20px auto;
+    }
+    .primary_but{
+      width: 600px;
+      height: 51px;
+      background-color: #33D9B2;
+    }
+
+    .secondary_but{
+      width: 600px;
+      height: 51px;
+    }
+
+    .text_box{
+      height: 51px;
+    }
+    
+    .form1{
+      width: 600px;
+      display: inherit;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
   }
   /* iPhone portrait */
   @media (orientation: portrait) and (max-device-width : 414px){
@@ -139,6 +203,28 @@
     object-fit: cover;
   }
 
+  .primary_but{
+    width: 326px;
+    height: 45px;
+    background-color: #33D9B2;
+  }
+
+  .secondary_but{
+    width: 326px;
+    height: 45px;
+  }
+
+  .text_box{
+    height: 45px;
+  }
+  
+  .form1{
+    width: 326px;
+    display: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
 
   /* homepage cards media queries */
   .categories_homepage{
