@@ -8,7 +8,8 @@ class Footer extends HTMLElement {
       <style>
       .footerStyles {
         background-color: #33D9B2;
-        height: 50px;
+        height: 55px;
+        padding-top: 10px;
       }
     </style>
     <div class="container-fluid footerStyles">
