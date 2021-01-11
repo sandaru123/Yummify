@@ -109,8 +109,8 @@ class GuestHeader extends HTMLElement {
             </div>
 
             <div class="col d-flex justify-content-center" style="padding-top:5px;">
-              <a class="navbar-brand" href="#">
-                <img src="/Images/YUMIFY.png" height="20px" width="100px">
+            <a class="navbar-brand" href="#">
+            <img src="/Images/YUMIFY.png" height="20px" width="100px">
               </a>
             </div>
 
@@ -131,7 +131,7 @@ class GuestHeader extends HTMLElement {
                   <img src="/Images/icons/house.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10" >
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
                 </div>
               </div>
             </li>

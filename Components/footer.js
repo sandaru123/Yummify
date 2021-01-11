@@ -6,22 +6,47 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
-      <style>
-      .footerStyles {
-        background-color: #33D9B2;
-        height: 55px;
-        padding-top: 10px;
-      }
-    </style>
+    <style>
+    .footerStyles {
+       background-color: #33D9B2;
+       height: 60px;
+    }
 
-    <div class="container-fluid footerStyles">
-      <div class="d-flex justify-content-center">
-        <img src="/Images/YUMIFY.png" height="20px" width="100px" style="justify-self: center;">
-      </div>
-      <div class="d-flex justify-content-center">
-       <p class="normal" style="justify-content: center;">© 2020 Yumify Cooperation private (LTD)</p>
-      </div>
+    .footer {
+      position:absolute;
+      bottom:0;
+      width:100%;
+    }
+
+    .fluidContainer {
+       margin-right: auto;
+       margin-left: auto;
+       width: 100%;
+       padding-right: .75rem;
+       padding-left: .75rem;
+    }
+
+    *,
+    ::after,
+    ::before {
+       box-sizing: border-box;
+    }
+
+    .displayFlex {
+      display: flex !important;
+      justify-content: center!important;
+   }
+    
+ </style>
+
+ <div class="fluidContainer footerStyles footer">
+    <div class="displayFlex">
+       <img src="/Images/YUMIFY.png" height="20px" width="100px" style="margin-top: 10px; ">
     </div>
+    <div class="displayFlex" style="">
+       <p style="justify-content: center; margin-top:5px;">© 2020 Yumify Cooperation private (LTD)</p>
+    </div>
+ </div>
       `;
   }
 }
