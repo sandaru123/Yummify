@@ -4,7 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <script src="JQuerryMobileAssets/jquery.min.js"></script>
-    <script src="JQuerryMobileAssets/Script.js"></script>
+    
 
     <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -111,7 +111,7 @@
                         <input type="password" data-clear-btn="true" name="password" id="password" value=""
                         autocomplete="off" placeholder="Password" class="text_box">
                 </form>
-                <a href="#homepage" class="ui-btn ui-corner-all primary_but" >Login</a>
+                <a href="#homepage" class="ui-btn ui-corner-all primary_but" style="text-align:center;">Login</a>
                 <a href="" class="ui-btn ui-corner-all secondary_but">Forgot Password</a>
                 <a href="#signup" class="ui-btn ui-corner-all secondary_but">Create an Account</a>
             </div>
@@ -274,10 +274,87 @@
 
     </div><!-- /page -->
 
+
+
+    <!-- Start of Payment -->
+    <div data-role="page" id="payment">
+        <div class="headers" data-role="header">
+            <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span
+                    style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
+            </h1>
+        </div><!-- /header -->
+        <div style="height: 47px; background: #33D9B2;">
+            <i class=""></i><span>Payment</span>
+        </div>
+        <div class="summaryDiv_payment">
+                <div class="padding35_payment">
+                    <h2>Summary</h2>
+                    <table style="width:100%">
+                        <tr>
+                          <td>Subtotal</td>
+                          <td style="text-align: right;">3000</td>
+                        </tr>
+                        <tr>
+                          <td>Promos</td>
+                          <td style="text-align: right;">200</td>
+                        </tr>
+                        <tr>
+                          <td>Point discount</td>
+                          <td style="text-align: right;">400</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery charges</td>
+                            <td style="text-align: right;">35</td>
+                        </tr>
+                      </table>
+                </div>
+                <div style="background-color:#252525; height: 58px;">
+                    <div class="padding35LeftandRight_payment">
+                        <table style="width:100%">
+                            <tr>
+                              <td>Total</td>
+                              <td style="text-align: right;">3000</td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+        </div>
+        <div role="main" class="ui-content">
+            <div>
+                <h5>Payment options</h5>
+                <div style="display: inline-flex; width: 100%;">
+                    <button class="ui-btn ui-corner-all ui-shadow paymentOption_Card debitCredit_payment" style="margin-right: 1%;">Debit/Credit</button>
+                    <button class="ui-btn ui-corner-all ui-shadow paymentOption_Card cash_payment" style="margin-right: 1%;">Cash</button>
+                    <button class="ui-btn ui-corner-all ui-shadow paymentOption_Card paypal_payment" style="margin-right: 1%;">Paypal</button>
+                </div>
+                <h5 class="paymentDetailsH">Payment details</h5>
+                <div class="ui-grid-b ui-responsive paymentDetails">
+                        <div class="ui-block-a" style="margin-right: 1%;"><input type="text" name="cardName_payment" id="cardName_payment" value="" placeholder="Name on card"></div>
+                        <div class="ui-block-b" style="margin-right: 1%;"><input type="text" name="cardNumber_payment" id="cardNumber_payment" value="" placeholder="Card number"></div>
+                        <div class="ui-block-c" >
+                            <div class="ui-block-a" id="fieldTo40" style="width: 55%;"> <input type="text" name="expDate_payment" id="expDate_payment" value="" placeholder="Expiry date(YY/MM)"></div>
+                            <div class="ui-block-b" id="fieldTo60" style="width: 44%; margin-left: 1%;"> <input type="text" name="cvc_payment" id="cvc_payment" value="" placeholder="CVC"></div>
+                        </div>	
+                </div>
+                <h5>Delivery address</h5>
+                <div class="ui-grid-b ui-responsive">	
+                        <div class="ui-block-a" style="margin-right: 1%;"><input type="text" name="houseNo_payment" id="houseNo_payment" value="" placeholder="House no."></div>
+                        <div class="ui-block-b" style="margin-right: 1%;"><input type="text" name="street_payment" id="street_payment" value="" placeholder="Street"></div>
+                        <div class="ui-block-c" ><input type="text" name="city_payment" id="city_payment" value="" placeholder="City"></div>
+                   
+                </div>
+
+            </div>
+        </div><!-- /content -->
+
+
+    </div><!-- /page -->
+
+
 </body>
 <script src="Scripts/CardScript.js"></script>
 <script>
     createCards();
 </script>
-
+<script src="JQuerryMobileAssets/Script.js"></script>
 </html>

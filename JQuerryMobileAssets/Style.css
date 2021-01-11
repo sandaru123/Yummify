@@ -152,6 +152,34 @@
   text-align: left;
 }
 
+
+.summaryDiv_payment{
+  height: 400px;
+  background-color: black;
+  
+}
+
+.padding35_payment{
+  padding-top: 35px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.padding35LeftandRight_payment{
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.paymentOption_Card{
+  width: 360px;
+  height: 50px;
+}
+
+
+
+/* ====================================media quaries------------------------------------- */
+
+
 /* iPhone landscape */
 @media (orientation: landscape) and (max-device-width : 812px){
   /* .ui-block-a {
@@ -194,10 +222,7 @@
   }
   /* iPhone portrait */
   @media (orientation: portrait) and (max-device-width : 414px){
-  .ui-block-a{
-  background-color: lightgreen;
-   }
-
+    
    .product_details_Img{
     height: 208px;
     object-fit: cover;
@@ -245,7 +270,7 @@
    /* ipad landscape */
    @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape){
    .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
-    width: 30%;
+    width: 32.333%;
     }
     .product_details_Img{
       height: 510px;
@@ -275,35 +300,37 @@
   }
   /* ipad portrait */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
-  .ui-block-a{
-  background-color: lightgreen;
-   }
-   .product_details_Img{
-    height: 510px;
-    object-fit: cover;
-  }
+        .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
+          width: 45%;
+          }
+      .product_details_Img{
+        height: 510px;
+        object-fit: cover;
+      }
 
-  .fontTitle{
-    font-size: 24px;
-  }
+      .fontTitle{
+        font-size: 24px;
+      }
 
 
-  /* homepage cards media queries */
-  .categories_homepage{
-    /* grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2)); */
-    grid-template-columns: repeat(6, 200px);
-    grid-template-rows: minmax(146px, 1fr);
-  }
-  .promotions_homepage{
-    grid-template-columns: repeat(6, 359px);
-    grid-template-rows: minmax(268px, 1fr);
-  }
-  .popular_homepage{
-    grid-template-columns: repeat(6, 359px);
-    grid-template-rows: minmax(268px, 1fr);
-  }
-  }
+        /* homepage cards media queries */
+        .categories_homepage{
+          /* grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2)); */
+          grid-template-columns: repeat(6, 200px);
+          grid-template-rows: minmax(146px, 1fr);
+        }
+        .promotions_homepage{
+          grid-template-columns: repeat(6, 359px);
+          grid-template-rows: minmax(268px, 1fr);
+        }
+        .popular_homepage{
+          grid-template-columns: repeat(6, 359px);
+          grid-template-rows: minmax(268px, 1fr);
+        }
+
+  } /* ipad portrait */
 
  
 
 
+  
