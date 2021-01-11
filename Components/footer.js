@@ -5,8 +5,8 @@ class Footer extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <style>
 
+      <style>
       .footerStyles {
         background-color: #33D9B2;
         height: 55px;
@@ -19,7 +19,7 @@ class Footer extends HTMLElement {
         <img src="/Images/YUMIFY.png" height="20px" width="100px" style="justify-self: center;">
       </div>
       <div class="d-flex justify-content-center">
-       <p style="justify-content: center;">© 2020 Yumify Cooperation private (LTD)</p>
+       <p class="normal" style="justify-content: center;">© 2020 Yumify Cooperation private (LTD)</p>
       </div>
     </div>
       `;
