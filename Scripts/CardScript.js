@@ -6,20 +6,60 @@ function createCards() {
 		exampleBlockC = $('#exampleBlockC'), // cache the selector of the element, increases performance
 		i,
 		j = 1,
-		tag,
-		
+
 		// the cards, in this example in an array
-		imagename = ["Image1", "Image2", "Image3","Image3"],
+		imagename = ["Image1", "Image2", "Image3", "Image3"],
 		imagesource = ["Images/burgers.jpg", "./images/image2.jpg", "./images/image3.jpg", "./images/image3.jpg"],
-		titlecard = ["Image!", "Image!", "Image!","Image!"],
-		titleimage = ["Title", "Title", "Title","Title"],
-		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...","Lorem ipsum part 3..."];
- 
+		titlecard = ["Image!", "Image!", "Image!", "Image!"],
+		titleimage = ["Title", "Title", "Title", "Title"],
+		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...", "Lorem ipsum part 3..."];
+
 	// emptying the current grid
 	exampleBlockA.empty();
 	exampleBlockB.empty();
 	exampleBlockC.empty();
- 
+
+	var tag = '';
+
+	for (i = 0; i < 3; i++) {
+
+		tag += '<div class="ui-block-a card maincardwidth">';
+		tag += '<div class="flexcolumn">';
+		tag += '<div id="card'+(i+1)+'" class="flexrow">';
+		tag += '<div style="width: 180px;">';
+		tag += '<img class="card-image cardimageedit" src="./Images/drinks.jpg" />';
+		tag += '</div>';
+		tag += '<div class="flexcolumn" style="width: 220px;">';
+		tag += '<div style="height: auto;">';
+		tag += '<p style="font-size: 20px;">Chorizo & Mozzarella</p>';
+		tag += '<p style="float: right; margin-top: -80px;">$25</p>';
+		tag += '</div>';
+		tag += '<div style="height: auto;">';
+		tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
+		tag += '<p style="font-size: 15px; margin-top: -15px;">Butter chicken curry or murg makhani is a curry of chicken in a spiced tomato, butter and cream sauce.</p>';
+		tag += '</div>';
+		tag += '</div>';
+		tag += '</div>';
+		tag += '<div class="flexcolumn" style="height: 50px;">';
+		tag += '<div>';
+		tag += '<span class="fa fa-star starcoluryello"></span>';
+		tag += '<span class="fa fa-star starcoluryello"></span>';
+		tag += '<span class="fa fa-star starcoluryello"></span>';
+		tag += '<span class="fa fa-star starcoluryello"></span>';
+		tag += '<span class="fa fa-star" style="color: #de7575;"></span>';
+		tag += '</div>';
+		tag += '<div></div>';
+		tag += '</div>';
+		tag += '</div>';
+		tag += '</div>';
+
+		pressEffectCard('card' + i);
+
+	}
+	$("#appentcard").html("");
+	$("#appentcard").html(tag);
+
+	return;
 	// the loop to get the values from the arrays
 	for (i = 0; i < imagename.length; i = i + 1) {
 		tag = '<div class="card" id="card' + i + '">'; // start building the tag for the card
@@ -34,10 +74,10 @@ function createCards() {
 			tag = tag + '<h1>' + titlecard[i] + '</h1>'; // insert titlecard if it exists
 		}
 		if (text[i] !== null) {
-			tag = tag + '<p>' +  text[i] + '</p>'; // insert text in the card if it exists
+			tag = tag + '<p>' + text[i] + '</p>'; // insert text in the card if it exists
 		}
-        tag = tag + '</div>'; // end the card building
-		
+		tag = tag + '</div>'; // end the card building
+
 		/*	You will need to create cards in a special order.
 			The first 1/3 of the cards are placed in block A.
 			The second 1/3 of the cards are placed in block B.
@@ -57,12 +97,12 @@ function createCards() {
 		} else if (i <= ((imagename.length / 3) * 3)) {
 			exampleBlockC.append(tag);
 		}
-		
+
 		// add a press effect to the card
 		pressEffectCard('card' + i);
 	}
 }
- 
+
 // press effect card ui
 function pressEffectCard(x) {
 	var id = $("#" + x); // cache the selector of the element, increases performance
