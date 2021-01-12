@@ -25,7 +25,7 @@ class Header extends HTMLElement {
               </a>
             </div>
 
-            <div class="col-1">
+            <div class="col-1" style="padding:0;">
               <a class="btn" type="submit" style="padding-bottom: 5px;">
                 <img src="/Images/icons/search.svg" height="20px" width="20px">
               </a>
@@ -117,7 +117,7 @@ class Header extends HTMLElement {
       <div class="container-fluid">
         <div class="row">
 
-          <div class="col">
+          <div class="col" style="padding:0;">
             <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
@@ -125,13 +125,13 @@ class Header extends HTMLElement {
             </a>
           </div>
 
-          <div class="col d-flex justify-content-center" style="padding-top:5px;">
+          <div class="col d-flex justify-content-center">
             <a class="navbar-brand" href="#">
               <img src="/Images/YUMIFY.png" height="20px" width="100px">
             </a>
           </div>
 
-          <div class="col d-flex justify-content-end">
+          <div class="col d-flex justify-content-end" style="padding:0;">
             <a class="btn" type="submit" style="padding-top: 5px;">
               <img src="/Images/icons/search.svg" height="20px" width="20px">
             </a>
@@ -232,7 +232,7 @@ class Header extends HTMLElement {
         <div class="container-fluid">
           <div class="row">
 
-            <div class="col">
+            <div class="col" style="padding:0;">
               <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -240,13 +240,13 @@ class Header extends HTMLElement {
               </a>
             </div>
 
-            <div class="col" style="padding-top:5px;">
+            <div class="col d-flex justify-content-center" style="">
               <a class="navbar-brand" href="#">
                 <img src="/Images/YUMIFY.png" height="20px" width="100px">
               </a>
             </div>
 
-            <div class="col d-flex justify-content-end">
+            <div class="col d-flex justify-content-end" style="padding:0;">
               <a class="btn" type="submit" style="padding-top: 5px;">
                 <img src="/Images/icons/search.svg" height="20px" width="20px">
               </a>
