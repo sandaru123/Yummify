@@ -1,59 +1,84 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-   <script src="JQuerryMobileAssets/jquery.min.js"></script>
-   <script src="JQuerryMobileAssets/Script.js"></script>
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
 
-   <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
-   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+<script src="/JQuerryMobileAssets/jquery.min.js"></script>
 
-   <link rel="stylesheet" href="JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
-   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-   <script src="JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
+<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <meta charset="UTF-8">
-   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<link rel="stylesheet" href="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
 
-   <meta name="viewport"
-       content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
-   <link rel="stylesheet" href="../JQuerryMobileAssets/Style.css" />
-   <link rel="stylesheet" href="../JQuerryMobileAssets/Card.css"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-   <!-- Bootstrap -->
-   <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
-   <script src="Bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/JQuerryMobileAssets/Style.css" />
+<link rel="stylesheet" href="/JQuerryMobileAssets/Card.css" />
+<link rel="stylesheet" href="/Styles/index.css" />
 
-   <style>
-       @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
-   </style>
-</head>
+<!-- Bootstrap -->
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+<!-- components -->
+<script src="/Components/headerwithoutnav.js" type="text/javascript" defer></script>
+
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+</style>
+<title>Register</title>
 
 <body>
    <div data-role="page" id="signup">
-
-      <div class="header" data-role="header">
-         <h1>signup</h1>
-      </div><!-- /header -->
-
-      <div role="main" class="ui-content">
-         <div>
-            <form>
-               <input type="text" data-clear-btn="true" name="NameSignup" id="NameSignup" value="" placeholder="Name">
-                   <input type="email" data-clear-btn="true" name="emailSignup" id="emailSignup" value=""
-                  placeholder="Email">
-                   <input type="password" data-clear-btn="true" name="passwordSignup" id="passwordSignup" value=""
-                  autocomplete="off" placeholder="Password">
-               <input type="password" data-clear-btn="true" name="con_passwordSignup" id="con_passwordSignup" value=""
-                  autocomplete="off" placeholder="Confirm Password">
-            </form>
-            <a href="#login" class="ui-btn ui-corner-all">Register</a>
-            <a href="#login" class="ui-btn ui-corner-all">Signin</a>
+      <div class="headers" data-role="header">
+         <!-- <div style="height: 30px; padding-top: 5px;">
+            <img src="/Images/YUMIFY.png" height="20px" width="100px"
+               style="display: flex; margin-left: auto; margin-right: auto; width: 25%; margin-top:10px;">
+         </div> -->
+      </div>
+      <headerwithoutnav-component></headerwithoutnav-component>
+      <!-- nav bar with back button start -->
+      <div class="container-fluid d-block d-sm-none d-md-none" style="background-color: #33D9B2; padding-top: 5px;">
+         <div class="row">
+               <div class="col-1">
+                  <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px">
+               </div>
+               <div class="col-10">
+                  <h5 style="font-weight: bold; font-size:18px; padding-top: 5px;">Sign Up</h5>
+               </div>
          </div>
+      </div>
+      <!-- nav bar with back button end -->
+      <div class="loginLogo">
+         <h1 style="font-family: 'Sonsie One', cursive;margin-left: auto; margin-right: auto; display: table;"><span
+               style="font-size:36px;">YUM</span><span
+               style="color: #33D9B2;text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black; font-size:36px;">IFY</span>
+         </h1>
+      </div>
+      <div role="main" class="ui-content">
+         <input type="text" name="NameSignup" id="NameSignup" value="" placeholder="Name" class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
+         <input type="email" name="emailSignup" id="emailSignup" value="" placeholder="Email" class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
+         <input type="password" name="passwordSignup" id="passwordSignup" value="" autocomplete="off" placeholder="Password" class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
+         <input type="password" name="con_passwordSignup" id="con_passwordSignup" value="" autocomplete="off" placeholder="Confirm Password" class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
+
+      <a href="/Pages/RegisterPage.html" class="ui-btn ui-corner-all"
+      style="text-align:center; padding-left: 25px; padding-right:25px; font-size:14px; margin-bottom: 20px; margin-top:20px; width: 100%; height: 20%; color: black; background-color:#33D9B2;">Register</a>
+      <a href="/Pages/LoginPage.html" class="ui-btn ui-corner-all"
+         style="text-align:center; border: solid 2px #33D9B2; color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Sign in</a>
       </div><!-- /content -->
 
 
