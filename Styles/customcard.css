@@ -22,3 +22,11 @@
     margin-top: 10px;
     border-radius: 10px;
 }
+
+.forntwaightnormal {
+    font-weight: normal;
+  }
+
+.forntwaightbold{
+    font-weight: bold;
+}

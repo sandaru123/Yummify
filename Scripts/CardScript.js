@@ -23,7 +23,7 @@ function createCards() {
 
 	for (i = 0; i < 3; i++) {
 
-		tag += '<div class="ui-block-a card maincardwidth">';
+		tag += '<div style="margin: 14px; border-radius: 10px;" class="ui-block-a card maincardwidth">';
 		tag += '<div class="flexcolumn">';
 		tag += '<div id="card'+(i+1)+'" class="flexrow">';
 		tag += '<div style="width: 180px;">';
@@ -32,7 +32,7 @@ function createCards() {
 		tag += '<div class="flexcolumn" style="width: 220px;">';
 		tag += '<div style="height: auto;">';
 		tag += '<p style="font-size: 20px;">Chorizo & Mozzarella</p>';
-		tag += '<p style="float: right; margin-top: -80px;">$25</p>';
+		tag += '<p style="float: right; margin-top: -60px;">$25</p>';
 		tag += '</div>';
 		tag += '<div style="height: auto;">';
 		tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
@@ -40,15 +40,15 @@ function createCards() {
 		tag += '</div>';
 		tag += '</div>';
 		tag += '</div>';
-		tag += '<div class="flexcolumn" style="height: 50px;">';
+		tag += '<div class="flexrow" style="height: 30px; margin-top:20px;">';
 		tag += '<div>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
-		tag += '<span class="fa fa-star" style="color: #de7575;"></span>';
+		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
+		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
+		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
+		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
+		tag += '<span class="fa fa-star fa-lg" style="color: #de7575;"></span>';
 		tag += '</div>';
-		tag += '<div></div>';
+		tag += '<div style="position: absolute; margin-right: 20px; right: 0;"> <i style="color: red;" class="fa fa-heart fa-lg"></i> <i class="fa fa-shopping-cart fa-lg"></i> </div>';
 		tag += '</div>';
 		tag += '</div>';
 		tag += '</div>';

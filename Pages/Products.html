@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <script src="../JQuerryMobileAssets/jquery.min.js"></script>
     <script src="../JQuerryMobileAssets/Script.js"></script>
+    <link rel="stylesheet" href="../JQuerryMobileAssets/Card.css" />
 
     <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -57,15 +58,27 @@
             </div>
             <div class="col-11">
                 <a onclick="backredirect()" style="text-decoration: none; color: black">
-                    <h5 class="normal">Products</h5>
+                    <h5 class="forntwaightbold">Products</h5>
                 </a>
             </div>
         </div>
     </div>
     <!-- nav bar with back button end -->
 
+    <div style="margin-bottom: -40px;" class="ui-content">
+        <div class="ui-grid-b ui-responsive flexrow" style="padding: 10px;">
+            <div style="margin-left: 10px;">
+                <h5 class="forntwaightbold">Bakery</h5>
+            </div>
+            <div style="position: absolute; margin-right: 30px; right: 0;">
+                <p style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i class="fa fa-filter"></i> </p>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Content -->
-    <div role="main" class="ui-content">
+    <div style="margin-bottom: 50px;" role="main" class="ui-content">
         <div id="appentcard" class="ui-grid-b ui-responsive">
         </div>
     </div>
@@ -81,7 +94,6 @@
         })
 
         function backredirect() {
-            console.log("HEllo");
             window.location.href = "HomePage.html";
         }
 
