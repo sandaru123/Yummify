@@ -29,9 +29,16 @@
     <link rel="stylesheet" href="/JQuerryMobileAssets/Card.css" />
     <link rel="stylesheet" href="/Styles/index.css" />
 
+    <!-- components -->
     <script src="/Components/header.js" type="text/javascript" defer></script>
     <script src="/Components/footer.js" type="text/javascript" defer></script>
 
+    <script src="/Scripts/CardScript.js"></script>
+    <script>
+        createCards();
+    </script>
+    <script src="/JQuerryMobileAssets/Script.js"></script>
+    
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
@@ -100,17 +107,17 @@
     <div data-role="page" id="homepage">
         <header-component></header-component>
 
-          <!-- nav bar with back button start -->
-     <div class="container-fluid d-block d-sm-none" style="background-color: #33D9B2; padding-top: 10px;">
-        <div class="row">
-          <div class="col-11">
-            <a href="/index.html" style="text-decoration: none; color: black">
-              <h5 class="normal">Home</h5>
-            </a>
-          </div>
+        <!-- nav bar with back button start -->
+        <div class="container-fluid d-block d-sm-none" style="background-color: #33D9B2; padding-top: 10px;">
+            <div class="row">
+                <div class="col-11">
+                    <a href="/index.html" style="text-decoration: none; color: black">
+                        <h5 class="normal">Home</h5>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- nav bar with back button end -->
+        <!-- nav bar with back button end -->
 
         <div role="main" class="ui-content">
             <div class="">
@@ -220,10 +227,12 @@
                 </div> -->
 
             </div>
-        </div><!-- /content -->
+        </div>
+        <!-- /content -->
 
 
-    </div><!-- /page -->
+    </div>
+    <!-- /page -->
 
 
 
@@ -234,7 +243,8 @@
 
         <div class="headers" data-role="header">
             <h1>product details</h1>
-        </div><!-- /header -->
+        </div>
+        <!-- /header -->
         <div>
             <div>
                 <img class="product_details_Img" style="width: 100%;"
@@ -243,10 +253,12 @@
         </div>
         <div role="main" class="ui-content">
 
-        </div><!-- /content -->
+        </div>
+        <!-- /content -->
 
 
-    </div><!-- /page -->
+    </div>
+    <!-- /page -->
 
 
 
@@ -256,7 +268,8 @@
             <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span
                     style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
             </h1>
-        </div><!-- /header -->
+        </div>
+        <!-- /header -->
         <div style="height: 47px; background: #33D9B2;">
             <i class=""></i><span>Payment</span>
         </div>
@@ -330,17 +343,12 @@
                 </div>
 
             </div>
-        </div><!-- /content -->
-
+        </div>
+        <!-- /content -->
 
     </div><!-- /page -->
 
 
 </body>
-<script src="Scripts/CardScript.js"></script>
-<script>
-    createCards();
-</script>
-<script src="JQuerryMobileAssets/Script.js"></script>
 
 </html>

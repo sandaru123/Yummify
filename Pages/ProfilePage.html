@@ -11,6 +11,8 @@
        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
      </script>
 
+     <link rel="stylesheet" href="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
      <script src="/JQuerryMobileAssets/jquery.min.js"></script>
      <script src="/JQuerryMobileAssets/Script.js"></script>
@@ -18,21 +20,19 @@
      <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-     <link rel="stylesheet" href="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
      <script src="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <meta charset="UTF-8">
 
      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
      <meta name="viewport"
        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
      <script src="/JQuerryMobileAssets/jquery.min.js"></script>
-     <link rel="stylesheet" href="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
      <script src="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
 
-     <link rel="stylesheet" href="/JQuerryMobileAssets/Card.css" /> 
      <link rel="stylesheet" href="/Styles/profile.css" />
+     <link rel="stylesheet" href="/Styles/tailwind.css" />
+
 
      <!-- components -->
      <script src="/Components/header.js" type="text/javascript" defer></script>
@@ -40,7 +40,6 @@
 
    </head>
    <!-- head end -->
-
    <!-- body start -->
 
    <body>
@@ -49,18 +48,11 @@
 
      <!-- nav bar with back button start -->
      <div class="container-fluid d-block d-sm-none" style="background-color: #33D9B2; padding-top: 10px;">
-       <div class="row">
-         <div class="col-1">
-           <a href="#">
-             <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px">
-           </a>
-         </div>
-         <div class="col-11">
-           <a href="/index.html" style="text-decoration: none; color: black">
-             <h5 class="normal">Profile</h5>
-           </a>
-         </div>
-       </div>
+       <a class="flex" href="/index.html" style="text-decoration: none; color: black">
+         <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1">
+
+         <p class="normal" style="font-size: 18px">Profile</p>
+       </a>
      </div>
      <!-- nav bar with back button end -->
 
