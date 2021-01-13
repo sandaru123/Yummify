@@ -27,7 +27,7 @@ function createCards() {
 		tag += '<div class="flexcolumn">';
 		tag += '<div id="card'+(i+1)+'" class="flexrow">';
 		tag += '<div style="width: 180px;">';
-		tag += '<img class="card-image cardimageedit" src="./Images/drinks.jpg" />';
+		tag += '<img class="card-image cardimageedit" src="../Images/drinks.jpg" />';
 		tag += '</div>';
 		tag += '<div class="flexcolumn" style="width: 220px;">';
 		tag += '<div style="height: auto;">';

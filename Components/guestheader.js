@@ -21,13 +21,13 @@ class GuestHeader extends HTMLElement {
            <div class="row">
              <div class="col-3 d-flex justify-content-end">
                <a class="navbar-brand" href="#">
-                 <img src="/Images/YUMIFY.png" height="20px" width="100px">
+                 <img src="../Images/YUMIFY.png" height="20px" width="100px">
                </a>
              </div>
 
              <div class="col-1">
                <a class="btn" type="submit" style="padding-bottom: 5px;">
-                 <img src="/Images/icons/search.svg" height="20px" width="20px">
+                 <img src="../Images/icons/search.svg" height="20px" width="20px">
                </a>
              </div>
 
@@ -35,7 +35,7 @@ class GuestHeader extends HTMLElement {
                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                  aria-label="Toggle navigation">
-                 <img src="/Images/icons/list.svg" height="20px" width="20px">
+                 <img src="../Images/icons/list.svg" height="20px" width="20px">
                </button>
              </div>
 
@@ -65,7 +65,7 @@ class GuestHeader extends HTMLElement {
                  <a>
                    <div class="row ">
                      <div class="col-2 ">
-                       <img src="/Images/icons/signup.svg" height="20px" width="20px">
+                       <img src="../Images/icons/signup.svg" height="20px" width="20px">
                      </div>
                      <div class="col-10 d-block d-sm-none">
                        <a class="nav-link active" aria-current="page" href="#">Signup</a>
@@ -78,7 +78,7 @@ class GuestHeader extends HTMLElement {
                  <a>
                    <div class="row ">
                      <div class="col-2 ">
-                       <img src="/Images/icons/login.svg" height="20px" width="20px">
+                       <img src="../Images/icons/login.svg" height="20px" width="20px">
                      </div>
                      <div class="col-10 d-block d-sm-none">
                        <a class="nav-link active" aria-current="page" href="#">Login</a>
@@ -104,19 +104,19 @@ class GuestHeader extends HTMLElement {
               <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img src="/Images/icons/list.svg" height="20px" width="20px">
+                <img src="../Images/icons/list.svg" height="20px" width="20px">
               </a>
             </div>
 
             <div class="col d-flex justify-content-center" style="padding-top:5px;">
             <a class="navbar-brand" href="#">
-            <img src="/Images/YUMIFY.png" height="20px" width="100px">
+            <img src="../Images/YUMIFY.png" height="20px" width="100px">
               </a>
             </div>
 
             <div class="col d-flex justify-content-end">
               <a class="btn" type="submit" style="padding-top: 5px;">
-                <img src="/Images/icons/search.svg" height="20px" width="20px">
+                <img src="../Images/icons/search.svg" height="20px" width="20px">
               </a>
             </div>
           </div>
@@ -128,7 +128,7 @@ class GuestHeader extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
               <div class="row ">
                 <div class="col-2 imageProperties" style="margin-top:5px">
-                  <img src="/Images/icons/house.svg" height="20px" width="20px">
+                  <img src="../Images/icons/house.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10" >
                   <a class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
@@ -140,7 +140,7 @@ class GuestHeader extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 imageProperties" style="margin-top:5px">
-                  <img src="/Images/icons/contact.svg" height="20px" width="20px">
+                  <img src="../Images/icons/contact.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">Contact</a>
@@ -151,7 +151,7 @@ class GuestHeader extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 " style="margin-top:5px">
-                  <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
+                  <img src="../Images/icons/info-circle.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">About Us</a>
@@ -162,7 +162,7 @@ class GuestHeader extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 " style="margin-top:5px">
-                  <img src="/Images/icons/signup.svg" height="20px" width="20px">
+                  <img src="../Images/icons/signup.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">Signup</a>
@@ -173,7 +173,7 @@ class GuestHeader extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 " style="margin-top:5px; ">
-                  <img src="/Images/icons/login.svg" height="20px" width="20px">
+                  <img src="../Images/icons/login.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">Login</a>
@@ -197,19 +197,19 @@ class GuestHeader extends HTMLElement {
                <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                  aria-label="Toggle navigation">
-                 <img src="/Images/icons/list.svg" height="20px" width="20px">
+                 <img src="../Images/icons/list.svg" height="20px" width="20px">
                </a>
              </div>
 
              <div class="col d-flex justify-content-center" style="padding-top:5px;">
                <a class="navbar-brand" href="#">
-                 <img src="/Images/YUMIFY.png" height="20px" width="100px">
+                 <img src="../Images/YUMIFY.png" height="20px" width="100px">
                </a>
              </div>
 
              <div class="col d-flex justify-content-end">
                <a class="btn" type="submit" style="padding-top: 5px;">
-                 <img src="/Images/icons/search.svg" height="20px" width="20px">
+                 <img src="../Images/icons/search.svg" height="20px" width="20px">
                </a>
              </div>
            </div>
@@ -221,7 +221,7 @@ class GuestHeader extends HTMLElement {
              <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
                <div class="row ">
                  <div class="col-2 imageProperties" style="margin-top:5px">
-                   <img src="/Images/icons/house.svg" height="20px" width="20px">
+                   <img src="../Images/icons/house.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
                    <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -233,7 +233,7 @@ class GuestHeader extends HTMLElement {
              <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
                <div class="row ">
                  <div class="col-2 imageProperties" style="margin-top:5px">
-                   <img src="/Images/icons/contact.svg" height="20px" width="20px">
+                   <img src="../Images/icons/contact.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
@@ -244,7 +244,7 @@ class GuestHeader extends HTMLElement {
              <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
                <div class="row ">
                  <div class="col-2 " style="margin-top:5px">
-                   <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
+                   <img src="../Images/icons/info-circle.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
@@ -255,7 +255,7 @@ class GuestHeader extends HTMLElement {
              <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
                <div class="row ">
                  <div class="col-2 " style="margin-top:5px">
-                   <img src="/Images/icons/signup.svg" height="20px" width="20px">
+                   <img src="../Images/icons/signup.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
                    <a class="nav-link active" aria-current="page" href="#">Signup</a>
@@ -266,7 +266,7 @@ class GuestHeader extends HTMLElement {
              <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
                <div class="row ">
                  <div class="col-2 " style="margin-top:5px; ">
-                   <img src="/Images/icons/login.svg" height="20px" width="20px">
+                   <img src="../Images/icons/login.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
                    <a class="nav-link active" aria-current="page" href="#">Login</a>

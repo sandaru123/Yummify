@@ -22,7 +22,7 @@ class HeaderWithoutNav extends HTMLElement {
            <div class="row">
              <div class="col-2 d-flex justify-content-end">
                <a class="navbar-brand" href="#">
-                 <img src="/Images/YUMIFY.png" height="20px" width="100px">
+                 <img src="../Images/YUMIFY.png" height="20px" width="100px">
                </a>
              </div>
            </div>
@@ -42,7 +42,7 @@ class HeaderWithoutNav extends HTMLElement {
 
             <div class="col d-flex justify-content-center" style="padding-top:5px;">
             <a class="navbar-brand" href="#">
-            <img src="/Images/YUMIFY.png" height="20px" width="100px">
+            <img src="../Images/YUMIFY.png" height="20px" width="100px">
               </a>
             </div>
           </div>
@@ -61,7 +61,7 @@ class HeaderWithoutNav extends HTMLElement {
 
              <div class="col d-flex justify-content-center">
                <a class="navbar-brand" href="#">
-                 <img src="/Images/YUMIFY.png" height="20px" width="100px">
+                 <img src="../Images/YUMIFY.png" height="20px" width="100px">
                </a>
              </div>
 

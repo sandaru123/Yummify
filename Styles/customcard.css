@@ -1,0 +1,24 @@
+.flexcolumn{
+    display: flex; 
+    flex-direction: column;
+}
+
+.flexrow{
+    display: flex; 
+    flex-direction:row;
+}
+
+.maincardwidth{
+    width: 320px !important; 
+    height: auto; 
+    padding: 10px;
+}
+
+.starcoluryello{
+    color: yellow;
+}
+
+.cardimageedit{
+    margin-top: 10px;
+    border-radius: 10px;
+}

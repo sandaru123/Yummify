@@ -21,13 +21,13 @@ class Header extends HTMLElement {
           <div class="row">
             <div class="col-3" style="padding-top:8px;">
               <a class="navbar-brand" href="#">
-                <img src="/Images/YUMIFY.png" height="20px" width="100px">
+                <img src="../Images/YUMIFY.png" height="20px" width="100px">
               </a>
             </div>
 
             <div class="col-1" style="padding:0;">
               <a class="btn" type="submit" style="padding-bottom: 5px;">
-                <img src="/Images/icons/search.svg" height="20px" width="20px">
+                <img src="../Images/icons/search.svg" height="20px" width="20px">
               </a>
             </div>
 
@@ -35,7 +35,7 @@ class Header extends HTMLElement {
               <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img src="/Images/icons/list.svg" height="20px" width="20px">
+                <img src="../Images/icons/list.svg" height="20px" width="20px">
               </button>
             </div>
 
@@ -69,7 +69,7 @@ class Header extends HTMLElement {
                 <a>
                   <div class="row ">
                     <div class="col-2 imageProperties">
-                      <img src="/Images/icons/cart.svg" height="20px" width="20px">
+                      <img src="../Images/icons/cart.svg" height="20px" width="20px">
                     </div>
                     <div class="col-10 d-block d-sm-none">
                       <a class="nav-link active" aria-current="page" href="#">Cart</a>
@@ -82,7 +82,7 @@ class Header extends HTMLElement {
                 <a>
                   <div class="row ">
                     <div class="col-2 imageProperties ">
-                      <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+                      <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
                     </div>
                     <div class="col-10 d-block d-sm-none">
                       <a class="nav-link active" aria-current="page" href="#">My Products</a>
@@ -95,7 +95,7 @@ class Header extends HTMLElement {
                 <a>
                   <div class="row ">
                     <div class="col-2 imageProperties ">
-                      <img src="/Images/icons/logout.svg" height="20px" width="20px">
+                      <img src="../Images/icons/logout.svg" height="20px" width="20px">
                     </div>
                     <div class="col-10 d-block d-sm-none">
                       <a class="nav-link active" aria-current="page" href="#">Logout</a>
@@ -121,19 +121,19 @@ class Header extends HTMLElement {
             <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
               aria-label="Toggle navigation">
-              <img src="/Images/icons/list.svg" height="20px" width="20px">
+              <img src="../Images/icons/list.svg" height="20px" width="20px">
             </a>
           </div>
 
           <div class="col d-flex justify-content-center">
             <a class="navbar-brand" href="#">
-              <img src="/Images/YUMIFY.png" height="20px" width="100px">
+              <img src="../Images/YUMIFY.png" height="20px" width="100px">
             </a>
           </div>
 
           <div class="col d-flex justify-content-end" style="padding:0;">
             <a class="btn" type="submit" style="padding-top: 5px;">
-              <img src="/Images/icons/search.svg" height="20px" width="20px">
+              <img src="../Images/icons/search.svg" height="20px" width="20px">
             </a>
           </div>
         </div>
@@ -145,7 +145,7 @@ class Header extends HTMLElement {
           <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
             <div class="row ">
               <div class="col-2 imageProperties">
-                <img src="/Images/icons/house.svg" height="20px" width="20px">
+                <img src="../Images/icons/house.svg" height="20px" width="20px">
               </div>
               <div class="col-10">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -157,7 +157,7 @@ class Header extends HTMLElement {
           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
             <div class="row ">
               <div class="col-2 imageProperties">
-                <img src="/Images/icons/contact.svg" height="20px" width="20px">
+                <img src="../Images/icons/contact.svg" height="20px" width="20px">
               </div>
               <div class="col-10">
                 <a class="nav-link active" aria-current="page" href="#">Contact</a>
@@ -168,7 +168,7 @@ class Header extends HTMLElement {
           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
             <div class="row ">
               <div class="col-2 imageProperties">
-                <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
+                <img src="../Images/icons/info-circle.svg" height="20px" width="20px">
               </div>
               <div class="col-10">
                 <a class="nav-link active" aria-current="page" href="#">About Us</a>
@@ -179,7 +179,7 @@ class Header extends HTMLElement {
           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
             <div class="row ">
               <div class="col-2 imageProperties">
-                <img src="/Images/icons/person.svg" height="20px" width="20px">
+                <img src="../Images/icons/person.svg" height="20px" width="20px">
               </div>
               <div class="col-10">
                 <a class="nav-link active" aria-current="page" href="#">Account</a>
@@ -190,7 +190,7 @@ class Header extends HTMLElement {
           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
             <div class="row ">
               <div class="col-2 imageProperties">
-                <img src="/Images/icons/cart.svg" height="20px" width="20px">
+                <img src="../Images/icons/cart.svg" height="20px" width="20px">
               </div>
               <div class="col-10">
                 <a class="nav-link active" aria-current="page" href="#">Cart</a>
@@ -201,7 +201,7 @@ class Header extends HTMLElement {
           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
             <div class="row ">
               <div class="col-2 imageProperties ">
-                <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+                <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
               </div>
               <div class="col-10">
                 <a class="nav-link active" aria-current="page" href="#">My Products</a>
@@ -212,7 +212,7 @@ class Header extends HTMLElement {
           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
             <div class="row ">
               <div class="col-2 imageProperties ">
-                <img src="/Images/icons/logout.svg" height="20px" width="20px">
+                <img src="../Images/icons/logout.svg" height="20px" width="20px">
               </div>
               <div class="col-10">
                 <a class="nav-link active" aria-current="page" href="#">Logout</a>
@@ -236,19 +236,19 @@ class Header extends HTMLElement {
               <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <img src="/Images/icons/list.svg" height="20px" width="20px">
+                <img src="../Images/icons/list.svg" height="20px" width="20px">
               </a>
             </div>
 
             <div class="col d-flex justify-content-center" style="">
               <a class="navbar-brand" href="#">
-                <img src="/Images/YUMIFY.png" height="20px" width="100px">
+                <img src="../Images/YUMIFY.png" height="20px" width="100px">
               </a>
             </div>
 
             <div class="col d-flex justify-content-end" style="padding:0;">
               <a class="btn" type="submit" style="padding-top: 5px;">
-                <img src="/Images/icons/search.svg" height="20px" width="20px">
+                <img src="../Images/icons/search.svg" height="20px" width="20px">
               </a>
             </div>
           </div>
@@ -260,7 +260,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
               <div class="row ">
                 <div class="col-2 imageProperties">
-                  <img src="/Images/icons/house.svg" height="20px" width="20px">
+                  <img src="../Images/icons/house.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -272,7 +272,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 imageProperties">
-                  <img src="/Images/icons/contact.svg" height="20px" width="20px">
+                  <img src="../Images/icons/contact.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">Contact</a>
@@ -283,7 +283,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 imageProperties">
-                  <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
+                  <img src="../Images/icons/info-circle.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">About Us</a>
@@ -294,7 +294,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 imageProperties">
-                  <img src="/Images/icons/person.svg" height="20px" width="20px">
+                  <img src="../Images/icons/person.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">Account</a>
@@ -305,7 +305,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 imageProperties">
-                  <img src="/Images/icons/cart.svg" height="20px" width="20px">
+                  <img src="../Images/icons/cart.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">Cart</a>
@@ -316,7 +316,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 imageProperties ">
-                  <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+                  <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">My Products</a>
@@ -327,7 +327,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
               <div class="row ">
                 <div class="col-2 imageProperties ">
-                  <img src="/Images/icons/logout.svg" height="20px" width="20px">
+                  <img src="../Images/icons/logout.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
                   <a class="nav-link active" aria-current="page" href="#">Logout</a>
