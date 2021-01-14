@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+<script src="/JQuerryMobileAssets/jquery.min.js"></script>
+
+<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<link rel="stylesheet" href="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+<link rel="stylesheet" href="/JQuerryMobileAssets/Style.css" />
+<link rel="stylesheet" href="/JQuerryMobileAssets/Card.css" />
+<link rel="stylesheet" href="/Styles/index.css" />
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+<!-- components -->
+<script src="/Components/headerwithoutnav.js" type="text/javascript" defer></script>
+<script src="../Components/footer.js" type="text/javascript" defer></script>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+</style>
+<title>Register</title>
+
+<body>
+    <div data-role="page" id="signup">
+        <div class="headers" data-role="header">
+            <!-- <div style="height: 30px; padding-top: 5px;">
+            <img src="/Images/YUMIFY.png" height="20px" width="100px"
+               style="display: flex; margin-left: auto; margin-right: auto; width: 25%; margin-top:10px;">
+         </div> -->
+        </div>
+        <headerwithoutnav-component></headerwithoutnav-component>
+        <!-- nav bar with back button start -->
+        <div class="container-fluid d-block d-sm-none d-md-none" style="background-color: #33D9B2; padding-top: 5px;">
+            <div class="row">
+                <div onclick="backredirect()" class="col-1">
+                    <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px">
+                </div>
+                <div onclick="backredirect()" class="col-10">
+                    <h5 style="font-weight: bold; font-size:18px; padding-top: 5px;">Add Products</h5>
+                </div>
+            </div>
+        </div>
+        <!-- nav bar with back button end -->
+
+        <div style="margin-bottom: -40px;" class="ui-content">
+            <div class="ui-grid-b ui-responsive" style="padding: 10px;">
+                <div>
+                    <h5 class="forntwaightbold">Add Products</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="loginLogo">
+            <img style="height: 200px; border-radius: 50%; margin-left: 15%;" alt="image"
+                src="../Images/insertimg.png" />
+        </div>
+        <div role="main" class="ui-content">
+            <input type="text" name="Product Name" id="ProductName" value="" placeholder="Product Name" class="text_box"
+                style="border: none; font-size:14px; padding-left: 15px; margin-bottom: 20px;">
+            <input type="text" name="Description" id="Description" value="" placeholder="Description" class="text_box"
+                style="border: none; font-size:14px; padding-left: 15px; height: 100px; margin-bottom: 20px;">
+            <input type="text" name="Price" id="Price" value="" placeholder="Price" class="text_box"
+                style="border: none; font-size:14px; padding-left: 15px; margin-bottom: 20px;">
+
+            <a href="#" class="ui-btn ui-corner-all"
+                style="text-align:center; padding-left: 25px; padding-right:25px; font-size:14px; margin-bottom: 20px; margin-top:20px; width: 100%; height: 20%; color: black; background-color:#33D9B2;">Add
+                Product</a>
+        </div>
+        <!-- /content -->
+        <br />
+        <br />
+        <br />
+        <footer-component></footer-component>
+    </div>
+
+    <script>
+        function backredirect(){
+            window.location.href = "myproducts.html";
+        }
+    </script>
+
+</body>
+
+</html>
