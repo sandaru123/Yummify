@@ -39,12 +39,12 @@ class Footer extends HTMLElement {
     
  </style>
 
- <div class="fluidContainer footerStyles footer">
+ <div class="fluidContainer footerStyles footer mt-3">
     <div class="displayFlex">
        <img src="/Images/YUMIFY.png" height="20px" width="100px" style="margin-top: 10px; ">
     </div>
     <div class="displayFlex" style="">
-       <p style="justify-content: center; margin-top:2px;">© 2020 Yumify Cooperation private (LTD)</p>
+       <p style="justify-content: center; margin-top:2px; font-size: 15px;">© 2020 Yumify Cooperation private (LTD)</p>
     </div>
  </div>
       `;

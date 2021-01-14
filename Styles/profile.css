@@ -18,5 +18,33 @@
   font-style: oblique;
 }
 
+.profilePic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 33px;
+  padding-bottom: 20px;
+}
+
+.pointsCard{
+  background-color:#FAFAFA;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.pointCard{
+  background-color:#ffffff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 /*# sourceMappingURL=profile.css.map */

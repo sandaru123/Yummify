@@ -2,6 +2,10 @@
     --gutter: 20px;
   }
 
+  * {
+    font-family: 'Fira Sans', sans-serif;
+}
+
   .hs {
     display: grid;
     grid-gap: calc(var(--gutter) / 2);
@@ -117,7 +121,6 @@
 } */
 
 
-
 .loginLogo{
   margin: 119px auto 119px auto;
 }
@@ -219,6 +222,7 @@
       margin-right: auto;
       text-align: left;
     }
+
 
   }
   /* iPhone portrait */

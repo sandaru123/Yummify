@@ -10,39 +10,31 @@ class Header extends HTMLElement {
       background-color: #33D9B2;
     }
 
-    @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+    .imageproperties {
+       width: 20px;
+       height: 20px;
+    }
 
   </style>
 
   <header>
 
-  <!-- ipad nav strat -->
+  <!-- ipad nav start -->
   <nav class="navbar navbar-expand-lg navbar-light nav d-none d-lg-block d-xl-none">
-    <div class="container-fluid">
-
-      <div class="container ">
-        <div class="row">
-          <div class="col-3" style="padding-top:8px;">
+    <div class="container flex">
+      <div class="container" style="padding-right: 0px !important; padding-left: 0px !important;">
+        <div class="row items-center" >
+          <div class="col-3" style="padding-top:8px; display: flex; height:40px; width:140px;">
             <a class="navbar-brand" href="#">
-              <img src="/Images/YUMIFY.png" height="20px" width="100px">
+              <img src="/Images/YUMIFY.png" >
             </a>
           </div>
 
-          <div class="col-1" style="padding:0;">
-            <a class="btn" type="submit" style="padding-bottom: 5px;">
+          <div class="col-2" style="padding:0;">
+            <a class="btn" type="submit" style=" ">
               <img src="/Images/icons/search.svg" height="20px" width="20px">
             </a>
           </div>
-
-          <div class="col-8">
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <img src="/Images/icons/list.svg" height="20px" width="20px">
-            </button>
-          </div>
-
-
         </div>
       </div>
 
@@ -69,46 +61,31 @@ class Header extends HTMLElement {
             </li>
 
             <li class="nav-item container-fluid" style="padding-top:5px">
-              <a>
-                <div class="row ">
-                  <div class="col-2 imageProperties">
+              
+                  <div class="col-3 w-5">
                     <img src="/Images/icons/cart.svg" height="20px" width="20px">
                   </div>
-                  <div class="col-10 d-block d-sm-none">
-                    <a class="nav-link active" aria-current="page" href="#">Cart</a>
-                  </div>
-                </div>
-              </a>
+                 
             </li>
 
             <li class="nav-item container-fluid" style="padding-top:5px">
-              <a>
-                <div class="row ">
-                  <div class="col-2 imageProperties ">
+              
+                  <div class="col-3 w-5">
                     <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
                   </div>
-                  <div class="col-10 d-block d-sm-none">
-                    <a class="nav-link active" aria-current="page" href="#">My Products</a>
-                  </div>
-                </div>
-              </a>
+                  
             </li><br>
 
             <li class="nav-item container-fluid" style="padding-top:5px">
-              <a>
-                <div class="row ">
-                  <div class="col-2 imageProperties ">
+              
+                  <div class="col-3 w-5 ">
                     <img src="/Images/icons/logout.svg" height="20px" width="20px">
                   </div>
-                  <div class="col-10 d-block d-sm-none">
-                    <a class="nav-link active" aria-current="page" href="#">Logout</a>
-                  </div>
-                </div>
-              </a>
+                  
             </li>
+
         </div>
       </div>
-
     </div>
   </nav>
   <!-- ipad nav end -->
@@ -146,7 +123,7 @@ class Header extends HTMLElement {
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
-          <div class="row ">
+          <div class="row items-center">
             <div class="col-2 imageProperties">
               <img src="/Images/icons/house.svg" height="20px" width="20px">
             </div>
@@ -158,7 +135,7 @@ class Header extends HTMLElement {
 
 
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-          <div class="row ">
+          <div class="row items-center">
             <div class="col-2 imageProperties">
               <img src="/Images/icons/contact.svg" height="20px" width="20px">
             </div>
@@ -169,7 +146,7 @@ class Header extends HTMLElement {
         </li>
 
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-          <div class="row ">
+          <div class="row items-center">
             <div class="col-2 imageProperties">
               <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
             </div>
@@ -180,7 +157,7 @@ class Header extends HTMLElement {
         </li>
 
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-          <div class="row ">
+          <div class="row items-center">
             <div class="col-2 imageProperties">
               <img src="/Images/icons/person.svg" height="20px" width="20px">
             </div>
@@ -191,7 +168,7 @@ class Header extends HTMLElement {
         </li>
 
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-          <div class="row ">
+          <div class="row items-center">
             <div class="col-2 imageProperties">
               <img src="/Images/icons/cart.svg" height="20px" width="20px">
             </div>
@@ -202,7 +179,7 @@ class Header extends HTMLElement {
         </li>
 
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-          <div class="row ">
+          <div class="row items-center">
             <div class="col-2 imageProperties ">
               <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
             </div>
@@ -213,7 +190,7 @@ class Header extends HTMLElement {
         </li><br>
 
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-          <div class="row ">
+          <div class="row items-center">
             <div class="col-2 imageProperties ">
               <img src="/Images/icons/logout.svg" height="20px" width="20px">
             </div>
@@ -242,9 +219,9 @@ class Header extends HTMLElement {
             <img src="/Images/icons/list.svg" height="20px" width="20px">
           </a>
         </div>
-        <div class="col d-flex justify-content-center" style="">
+        <div class="col d-flex justify-content-center" style="padding-right: 0px !important;">
            <a class="navbar-brand" href="#">
-             <img src="/Images/YUMIFY.png" height="20px" width="100px">
+             <img src="/Images/YUMIFY.png" height="40px" width="120px">
            </a>
          </div>
          <div class="col d-flex justify-content-end" style="padding:0;">
@@ -255,11 +232,11 @@ class Header extends HTMLElement {
      </div>
 
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-top:20px">
 
-         <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
-           <div class="row ">
-             <div class="col-2 imageProperties">
+         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+           <div class="row items-center">
+             <div class="col-2 imageProperties" style="vertical-align: baseline;">
                <img src="/Images/icons/house.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
@@ -270,7 +247,7 @@ class Header extends HTMLElement {
 
 
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-           <div class="row ">
+           <div class="row items-center">
              <div class="col-2 imageProperties">
                <img src="/Images/icons/contact.svg" height="20px" width="20px">
              </div>
@@ -281,7 +258,7 @@ class Header extends HTMLElement {
          </li>
 
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-           <div class="row ">
+           <div class="row items-center">
              <div class="col-2 imageProperties">
                <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
              </div>
@@ -292,7 +269,7 @@ class Header extends HTMLElement {
          </li>
 
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-           <div class="row ">
+           <div class="row items-center">
              <div class="col-2 imageProperties">
                <img src="/Images/icons/person.svg" height="20px" width="20px">
              </div>
@@ -303,7 +280,7 @@ class Header extends HTMLElement {
          </li>
 
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-           <div class="row ">
+           <div class="row items-center">
              <div class="col-2 imageProperties">
                <img src="/Images/icons/cart.svg" height="20px" width="20px">
              </div>
@@ -314,7 +291,7 @@ class Header extends HTMLElement {
          </li>
 
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-           <div class="row ">
+           <div class="row items-center">
              <div class="col-2 imageProperties ">
                <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
              </div>
@@ -324,9 +301,9 @@ class Header extends HTMLElement {
            </div>
          </li><br>
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
-           <div class="row ">
-             <div class="col-2 imageProperties ">
-               <img src="/Images/icons/logout.svg" height="20px" width="20px">
+           <div class="row items-center">
+             <div class="col-2 imageProperties " style=" vertical-align: text-bottom;">
+               <img src="/Images/icons/logout.svg" height="20px" width="20px"  >
              </div>
              <div class="col-10">
                <a class="nav-link active" aria-current="page" href="#">Logout</a>
