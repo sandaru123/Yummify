@@ -38,6 +38,7 @@
     <!--Custom Scripts and CSS-->
     <script src="../Scripts/CardScript.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="../Styles/customcard.css">
+    <link rel="stylesheet" href="../Styles/products.css">
     <link rel="stylesheet" href="/JQuerryMobileAssets/Style.css">
 
 </head>
@@ -71,33 +72,39 @@
             <div style="margin-left: 10px;">
                 <h5 class="forntwaightbold">Bakery</h5>
             </div>
-            <div style="position: absolute; margin-right: 30px; right: 0;">
-                <p style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i class="fa fa-filter"></i> </p>
+            <div style="position: absolute; margin-right: 30px; right: 0; ">
+
+
+
+                <p id="opendropwown" style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i
+                        class="fa fa-filter"></i> </p>
+
             </div>
 
-            <div class="ui-field-contain">
-                    <label for="select-choice-1" class="select">Shipping method:</label>
-                    <select name="select-choice-1" id="selectDropdown">
-                      <option value="Name">Sort By Name</option>
-                      <option value="Price">Sort By Price</option>
-                    </select>
-                  </div>
+        </div>
+    </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="closebutton">&times;</span>
+            <select style="margin-top: 5px;" name="select-choice-1" id="selectDropdown">
+                <option value="Name">Sort By Name</option>
+                <option value="Price">Sort By Price</option>
+            </select>
         </div>
     </div>
 
     <!-- Content -->
-    <div role="main" class="ui-content">
+    <div role="main" style="margin-bottom: 80px;" class="ui-content">
         <div id="appentcard" class="ui-grid-b ui-responsive">
-                <div class="ui-block-a" id="exampleBlockA"> </div>
-                    <div class="ui-block-b" id="exampleBlockB"></div>
-                    <div class="ui-block-c" id="exampleBlockC"> </div>
+            <div class="ui-block-a" id="exampleBlockA"> </div>
+            <div class="ui-block-b" id="exampleBlockB"></div>
+            <div class="ui-block-c" id="exampleBlockC"> </div>
         </div>
     </div>
 
-
     <footer-component></footer-component>
-
 
     <script>
 
