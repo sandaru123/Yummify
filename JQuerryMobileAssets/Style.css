@@ -32,6 +32,11 @@
   
   /* Demo styles */
   
+  a.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
   html,
   body {
     font-family: 'Fira Sans';font-size: 22px;
@@ -144,6 +149,30 @@
   text-align: left;
 }
 
+
+.secondary_but2{
+  text-align: center;
+border: solid 2px #33D9B2;
+color: #33D9B2;
+padding-left: 25px;
+padding-right: 25px;
+font-size: 14px;
+width: 100%;
+height: 20%;
+}
+
+.secondary_but3{
+  text-align: center;
+  border: solid 2px #33D9B2;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
+}
+
 .text_box{
   height: 50px;
 }
@@ -179,7 +208,30 @@
   height: 50px;
 }
 
+.add_to_bill_payment{
+  width: 65%;
+  height: 231px;
+  background-color: #E8E6E6;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
 
+.agreementLabel_payment{
+  color: red;
+  margin-left: 4%;
+  margin-top: 0.3%;
+  font-size: 14px;
+}
+
+.cardsx {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
 
 /* ====================================media quaries------------------------------------- */
 
@@ -189,6 +241,13 @@
   /* .ui-block-a {
   background-color: lightblue;
    } */
+
+   html,
+   body {
+     font-size: 20px;
+   }
+   .cardsx { grid-template-columns: repeat(3, 1fr); }
+     
    .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
     width: 33%;
     }
@@ -209,7 +268,9 @@
     .secondary_but{
       width: 600px;
       height: 51px;
+      
     }
+
 
     .text_box{
       height: 51px;
@@ -223,10 +284,25 @@
       text-align: left;
     }
 
+<<<<<<< Updated upstream
+=======
+    .summaryDiv_payment{
+      height: 293px;
+    }
+>>>>>>> Stashed changes
 
   }
   /* iPhone portrait */
   @media (orientation: portrait) and (max-device-width : 414px){
+    .add_to_bill_payment {
+      width: 100%;
+    }
+
+    html,
+  body {
+    font-size: 16px;
+  }
+    
     
    .product_details_Img{
     height: 208px;
@@ -244,6 +320,12 @@
     height: 45px;
   }
 
+  .agreementLabel_payment{
+    margin-left: 4%;
+    margin-top: 2.2%;
+    font-size: 11px;
+  }
+
   .text_box{
     height: 45px;
   }
@@ -254,6 +336,10 @@
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+  }
+
+  .summaryDiv_payment{
+    height: 255px;
   }
 
   /* homepage cards media queries */
@@ -301,6 +387,11 @@
     .fontTitle{
         font-size: 24px;
     }
+
+    .summaryDiv_payment{
+      height: 320px;
+    }
+    .cardsx { grid-template-columns: repeat(3, 1fr); }
     
   }
   /* ipad portrait */
@@ -317,6 +408,7 @@
         font-size: 24px;
       }
 
+      .cardsx { grid-template-columns: repeat(2, 1fr); }
 
         /* homepage cards media queries */
         .categories_homepage{
