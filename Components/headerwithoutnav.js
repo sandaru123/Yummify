@@ -13,7 +13,7 @@ class HeaderWithoutNav extends HTMLElement {
 
    <header>
 
-     <!-- ipad nav strat -->
+     <!-- ipad nav start -->
 
      <nav class="navbar navbar-expand-lg navbar-light nav d-none d-lg-block d-xl-none">
        <div class="container-fluid">

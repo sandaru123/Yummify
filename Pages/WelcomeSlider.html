@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+   </script>
+
+   <meta name="viewport" content="width = device-width, initial-scale = 1">
+   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   <link rel="stylesheet" href="../Styles/WelcomeSlider.css">
+   <link rel="stylesheet" href="../JQuerryMobileAssets/jquery.mobile-1.4.5.min.css">
+
+   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+   <script src="../JQuerryMobileAssets/jquery.min.js"></script>
+   <script src="../JQuerryMobileAssets/Script.js"></script>
+   <link rel="stylesheet" href="../JQuerryMobileAssets/Card.css" />
+
+   <script src="../JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta charset="UTF-8">
+
+   <meta name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+   <script src="../JQuerryMobileAssets/jquery.min.js"></script>
+   <link rel="stylesheet" href="../JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
+   <script src="../JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
+
+   <!-- components -->
+   <script src="../Components/headerwithoutnav.js" type="text/javascript" defer></script>
+
+   <!--Custom Scripts and CSS-->
+
+   <link rel="stylesheet" href="../Styles/customcard.css">
+   <link rel="stylesheet" href="/JQuerryMobileAssets/Style.css">
+
+</head>
+
+<body>
+
+   <div class="">
+
+      <div style="background-color: #ffffff;" class="flexcolumn" data-role="page" id="slide1">
+         <div class="mainimgdiv">
+            <img class="welcomeimg1center" src="../Images/slider1.png" />
+            <div class="dotlocation">
+               <i class="fa fa-circle activedot"></i>
+               <i class="fa fa-circle inactivedot"></i>
+               <i class="fa fa-circle inactivedot"></i>
+            </div>
+         </div>
+
+         <div class="welcomebuttondiv w-100">
+            <div class="vertical-center">
+               <a style="text-align: center;" href="#slide2" class="welcomebutton">Next</a>
+            </div>
+            
+         </div>
+      </div>
+
+      <div data-role="page" id="slide2">
+         <div class="mainimgdiv">
+            <img class="welcomeimg1center" src="../Images/slider2.png" />
+            <div class="dotlocation">
+               <i class="fa fa-circle inactivedot"></i>
+               <i class="fa fa-circle activedot"></i>
+               <i class="fa fa-circle inactivedot"></i>
+            </div>
+         </div>
+
+         <div class="welcomebuttondiv w-100"  style="display: flex; justify-content: space-between;">
+            <div class="vertical-center">
+               <a style="text-align: center;" href="#slide3" class="welcomebutton">Next</a>
+            </div>
+            <div class="vertical-center1">
+               <a style="text-align: center;" href="#slide1" class="welcomebutton">back</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div data-role="page" id="slide3">
+         <div class="mainimgdiv">
+            <img class="welcomeimg1center" src="../Images/slider3.png" />
+            <div class="dotlocation">
+               <i class="fa fa-circle inactivedot"></i>
+               <i class="fa fa-circle inactivedot"></i>
+               <i class="fa fa-circle activedot"></i>
+            </div>
+         </div>
+
+               <div class="welcomebuttondiv w-100" style="display: flex; justify-content: space-between;">
+                  <div class="vertical-center">
+                     <a style="text-align: center;" href="#slide1" class="welcomebutton">Get Started</a>
+                  </div>
+                  <div class="vertical-center1">
+                     <a style="text-align: center;" href="#slide2" class="welcomebutton">back</a>
+                  </div>
+               </div>
+           
+         
+
+      </div>
+   </div>
+
+</body>
+
+</html>

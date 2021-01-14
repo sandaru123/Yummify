@@ -940,7 +940,6 @@ html body .ui-group-theme-a .ui-bar-inherit {
 	background-color: 			#33D9B2 /*{a-bar-background-color}*/;
 	border-color:	 		#33D9B2 /*{a-bar-border}*/;
 	color: 					rgb(0, 0, 0) /*{a-bar-color}*/;
-	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ 	#eee /*{a-bar-shadow-color}*/;
 	font-weight: bold;
 }
 .ui-bar-a {
@@ -954,7 +953,6 @@ html body .ui-group-theme-a .ui-bar-inherit {
 	background-color: 			#FFFFFF /*{a-page-background-color}*/;
 	border-color:	 		#bbb /*{a-page-border}*/;
 	color: 					#333 /*{a-page-color}*/;
-	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ 	#f3f3f3 /*{a-page-shadow-color}*/;
 }
 /* Body: Read-only lists, text inputs, collapsible content */
 .ui-body-a,
@@ -3555,17 +3553,7 @@ fieldset.ui-controlgroup {
 	padding: 0;
 	list-style: none;
 }
-.ui-content .ui-listview,
-.ui-panel-inner > .ui-listview {
-	/* margin: -1em; */
-}
-.ui-content .ui-listview-inset,
-.ui-panel-inner > .ui-listview-inset {
-	/* margin: 1em 0; */
-}
-.ui-collapsible-content > .ui-listview {
-	/* margin: -.5em -1em; */
-}
+
 .ui-collapsible-content > .ui-listview-inset {
 	margin: .5em 0;
 }
