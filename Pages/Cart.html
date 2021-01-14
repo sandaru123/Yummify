@@ -36,8 +36,9 @@
     <script src="../Components/guestheader.js" type="text/javascript" defer></script>
 
     <!--Custom Scripts and CSS-->
-    
+    <!-- <script src="../Scripts/CardScript.js" type="text/javascript" defer></script> -->
     <link rel="stylesheet" href="../Styles/customcard.css">
+    <link rel="stylesheet" href="../Styles/tailwind.css">
     <link rel="stylesheet" href="/JQuerryMobileAssets/Style.css">
 
 </head>
@@ -75,13 +76,13 @@
                 <p style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i class="fa fa-filter"></i> </p>
             </div>
 
-            <div class="ui-field-contain">
+            <!-- <div class="ui-field-contain">
                     <label for="select-choice-1" class="select">Shipping method:</label>
                     <select name="select-choice-1" id="selectDropdown">
                       <option value="Name">Sort By Name</option>
                       <option value="Price">Sort By Price</option>
                     </select>
-                  </div>
+                  </div> -->
 
         </div>
     </div>
@@ -93,18 +94,52 @@
                     <div class="ui-block-b" id="exampleBlockB"></div>
                     <div class="ui-block-c" id="exampleBlockC"> </div>
         </div>
+
+        <div>
+                <div class="add_to_bill_cart " style="border-radius: 10px;">
+
+                            <div class="cardsxCart" style="font-size: 14px; padding: 2%">
+                                    <div>
+                                            <a href="/Pages/RegisterPage.html" class="ui-btn ui-corner-all secondary_but"
+                                                     style="text-align:center; border: solid 2px #33D9B2; color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Continue shopping</a>
+                                        </div>
+
+                                     <div class=" grid grid-cols-2 md:grid-cols-2">
+                                         <div style="display: grid;">
+                                            <span>Total Amount</span>
+                                            <span style="font-size: 16px; color: #33D9B2" id="total_price">$253.00</span>
+                                         </div>
+                                         <div>  
+                                                <a href="/Pages/Payment.html" class="ui-btn ui-corner-all primary_but" style="text-align:center; padding-left: 25px; padding-right:25px; font-size:14px;width: 100%; height: 75%;">Confirm</a>
+                                         </div>
+                                     </div>
+                                  </div>
+                </div>
+                     
+                     
+        </div>
     </div>
 
-
-    <footer-component></footer-component>
    
 
+    </div>
+
+    <footer-component></footer-component>
+    <script src="../Scripts/CardScript.js"></script>
+    <script src="../Scripts/Cart.js"></script>
+<script></script>
+    <script>
+
+        $(function () {
+            createCartCards("Default");
+        })
+
+        function backredirect() {
+            window.location.href = "HomePage.html";
+        }
 
 
-    <script src="/Scripts/CardScript.js"></script>
-<script>
-    createCards("aa");
-</script>
+    </script>
 
 </body>
 <!-- body end -->

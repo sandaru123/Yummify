@@ -1,4 +1,13 @@
 // function to create the cards
+
+var cardItemslist = [
+	{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: 55, imagesource:'Images/burgers.jpg',rating: 4, faviorite:1, cart:1 },
+	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: 15, imagesource:'Images/burgers.jpg',rating: 2 , faviorite:1, cart:0},
+	{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: 11, imagesource:'Images/burgers.jpg',rating: 3, faviorite:1, cart:1 },
+	{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: 5, imagesource:'Images/burgers.jpg',rating: 4 , faviorite:0, cart:1}
+];
+
+
 function createCards(sortValue) {
 	// declaring some variables
 	var exampleBlockA = $('#exampleBlockA'), // cache the selector of the element, increases performance
@@ -17,12 +26,7 @@ function createCards(sortValue) {
 		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...", "Lorem ipsum part 3..."];
 
 	
-		var cardItemslist = [
-			{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: 55, imagesource:'Images/burgers.jpg',rating: 4 },
-			{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: 15, imagesource:'Images/burgers.jpg',rating: 2 },
-			{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: 11, imagesource:'Images/burgers.jpg',rating: 3 },
-			{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: 5, imagesource:'Images/burgers.jpg',rating: 4 }
-		];
+		
 
 		if(sortValue=="Name"){
 			cardItemslist.sort(function(a, b){
@@ -96,11 +100,11 @@ function createCards(sortValue) {
 			an interface that is lined like a table.
 		*/
 
-		if (i < (imagename.length / 3)) {
+		if (i < (cardItemslist.length / 3)) {
 			exampleBlockA.append(tag);
-		} else if (i < ((imagename.length / 3) * 2)) {
+		} else if (i < ((cardItemslist.length / 3) * 2)) {
 			exampleBlockB.append(tag);
-		} else if (i <= ((imagename.length / 3) * 3)) {
+		} else if (i <= ((cardItemslist.length / 3) * 3)) {
 			exampleBlockC.append(tag);
 		}
 

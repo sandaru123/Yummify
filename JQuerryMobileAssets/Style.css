@@ -210,13 +210,25 @@ height: 20%;
 
 .add_to_bill_payment{
   width: 65%;
-  height: 231px;
   background-color: #E8E6E6;
   margin-top: 40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
+  height: auto;
+  padding-bottom: 1%;
+  margin-bottom: 7%;
+}
+
+.add_to_bill_cart{
+  width: 65%;
+  background-color: #E8E6E6;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7%
 }
 
 .agreementLabel_payment{
@@ -232,6 +244,32 @@ height: 20%;
   display: grid;
   grid-gap: 1rem;
 }
+
+.cardsxCart{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videoDiv_aboutUs{
+  width: 100%;
+  height: 450px;
+  background-color: black;
+}
+
+/* .vision_div{
+  margin: 3%;
+  display: grid;
+  width: 40%;
+}
+.mission_div{
+  margin: 3%;
+  display: grid;
+  width: 40%;
+}
+
+.aboutUs_div{
+  display: block;
+} */
 
 /* ====================================media quaries------------------------------------- */
 
@@ -295,6 +333,11 @@ height: 20%;
       width: 100%;
     }
 
+    .add_to_bill_cart {
+      width: 100%;
+      margin-bottom: 19%;
+    }
+
     
 
     html,
@@ -355,6 +398,13 @@ height: 20%;
     grid-template-columns: repeat(6, 248px);
     grid-template-rows: minmax(171px, 1fr);
   }
+
+  .videoDiv_aboutUs{
+    width: 100%;
+    height: 256px;
+    background-color: black;
+  }
+
   }
 
    /* ipad landscape */
