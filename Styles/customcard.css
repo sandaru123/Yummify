@@ -1,0 +1,31 @@
+.flexcolumn{
+    display: flex; 
+    flex-direction: column;
+}
+
+.flexrow{
+    display: flex; 
+    flex-direction:row;
+}
+
+.maincardwidth{
+    height: auto; 
+    padding: 10px;
+}
+
+.starcoluryello{
+    color: yellow;
+}
+
+.cardimageedit{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.forntwaightnormal {
+    font-weight: normal;
+  }
+
+.forntwaightbold{
+    font-weight: bold;
+}
