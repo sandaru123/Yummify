@@ -1,5 +1,5 @@
 // function to create the cards
-function createCards() {
+function createCards(sortValue) {
 	// declaring some variables
 	var exampleBlockA = $('#exampleBlockA'), // cache the selector of the element, increases performance
 		exampleBlockB = $('#exampleBlockB'), // cache the selector of the element, increases performance
@@ -8,11 +8,37 @@ function createCards() {
 		j = 1,
 
 		// the cards, in this example in an array
-		imagename = ["Image1", "Image2", "Image3", "Image3"],
-		imagesource = ["Images/burgers.jpg", "./images/image2.jpg", "./images/image3.jpg", "./images/image3.jpg"],
+		imagename = ["Image1", "Image2", "Image3", "Image4"],
+		imagesource = ["Images/burgers.jpg", "./images/image2.jpg", "./images/image3.jpg", ".Images/promo\ 1.jpg"],
+		itemName = ["Chorizo & Mozzarella", "Italian panettone", "Mayo deviled eggs", "Rosemary Baked Olives"],
+		itemDetail = ["Butter chicken curry or murg makhani, butter and cream sauce.", "Butter chicken curry or murg makhani is a curry, butter.", "Bake in the preheated oven for 15 minutes", "stirring halfway through the baking."],
 		titlecard = ["Image!", "Image!", "Image!", "Image!"],
 		titleimage = ["Title", "Title", "Title", "Title"],
 		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...", "Lorem ipsum part 3..."];
+
+	
+		var cardItemslist = [
+			{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: 55, imagesource:'Images/burgers.jpg',rating: 4 },
+			{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: 15, imagesource:'Images/burgers.jpg',rating: 2 },
+			{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: 11, imagesource:'Images/burgers.jpg',rating: 3 },
+			{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: 5, imagesource:'Images/burgers.jpg',rating: 4 }
+		];
+
+		if(sortValue=="Name"){
+			cardItemslist.sort(function(a, b){
+				var a1= a.itemName.toString(), b1= b.itemName.toString();
+				if(a1== b1) return 0;
+				return a1> b1? 1: -1;
+			});
+		}else if(sortValue=="Price"){
+			cardItemslist.sort(function(a, b){
+				var a1= a.price, b1= b.price;
+				if(a1== b1) return 0;
+				return a1> b1? 1: -1;
+			});
+		}
+
+		
 
 	// emptying the current grid
 	exampleBlockA.empty();
@@ -21,62 +47,42 @@ function createCards() {
 
 	var tag = '';
 
-	for (i = 0; i < 3; i++) {
-
-		tag += '<div class="ui-block-a card maincardwidth">';
+	for (i = 0; i < cardItemslist.length; i++) {
+		 tag = '';
+		tag += '<div class=" card maincardwidth" style="height: 270.66px;">';
 		tag += '<div class="flexcolumn">';
-		tag += '<div id="card'+(i+1)+'" class="flexrow">';
+		tag += '<div id="card'+(i+1)+'" class="flexrow" style="height: 220px;">';
 		tag += '<div style="width: 180px;">';
-		tag += '<img class="card-image cardimageedit" src="./Images/drinks.jpg" />';
+		tag += '<img class="card-image cardimageedit" alt="image" src="' + cardItemslist[i].imagesource + '" />';
 		tag += '</div>';
-		tag += '<div class="flexcolumn" style="width: 220px;">';
+		tag += '<div class="flexcolumn" style="width: 220px;margin-top: 32px;">';
+		tag += '<p style="  margin-top: -19%;padding: 0px;  text-align: end;">'+cardItemslist[i].price+'</p>';
 		tag += '<div style="height: auto;">';
-		tag += '<p style="font-size: 20px;">Chorizo & Mozzarella</p>';
-		tag += '<p style="float: right; margin-top: -80px;">$25</p>';
+		tag += '<p style="font-size: 20px;">'+cardItemslist[i].itemName+'</p>';
 		tag += '</div>';
 		tag += '<div style="height: auto;">';
 		tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
-		tag += '<p style="font-size: 15px; margin-top: -15px;">Butter chicken curry or murg makhani is a curry of chicken in a spiced tomato, butter and cream sauce.</p>';
+		tag += '<p style="font-size: 15px; margin-top: -15px;">'+cardItemslist[i].itemDetail+'</p>';
 		tag += '</div>';
 		tag += '</div>';
 		tag += '</div>';
 		tag += '<div class="flexcolumn" style="height: 50px;">';
 		tag += '<div>';
+		
+		// for(s=1; s< cardItemslist[i].rating; s++){
+
+		// }
+
 		tag += '<span class="fa fa-star starcoluryello"></span>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
-		tag += '<span class="fa fa-star" style="color: #de7575;"></span>';
+		tag += '<span class="">'+cardItemslist[i].rating+'</span>';
+		// tag += '<span class="fa fa-star starcoluryello"></span>';
+		// tag += '<span class="fa fa-star starcoluryello"></span>';
+		// tag += '<span class="fa fa-star" style="color: #de7575;"></span>';
 		tag += '</div>';
 		tag += '<div></div>';
 		tag += '</div>';
 		tag += '</div>';
 		tag += '</div>';
-
-		pressEffectCard('card' + i);
-
-	}
-	$("#appentcard").html("");
-	$("#appentcard").html(tag);
-
-	return;
-	// the loop to get the values from the arrays
-	for (i = 0; i < imagename.length; i = i + 1) {
-		tag = '<div class="card" id="card' + i + '">'; // start building the tag for the card
-		if (imagename[i] !== null && imagesource[i] !== null) {
-			tag = tag + '<div class="card-image"><img alt="' + imagename[i] + '" src="' + imagesource[i] + '" />'; // insert imagesource and imagename if they exists
-			if (titleimage[i] !== null) {
-				tag = tag + '<h2>' + titleimage[i] + '</h2>'; // insert titleimage if it exists
-			}
-			tag = tag + '</div>'; // close the image part of the card
-		}
-		if (titlecard[i] !== null) {
-			tag = tag + '<h1>' + titlecard[i] + '</h1>'; // insert titlecard if it exists
-		}
-		if (text[i] !== null) {
-			tag = tag + '<p>' + text[i] + '</p>'; // insert text in the card if it exists
-		}
-		tag = tag + '</div>'; // end the card building
 
 		/*	You will need to create cards in a special order.
 			The first 1/3 of the cards are placed in block A.
@@ -135,4 +141,20 @@ $(".cash_payment").click(function(){
     var reduced_total = parseInt(payment_total,10) - parseInt(points,10);
     $('#subtotal_payment_summary').html(reduced_total.toString());
 	$("#summaryLink").click();
+  });
+
+  $(document).ready(function(){
+	$("#selectDropdown").change(function(){
+	  //selection changedvar 
+	  selText =  $( "#selectDropdown option:selected" ).text();
+	  
+	  if(selText == "Sort By Name"){
+		$("div .maincardwidth").remove();
+		createCards("Name");
+
+	  }else if(selText == "Sort By Price"){
+		$("div .maincardwidth").remove();
+		createCards("Price");
+	  }  
+  });
   });

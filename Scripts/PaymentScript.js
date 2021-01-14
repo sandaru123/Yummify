@@ -54,6 +54,10 @@ $(".cash_payment").click(function(){
     $("<a href='#paymentSummury'></a>").click();
   });
 
+  
+
+
+
 
   
 

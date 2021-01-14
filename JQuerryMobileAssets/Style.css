@@ -47,7 +47,7 @@
   body {
     display: grid;
     place-items: center;
-    background: #456173;
+    /* background: #456173; */
   }
   
   ul {
@@ -249,7 +249,7 @@ height: 20%;
    .cardsx { grid-template-columns: repeat(3, 1fr); }
      
    .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
-    width: 33%;
+    width: 50%;
     }
     .product_details_Img{
       height: 250px;
@@ -284,12 +284,9 @@ height: 20%;
       text-align: left;
     }
 
-<<<<<<< Updated upstream
-=======
     .summaryDiv_payment{
       height: 293px;
     }
->>>>>>> Stashed changes
 
   }
   /* iPhone portrait */
@@ -297,6 +294,8 @@ height: 20%;
     .add_to_bill_payment {
       width: 100%;
     }
+
+    
 
     html,
   body {
@@ -361,7 +360,7 @@ height: 20%;
    /* ipad landscape */
    @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape){
    .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
-    width: 32.333%;
+    width: 33.333%;
     }
     .product_details_Img{
       height: 510px;
@@ -397,7 +396,7 @@ height: 20%;
   /* ipad portrait */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
         .ui-grid-b>.ui-block-a, .ui-grid-b>.ui-block-b, .ui-grid-b>.ui-block-c {
-          width: 45%;
+          width: 50%;
           }
       .product_details_Img{
         height: 510px;
