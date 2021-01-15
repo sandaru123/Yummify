@@ -1,15 +1,276 @@
   /* ipad portrait */
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 
- }
+   .pointCard{
+      background-color: #ffffff;
+      border: 1px solid #33D9B2;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 150px;
+      margin-right: 150px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* yummy points card */
+    .pointsCardsmall{
+      background-color: #ffffff;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 150px;
+      margin-right: 150px;
+      border-radius: 10px;
+      display: flex;
+      justify-content:space-between;
+    }
+
+    .badgescard{
+      background-color: #ffffff;
+      border: 1px solid #E8E8E8;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 150px;
+      margin-right: 150px;
+      border-radius: 10px;
+    }
+
+    /* yummy points card center css */
+    .ScorecardPoints{
+      margin-left:auto;
+      margin-right: auto;
+      width:50%;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
+    /* leaderboard center css */
+    .Scorecard{
+       margin-left:auto;
+       margin-right: auto;
+       width:50%;
+    }
+
+    /* Badges big div */
+    .bigDiv{
+      display: block;
+      position: relative;
+      top: 390px; 
+      width: 100vw;
+   }
+
+    .listView{
+      padding-top: 12px;
+      padding-bottom: 0px;
+      font-weight: bold;
+      border-bottom: 2px solid #40A78F;
+    }
+
+    /* number */
+    .item1{
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* name */
+    .item2{
+      font-size: 18px;
+
+    }
+
+    /* Points */
+    .item3{
+      color:  #33D9B2;
+      font-size: 18px;
+    }
+}
+
 
  /* ipad landscape */
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape){
 
+   .pointCard{
+      background-color: #ffffff;
+      border: 1px solid #33D9B2;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 250px;
+      margin-right: 250px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* yummy points card */
+    .pointsCardsmall{
+      background-color: #ffffff;
+      padding-left: 35px;
+      padding-right: 35px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 300px;
+      margin-right: 300px;
+      border-radius: 10px;
+      display: flex;
+      justify-content:space-between;
+    }
+
+    .badgescard{
+      background-color: #ffffff;
+      border: 1px solid #E8E8E8;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 250px;
+      margin-right: 250px;
+      border-radius: 10px;
+    }
+
+    /* yummy points card center css */
+    .ScorecardPoints{
+      margin-left:auto;
+      margin-right: auto;
+      width:50%;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
+    /* leaderboard center css */
+    .Scorecard{
+       margin-left:auto;
+       margin-right: auto;
+       width:50%;
+    }
+
+    /* Badges big div */
+    .bigDiv{
+      display: block;
+      position: relative;
+      top: 370px; 
+      width: 100vw;
+   }
+
+    .listView{
+      padding-top: 12px;
+      padding-bottom: 0px;
+      font-weight: bold;
+      border-bottom: 2px solid #40A78F;
+    }
+
+    /* number */
+    .item1{
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* name */
+    .item2{
+      font-size: 18px;
+
+    }
+
+    /* Points */
+    .item3{
+      color:  #33D9B2;
+      font-size: 18px;
+    }
 }
 
 /* iPhone landscape */
 @media (orientation: landscape) and (max-device-width : 812px){
+
+   .pointCard{
+      background-color: #ffffff;
+      border: 1px solid #33D9B2;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 150px;
+      margin-right: 150px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* yummy points card */
+    .pointsCardsmall{
+      background-color: #ffffff;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-left: 150px;
+      margin-right: 150px;
+      border-radius: 10px;
+      display: flex;
+      justify-content:space-between;
+    }
+
+    .badgescard{
+      background-color: #ffffff;
+      border: 1px solid #E8E8E8;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-left: 150px;
+      margin-right: 150px;
+      border-radius: 10px;
+    }
+
+    /* yummy points card center css */
+    .ScorecardPoints{
+      margin-left:auto;
+      margin-right: auto;
+      width:50%;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
+    /* leaderboard center css */
+    .Scorecard{
+       margin-left:auto;
+       margin-right: auto;
+       width:50%;
+    }
+
+    /* Badges big div */
+    .bigDiv{
+      display: block;
+      position: relative;
+      top: 330px; 
+      width: 100vw;
+   }
+
+    .listView{
+      padding-top: 12px;
+      padding-bottom: 0px;
+      font-weight: bold;
+      border-bottom: 2px solid #40A78F;
+    }
+
+    /* number */
+    .item1{
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* name */
+    .item2{
+      font-size: 18px;
+
+    }
+
+    /* Points */
+    .item3{
+      color:  #33D9B2;
+      font-size: 18px;
+    }
+
 
 }
 
@@ -18,18 +279,88 @@
  
    .pointCard{
       background-color: #ffffff;
+      border: 1px solid #33D9B2;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       margin-left: 15px;
       margin-right: 15px;
       border-radius: 10px;
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
 
+    /* yummy points card */
+    .pointsCardsmall{
+      background-color: #ffffff;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 10px;
+      display: flex;
+      justify-content:space-between;
+    }
+
+    .badgescard{
+      background-color: #ffffff;
+      border: 1px solid #33D9B2;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 10px;
+    }
+
+    /* yummy points card center css */
+    .ScorecardPoints{
+      margin-left:auto;
+      margin-right: auto;
+      width:50%;
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+
+    /* leaderboard center css */
     .Scorecard{
        margin-left:auto;
        margin-right: auto;
        width:50%;
     }
 
-    .listView
+/* badges big div */
+.bigDiv{
+   display: block;
+   position: relative;
+   top: 370px; 
+   width: 100vw;
+}
+
+    .listView{
+      padding-top: 12px;
+      padding-bottom: 0px;
+      font-weight: bold;
+      border-bottom: 2px solid #40A78F;
+    }
+
+    /* number */
+    .item1{
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* name */
+    .item2{
+      font-size: 18px;
+
+    }
+
+    /* Points */
+    .item3{
+      color:  #33D9B2;
+      font-size: 18px;
+    }
 }

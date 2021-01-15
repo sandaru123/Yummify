@@ -12,10 +12,10 @@ class Footer extends HTMLElement {
        height: 60px;
     }
 
-    .footer {
-      position:absolute;
-      bottom:0;
-      width:100%;
+    .footer{
+      position: absolute;
+      width: 100%;
+      bottom: 0;
     }
 
     .fluidContainer {
