@@ -37,152 +37,166 @@
    <script src="/Components/header.js" type="text/javascript" defer></script>
 
    <link rel="stylesheet" href="../Styles/StarRating.css" />
+   <link rel="stylesheet" href="../Styles/productdetails.css" />
    <style>
       @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
    </style>
 </head>
 
 <body>
-   <div data-role="page" id="productDetails">
+   <header-component></header-component>
 
-      <header-component></header-component>
+   <!-- nav bar with back button start -->
+   <div class="grid grid-cols-1 md:grid-cols-1 ">
 
-      <!-- nav bar with back button start -->
-      <div class="grid grid-cols-1 md:grid-cols-2 ">
-         
-            <div class="flex container-fluid d-sm-none"
-               style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
-               <a class="flex" href="/Pages/HomePage.html" style="text-decoration: none; color: black">
-                  <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
-               </a>
-                  <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">Product Details</p>
-              
-            </div>
-            <!-- nav bar with back button end -->
-            <div>
-               <div>
-                  <img class="product_details_Img" style="width: 100%;"
-                     src="https://www.citystateinfo.org/wp-content/uploads/butterchicken-recipe.jpg"></img>
+      <div class="flex container-fluid d-sm-none"
+         style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
+         <a class="flex" href="/Pages/HomePage.html" style="text-decoration: none; color: black">
+            <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
+         </a>
+         <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">Product Details</p>
+
+      </div>
+      <!-- nav bar with back button end -->
+      <div class="">
+         <div>
+            <img class="product_details_Img" style="width: 100%;"
+               src="https://www.citystateinfo.org/wp-content/uploads/butterchicken-recipe.jpg"></img>
+         </div>
+      </div>
+
+      <div class="contentMargin">
+         <div role="main" class="ui-content">
+            <div style="display: block;">
+               <div class="flex justify-between">
+                  <div class="pl-5 pt-2">
+                     <h5 style="font-weight: bold;">Easy Butter Chicken</h5>
+                  </div>
+                  <div class="flex pr-5 pt-2 pr-5">
+                     <img class="mr-8 pb-1" src="/Images/icons/cart-plus.svg" height="25px" width="25px">
+                     <img src="/Images/icons/heart.svg" height="25px" width="25px">
+                  </div>
+
                </div>
-            </div>
-            <div role="main" class="ui-content">
-               <div style="display: block;">
-                  <div class="flex justify-between">
-                     <div class="pl-5 pt-2">
-                        <h5 style="font-weight: bold;">Easy Butter Chicken</h5>
-                     </div>
-                     <div class="flex pr-5 pt-2 pr-5">
-                        <img class="mr-3 pb-1" src="/Images/icons/cart-plus.svg" height="25px" width="25px">
-                        <img src="/Images/icons/heart.svg" height="25px" width="25px">
-                     </div>
 
+               <div class="flex pl-5 pt-2 pr-5">
+                  <span style="font-weight: bold" class="pr-2">$18</span>
+                  <div class="flex">
+                     <img src="/Images/icons/star-fill.svg" height="25px" width="25px"
+                        style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
+                     <img src="/Images/icons/star-fill.svg" height="25px" width="25px"
+                        style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
+                     <img src="/Images/icons/star-fill.svg" height="25px" width="25px"
+                        style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
+                     <img src="/Images/icons/star-fill.svg" height="25px" width="25px"
+                        style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
+                     <img src="/Images/icons/star-fill.svg" height="25px" width="25px"
+                        style="filter: invert(0%) sepia(5%) saturate(7478%) hue-rotate(44deg) brightness(103%) contrast(97%);">
                   </div>
-
-                  <div class="flex pl-5 pt-2 pr-5">
-                     <span style="font-weight: bold" class="pr-2">$18</span>
-                     <div class="flex">
-                        <img src="/Images/icons/star-fill.svg" height="25px" width="25px" style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
-                        <img src="/Images/icons/star-fill.svg" height="25px" width="25px" style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
-                        <img src="/Images/icons/star-fill.svg" height="25px" width="25px" style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
-                        <img src="/Images/icons/star-fill.svg" height="25px" width="25px" style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
-                        <img src="/Images/icons/star-fill.svg" height="25px" width="25px" style="filter: invert(0%) sepia(5%) saturate(7478%) hue-rotate(44deg) brightness(103%) contrast(97%);">
-                     </div>
-                     <span style="font-size: 10px;">13 ratings</span>
-                  </div>
-                 <div class="pl-5 pt-2 pr-5">
+                  <span class="ml-2" style="font-size: 10px;">13 ratings</span>
+               </div>
+               <div class="pl-5 pt-2 pr-5">
                   <span style="font-weight: bold">Jenifer Rie</span>
 
                   <div>
                      <span class="fontSize_14">Fancy a healthy version of your favourite Friday night chicken curry?
                         The chicken can be marinaded the day before so you can get ahead on your prep</span>
                   </div>
-                 </div>
-
-                  <div class="flex pl-5 pt-2 pr-5 mapAddressDiv" style="margin-top: 6%">
-                     <div class="mapDiv" style="width: 65%; height:200px; background-color:black; border: 1px solid #000; border-radius: 10px;">
-                        <iframe width="100%" height="100%" frameborder="0" style="border:0"
-                           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsWOdP5b34joRuwjEf7-GoFs&key=AIzaSyAcsoFeJllfVW6dvLkDcU1qj0i86C0Y8JI"
-                           allowfullscreen></iframe>
-                     </div>
-
-                     <div class="AddressBlock" style="display: block; margin-left: 6%">
-                        <div><span>Address</span>
-                           <address class="fontSize12_14">54, christopher road,piliyandala</address>
-                        </div>
-                        <div style="display: inline-block"><span>Contact</span>
-                           <address class="fontSize12_14">+94796523140</address>
-                        </div>
-
-                        <div>
-                           <button id="ratingPopupButton"> rate</button>
-                        </div>
-                     </div>
-
-                  </div>
                </div>
-            </div><!-- /content -->
 
-
-         <!-- Modal -->
-         <div class="modal fade" id="RatingModalDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-               <div class="modal-content">
-                  <div class="modal-header">
-                     <h4 class="modal-title" id="myModalLabel">Rate</h4>
-                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               <div class="flex pl-5 pt-2 pr-5 mapAddressDiv" style="margin-top: 6%">
+                  <div class="mapDiv"
+                     style="width: 65%; height:200px; background-color:black; border: 1px solid #000; border-radius: 10px;">
+                     <iframe width="100%" height="100%" frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsWOdP5b34joRuwjEf7-GoFs&key=AIzaSyAcsoFeJllfVW6dvLkDcU1qj0i86C0Y8JI"
+                        allowfullscreen></iframe>
                   </div>
-                  <div class="modal-body">
-                     <div>
-                        <section class='rating-widget'>
-                           <div style="display: block">
-                              <!-- Rating Stars Box -->
-                              <div class='rating-stars text-center'>
-                                 <ul id='stars'>
-                                    <li class='star' title='Poor' data-value='1'>
-                                       <i class='fa fa-star fa-fw'></i>
-                                    </li>
-                                    <li class='star' title='Fair' data-value='2'>
-                                       <i class='fa fa-star fa-fw'></i>
-                                    </li>
-                                    <li class='star' title='Good' data-value='3'>
-                                       <i class='fa fa-star fa-fw'></i>
-                                    </li>
-                                    <li class='star' title='Excellent' data-value='4'>
-                                       <i class='fa fa-star fa-fw'></i>
-                                    </li>
-                                    <li class='star' title='WOW!!!' data-value='5'>
-                                       <i class='fa fa-star fa-fw'></i>
-                                    </li>
-                                 </ul>
-                              </div>
 
-
-                              <div class='success-box'>
-                                 <div class='clearfix'></div>
-                                 <img alt='tick image' width='32'
-                                    src='data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM2QUMyNTk7IiBkPSJNMjEzLjMzMywwQzk1LjUxOCwwLDAsOTUuNTE0LDAsMjEzLjMzM3M5NS41MTgsMjEzLjMzMywyMTMuMzMzLDIxMy4zMzMgIGMxMTcuODI4LDAsMjEzLjMzMy05NS41MTQsMjEzLjMzMy0yMTMuMzMzUzMzMS4xNTcsMCwyMTMuMzMzLDB6IE0xNzQuMTk5LDMyMi45MThsLTkzLjkzNS05My45MzFsMzEuMzA5LTMxLjMwOWw2Mi42MjYsNjIuNjIyICBsMTQwLjg5NC0xNDAuODk4bDMxLjMwOSwzMS4zMDlMMTc0LjE5OSwzMjIuOTE4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K' />
-                                 <div class='text-message'></div>
-                                 <div class='clearfix'></div>
-                              </div>
-                           </div>
-
-                           <!-- <div><input type="text" name="ratingComment" id="ratingComment">
-                                <button id="ratingSubmit">Submit</button> -->
+                  <div class="AddressBlock" style="display: block; margin-left: 6%">
+                     <div><span>Address</span>
+                        <address class="fontSize12_14">54, christopher road,piliyandala</address>
                      </div>
-                     </section>
+                     <div style="display: inline-block"><span>Contact</span>
+                        <address class="fontSize12_14">+94796523140</address>
+                     </div>
 
+                     <div class="flex">
+                        <button class="mr-8" id="ratingPopupButton">
+                           <img src="/Images/icons/QR.svg" height="40px" width="40px">
+                        </button>
+                        <button id="ratingPopupButton">
+                           <img src="/Images/icons/rateBtn.svg" height="60px" width="60px">
+                        </button>
+                     </div>
                   </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                     <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
+
                </div>
             </div>
-
          </div>
       </div>
+      <!-- /content -->
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="RatingModalDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Rate</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <div>
+                     <section class='rating-widget'>
+                        <div style="display: block">
+                           <!-- Rating Stars Box -->
+                           <div class='rating-stars text-center'>
+                              <ul id='stars'>
+                                 <li class='star' title='Poor' data-value='1'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                 </li>
+                                 <li class='star' title='Fair' data-value='2'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                 </li>
+                                 <li class='star' title='Good' data-value='3'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                 </li>
+                                 <li class='star' title='Excellent' data-value='4'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                 </li>
+                                 <li class='star' title='WOW!!!' data-value='5'>
+                                    <i class='fa fa-star fa-fw'></i>
+                                 </li>
+                              </ul>
+                           </div>
+
+
+                           <div class='success-box'>
+                              <div class='clearfix'></div>
+                              <img alt='tick image' width='32'
+                                 src='data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM2QUMyNTk7IiBkPSJNMjEzLjMzMywwQzk1LjUxOCwwLDAsOTUuNTE0LDAsMjEzLjMzM3M5NS41MTgsMjEzLjMzMywyMTMuMzMzLDIxMy4zMzMgIGMxMTcuODI4LDAsMjEzLjMzMy05NS41MTQsMjEzLjMzMy0yMTMuMzMzUzMzMS4xNTcsMCwyMTMuMzMzLDB6IE0xNzQuMTk5LDMyMi45MThsLTkzLjkzNS05My45MzFsMzEuMzA5LTMxLjMwOWw2Mi42MjYsNjIuNjIyICBsMTQwLjg5NC0xNDAuODk4bDMxLjMwOSwzMS4zMDlMMTc0LjE5OSwzMjIuOTE4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K' />
+                              <div class='text-message'></div>
+                              <div class='clearfix'></div>
+                           </div>
+                        </div>
+
+                        <!-- <div><input type="text" name="ratingComment" id="ratingComment">
+                                <button id="ratingSubmit">Submit</button> -->
+                  </div>
+                  </section>
+
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+               </div>
+            </div>
+         </div>
+
+      </div>
    </div>
+
 </body>
 <script src="../Scripts/ProductDetails.js" type="text/javascript" defer></script>
 <script src="/Scripts/StarRating.js"></script>
