@@ -1,0 +1,24 @@
+/* ipad portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* ipad landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+}
+
+/* iPhone landscape */
+@media (orientation: landscape) and (max-device-width: 812px) {
+}
+
+/* iPhone portrait */
+@media (orientation: portrait) and (max-device-width: 414px) {
+
+  .fontSize_14 {
+    font-size: 14px;
+  }
+
+  .mapDiv{
+   height: 176px;
+   width: 207px;
+ }
+}
