@@ -2,7 +2,7 @@
 
 var cardItemslist = [
 	{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: '55$', imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart fa-lg',faviorite : 1 },
-	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart fa-lg',faviorite : 0 },
+	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg',faviorite : 0 },
 	{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: '11$', imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart fa-lg',faviorite : 1 },
 	{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: '5$', imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0 }
 ];
@@ -57,13 +57,13 @@ function createCards(sortValue) {
 		var icon2;
 		var pagename = document.location.href.match(/[^\/]+$/)[0]
 	
-		if (pagename == 'Products.html') {
+		if (pagename == 'Products.html' || pagename == 'searchpage.html') {
 			icon1 = cardItemslist[i].favornot;
 		}else if(pagename == 'myproducts.html'){
 			icon1 = cardItemslist[i].deleteitem;
 		}
 
-		if(pagename == 'Products.html'){
+		if(pagename == 'Products.html' || pagename == 'searchpage.html'){
 			icon2 = 'fa fa-shopping-cart fa-lg';
 		}else if(pagename == 'myproducts.html'){
 			icon2 = cardItemslist[i].editmyitems;
