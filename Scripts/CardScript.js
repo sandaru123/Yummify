@@ -1,10 +1,10 @@
 // function to create the cards
 
 var cardItemslist = [
-	{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: 55, imagesource:'Images/burgers.jpg',rating: 4, faviorite:1, cart:1 },
-	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: 15, imagesource:'Images/burgers.jpg',rating: 2 , faviorite:1, cart:0},
-	{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: 11, imagesource:'Images/burgers.jpg',rating: 3, faviorite:1, cart:1 },
-	{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: 5, imagesource:'Images/burgers.jpg',rating: 4 , faviorite:0, cart:1}
+	{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: 55, imagesource: 'Images/burgers.jpg', rating: 4, faviorite: 1, cart: 1 },
+	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: 15, imagesource: 'Images/burgers.jpg', rating: 2, faviorite: 1, cart: 0 },
+	{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: 11, imagesource: 'Images/burgers.jpg', rating: 3, faviorite: 1, cart: 1 },
+	{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: 5, imagesource: 'Images/burgers.jpg', rating: 4, faviorite: 0, cart: 1 }
 ];
 
 
@@ -27,10 +27,10 @@ function createCards(sortValue) {
 
 
 	var cardItemslist = [
-		{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: '55$', imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg' },
-		{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart fa-lg' },
-		{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: '11$', imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg' },
-		{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: '5$', imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart fa-lg' }
+		{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: '55$', imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg', editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+		{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart fa-lg', editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+		{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: '11$', imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg', editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+		{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: '5$', imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart fa-lg', editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' }
 	];
 
 	if (sortValue == "Name") {
@@ -57,6 +57,24 @@ function createCards(sortValue) {
 	var tag = '';
 
 	for (i = 0; i < cardItemslist.length; i++) {
+
+		var icon1;
+		var icon2;
+		var pagename = document.location.href.match(/[^\/]+$/)[0]
+		console.log(pagename);
+
+		if (pagename == 'Products.html') {
+			icon1 = cardItemslist[i].favornot;
+		}else if(pagename == 'myproducts.html'){
+			icon1 = cardItemslist[i].deleteitem;
+		}
+
+		if(pagename == 'Products.html'){
+			icon2 = 'fa fa-shopping-cart fa-lg';
+		}else if(pagename == 'myproducts.html'){
+			icon2 = cardItemslist[i].editmyitems;
+		}
+
 		tag = '';
 		tag += '<div class=" card maincardwidth" style="height: 220px;">';
 		tag += '<div class="flexcolumn">';
@@ -84,7 +102,7 @@ function createCards(sortValue) {
 		tag += '<span class="fa fa-star starcoluryello"></span>';
 		tag += '<span class="">' + cardItemslist[i].rating + '</span>';
 		tag += '</div>';
-		tag += '<div style="position: absolute; margin-right: 20px; right: 0;"> <i style="color: red;" class=" ' + cardItemslist[i].favornot + ' "></i> &nbsp <i class="fa fa-shopping-cart fa-lg"></i> </div>';
+		tag += '<div style="position: absolute; margin-right: 20px; right: 0;"> <i style="color: red;" class=" ' + icon1 + ' "></i> &nbsp <i class=" '+ icon2 +' "></i> </div>';
 		tag += '</div>';
 		tag += '</div>';
 		tag += '</div>';
