@@ -1,0 +1,38 @@
+/* Style tab links */
+.tablink {
+    background-color:white !important;
+    color: #968e8e !important;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+    box-shadow: 0px 0px 0px 0px #000000;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: rgb(5, 5, 5);
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    margin-top: -25%;
+  }
+
+  .revieworderbtn{
+    text-align:center !important; 
+    background-color: #33D9B2 !important;
+    border: solid 2px #33D9B2 !important; 
+    color: #000000 !important; 
+    padding-left: 25px !important; 
+    padding-right:25px !important; 
+    font-size:14px !important; 
+    width: 80% !important; 
+    height: 80% !important;
+  }

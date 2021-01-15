@@ -56,8 +56,7 @@ function createCards(sortValue) {
 		var icon1;
 		var icon2;
 		var pagename = document.location.href.match(/[^\/]+$/)[0]
-		console.log(pagename);
-
+	
 		if (pagename == 'Products.html') {
 			icon1 = cardItemslist[i].favornot;
 		}else if(pagename == 'myproducts.html'){
