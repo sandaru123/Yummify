@@ -309,6 +309,10 @@ height: 20%;
       
     }
 
+    .fontSize12_14{
+      font-size: 14px;
+    }
+
 
     .text_box{
       height: 51px;
@@ -333,11 +337,23 @@ height: 20%;
       width: 100%;
     }
 
+    .fontSize17_14{
+      font-size: 14px;
+    }
+
     .add_to_bill_cart {
       width: 100%;
       margin-bottom: 19%;
     }
 
+    .fontSize12_14{
+      font-size: 12px;
+    }
+
+    .mapDiv_details{
+      height: 176px;
+      width: 207px;
+    }
     
 
     html,
@@ -417,6 +433,14 @@ height: 20%;
       object-fit: cover;
     }
 
+    .fontSize12_14{
+      font-size: 14px;
+    }
+
+
+    .fontSize17_14{
+      font-size: 17px;
+    }
 
     /* homepage cards media queries */
     .categories_homepage{
@@ -455,6 +479,14 @@ height: 20%;
 
       .fontTitle{
         font-size: 24px;
+      }
+
+      .fontSize17_14{
+        font-size: 17px;
+      }
+
+      .fontSize12_14{
+        font-size: 14px;
       }
 
       .cardsx { grid-template-columns: repeat(2, 1fr); }

@@ -1,10 +1,10 @@
 // function to create the cards
 
 var cardItemslist = [
-	{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: 55, imagesource: 'Images/burgers.jpg', rating: 4, faviorite: 1, cart: 1 },
-	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: 15, imagesource: 'Images/burgers.jpg', rating: 2, faviorite: 1, cart: 0 },
-	{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: 11, imagesource: 'Images/burgers.jpg', rating: 3, faviorite: 1, cart: 1 },
-	{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: 5, imagesource: 'Images/burgers.jpg', rating: 4, faviorite: 0, cart: 1 }
+	{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: '55$', imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart fa-lg',faviorite : 1 },
+	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart fa-lg',faviorite : 0 },
+	{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: '11$', imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart fa-lg',faviorite : 1 },
+	{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: '5$', imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0 }
 ];
 
 
@@ -26,12 +26,7 @@ function createCards(sortValue) {
 		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...", "Lorem ipsum part 3..."];
 
 
-	var cardItemslist = [
-		{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: '55$', imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg', editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
-		{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart fa-lg', editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
-		{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: '11$', imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg', editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
-		{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: '5$', imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart fa-lg', editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' }
-	];
+	
 
 	if (sortValue == "Name") {
 		cardItemslist.sort(function (a, b) {

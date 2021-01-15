@@ -1,3 +1,10 @@
+var cardslist = [
+	{ itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: '55$', imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart fa-lg',faviorite : 1 },
+	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart fa-lg',faviorite : 0 },
+	{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: '11$', imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart fa-lg',faviorite : 1 },
+	{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: '5$', imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0 }
+];
+
 // function to create the cards
 function createFaviriteCards(sortValue) {
 	// declaring some variables
@@ -27,41 +34,37 @@ function createFaviriteCards(sortValue) {
 
 	for (i = 0; i < cardItemslist.length; i++) {
         if(cardItemslist[i].faviorite == 1){
-            tag = '';
-            tag += '<div class=" card maincardwidth" style="height: 270.66px;">';
-            tag += '<div class="flexcolumn">';
-            tag += '<div id="card'+(i+1)+'" class="flexrow" style="height: 220px;">';
-            tag += '<div style="width: 180px;">';
-            tag += '<img class="card-image cardimageedit" alt="image" src="' + cardItemslist[i].imagesource + '" />';
-            tag += '</div>';
-            tag += '<div class="flexcolumn" style="width: 220px;margin-top: 32px;">';
-            tag += '<p style="  margin-top: -19%;padding: 0px;  text-align: end;">'+cardItemslist[i].price+'</p>';
-            tag += '<div style="height: auto;">';
-            tag += '<p style="font-size: 20px;">'+cardItemslist[i].itemName+'</p>';
-            tag += '</div>';
-            tag += '<div style="height: auto;">';
-            tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
-            tag += '<p style="font-size: 15px; margin-top: -15px;">'+cardItemslist[i].itemDetail+'</p>';
-            tag += '</div>';
-            tag += '</div>';
-            tag += '</div>';
-            tag += '<div class="flexcolumn" style="height: 50px;">';
-            tag += '<div>';
-            
-            // for(s=1; s< cardItemslist[i].rating; s++){
-    
-            // }
-    
-            tag += '<span class="fa fa-star starcoluryello"></span>';
-            tag += '<span class="">'+cardItemslist[i].rating+'</span>';
-            // tag += '<span class="fa fa-star starcoluryello"></span>';
-            // tag += '<span class="fa fa-star starcoluryello"></span>';
-            // tag += '<span class="fa fa-star" style="color: #de7575;"></span>';
-            tag += '</div>';
-            tag += '<div></div>';
-            tag += '</div>';
-            tag += '</div>';
-            tag += '</div>';
+          tag = '';
+          tag += '<div class=" card maincardwidth favoriteCardsDiv" style="height: 220px;">';
+          tag += '<div class="flexcolumn">';
+          tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 180px;">';
+          tag += '<div style="width: 180px;">';
+          tag += '<img class="card-image cardimageedit" style="height: 150px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
+          tag += '</div>';
+          tag += '<div class="flexcolumn" style="width: 220px;">';
+          tag += '<div class="flexrow" style="height: auto;">';
+          tag += '<div>';
+          tag += '<p style="font-size: 18px;">' + cardItemslist[i].itemName + '</p>';
+          tag += '</div>';
+          tag += '<div>';
+          tag += '<p>' + cardItemslist[i].price + '</p>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '<div style="height: auto;">';
+          tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
+          tag += '<p style="font-size: 15px; margin-top: -18px; color:#6c6f71">' + cardItemslist[i].itemDetail + '</p>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '<div class="flexcolumn" style="height: 50px;">';
+          tag += '<div>';
+          tag += '<span class="fa fa-star starcoluryello"></span>';
+          tag += '<span class="">' + cardItemslist[i].rating + '</span>';
+          tag += '</div>';
+          tag += '<div style="display:flex; position: absolute; margin-right: 20px; right: 0;"><a class="favioriteI" id=" ' + i + ' "><i style="color: red;"  class=" ' + cardItemslist[i].favornot + '"></i> </a> &nbsp <a class="cartFavorite"><i class="fa fa-shopping-cart fa-lg"></i></a>  </div>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '</div>';
     
             /*	You will need to create cards in a special order.
                 The first 1/3 of the cards are placed in block A.
@@ -124,6 +127,46 @@ $(".cash_payment").click(function(){
     $('#subtotal_payment_summary').html(reduced_total.toString());
 	$("#summaryLink").click();
   });
+  
+
+  $(document).on("click", ".cartFavorite" , function() {
+    alert("Item Added to the Cart");
+  });
+
+
+  $(document).on("click", ".favioriteI" , function() {
+    var id= $(this).attr('id');
+    var idInt = parseInt(id,10);
+    //Find index of specific object using findIndex method.    
+    objIndex = cardItemslist.findIndex((obj => obj.id == 0));
+
+    //Log object to Console.
+    console.log("Before update: ", cardItemslist[objIndex])
+
+    //Update object's name property.
+    cardItemslist[idInt].faviorite = 0;
+
+    $("div .favoriteCardsDiv").remove();
+    createFaviriteCards("Nme");
+});
+
+  // $(".favioriteI").on('click', function () {
+  //   var id= this.attr('id');
+  //     var idInt = parseInt(id,10);
+  //     //Find index of specific object using findIndex method.    
+  //     objIndex = cardItemslist.findIndex((obj => obj.id == idInt));
+
+  //     //Log object to Console.
+  //     console.log("Before update: ", cardItemslist[objIndex])
+
+  //     //Update object's name property.
+  //     cardItemslist[objIndex].faviorite = 0;
+
+  //     $("div .favoriteCardsDiv").remove();
+	// 		createFaviriteCards("Nme");
+  // })
+
+  
 
   $(document).ready(function(){
 	$("#selectDropdown").change(function(){
