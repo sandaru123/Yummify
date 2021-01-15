@@ -20,7 +20,7 @@ class GuestHeader extends HTMLElement {
          <div class="container ">
            <div class="row">
              <div class="col-3 d-flex justify-content-end">
-               <a class="navbar-brand" href="#">
+               <a class="navbar-brand" href="/Pages/HomePage.html">
                  <img src="/Images/YUMIFY.png" height="20px" width="100px">
                </a>
              </div>
@@ -49,7 +49,7 @@ class GuestHeader extends HTMLElement {
 
                <a>
                  <li class="nav-item container-fluid">
-                   <a class="nav-link active" aria-current="page" href="#">Home</a>
+                   <a class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
                  </li>
                </a>
 
@@ -58,7 +58,7 @@ class GuestHeader extends HTMLElement {
                </li>
 
                <li class="nav-item container-fluid">
-                 <a class="nav-link active" aria-current="page" href="#">AboutUs</a>
+                 <a class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">AboutUs</a>
                </li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
                <li class="nav-item container-fluid" style="padding-top:5px">
@@ -68,7 +68,7 @@ class GuestHeader extends HTMLElement {
                        <img src="/Images/icons/signup.svg" height="20px" width="20px">
                      </div>
                      <div class="col-10 d-block d-sm-none">
-                       <a class="nav-link active" aria-current="page" href="#">Signup</a>
+                       <a class="nav-link active" aria-current="page" href="/Pages/RegisterPage.html">Signup</a>
                      </div>
                    </div>
                  </a>
@@ -81,7 +81,7 @@ class GuestHeader extends HTMLElement {
                        <img src="/Images/icons/login.svg" height="20px" width="20px">
                      </div>
                      <div class="col-10 d-block d-sm-none">
-                       <a class="nav-link active" aria-current="page" href="#">Login</a>
+                       <a class="nav-link active" aria-current="page" href="/Pages/LoginPage.html">Login</a>
                      </div>
                    </div>
                  </a>
@@ -109,13 +109,13 @@ class GuestHeader extends HTMLElement {
             </div>
 
             <div class="col d-flex justify-content-center" style="padding-top:5px;">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/Pages/HomePage.html">
             <img src="/Images/YUMIFY.png" height="20px" width="100px">
               </a>
             </div>
 
             <div class="col d-flex justify-content-end">
-              <a class="btn" type="submit" style="padding-top: 5px;">
+              <a class="btn" type="submit" style="padding-top: 5px;" href="#">
                 <img src="/Images/icons/search.svg" height="20px" width="20px">
               </a>
             </div>
@@ -154,7 +154,7 @@ class GuestHeader extends HTMLElement {
                   <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
-                  <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                  <a class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">About Us</a>
                 </div>
               </div>
             </li><br><br>
@@ -165,7 +165,7 @@ class GuestHeader extends HTMLElement {
                   <img src="/Images/icons/signup.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
-                  <a class="nav-link active" aria-current="page" href="#">Signup</a>
+                  <a class="nav-link active" aria-current="page" href="/Pages/RegisterPage.html">Signup</a>
                 </div>
               </div>
             </li>
@@ -176,7 +176,7 @@ class GuestHeader extends HTMLElement {
                   <img src="/Images/icons/login.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
-                  <a class="nav-link active" aria-current="page" href="#">Login</a>
+                  <a class="nav-link active" aria-current="page" href="/Pages/LoginPage.html">Login</a>
                 </div>
               </div>
             </li>
@@ -202,13 +202,13 @@ class GuestHeader extends HTMLElement {
              </div>
 
              <div class="col d-flex justify-content-center" style="padding-top:5px;">
-               <a class="navbar-brand" href="#">
+               <a class="navbar-brand" href="/Pages/HomePage.html">
                  <img src="/Images/YUMIFY.png" height="20px" width="100px">
                </a>
              </div>
 
              <div class="col d-flex justify-content-end">
-               <a class="btn" type="submit" style="padding-top: 5px;">
+               <a class="btn" type="submit" style="padding-top: 5px;" href="#">
                  <img src="/Images/icons/search.svg" height="20px" width="20px">
                </a>
              </div>
@@ -224,7 +224,7 @@ class GuestHeader extends HTMLElement {
                    <img src="/Images/icons/house.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="#">Home</a>
+                   <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
                  </div>
                </div>
              </li>
@@ -247,7 +247,7 @@ class GuestHeader extends HTMLElement {
                    <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                   <a class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">About Us</a>
                  </div>
                </div>
              </li><br><br>
@@ -258,7 +258,7 @@ class GuestHeader extends HTMLElement {
                    <img src="/Images/icons/signup.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="#">Signup</a>
+                   <a class="nav-link active" aria-current="page" href="/Pages/RegisterPage.html">Signup</a>
                  </div>
                </div>
              </li>
@@ -269,7 +269,7 @@ class GuestHeader extends HTMLElement {
                    <img src="/Images/icons/login.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="#">Login</a>
+                   <a class="nav-link active" aria-current="page" href="/Pages/LoginPage.html">Login</a>
                  </div>
                </div>
              </li>
@@ -278,6 +278,7 @@ class GuestHeader extends HTMLElement {
        </div>
      </nav>
    </header>
+
       `;
    }
  }

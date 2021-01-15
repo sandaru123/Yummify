@@ -25,13 +25,13 @@ class Header extends HTMLElement {
       <div class="container" style="padding-right: 0px !important; padding-left: 0px !important;">
         <div class="row items-center" >
           <div class="col-3" style="padding-top:8px; display: flex; height:40px; width:140px;">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/Pages/HomePage.html">
               <img src="/Images/YUMIFY.png" >
             </a>
           </div>
 
           <div class="col-2" style="padding:0;">
-            <a class="btn" type="submit" style=" ">
+            <a class="btn" type="submit" href="#">
               <img src="/Images/icons/search.svg" height="20px" width="20px">
             </a>
           </div>
@@ -44,7 +44,7 @@ class Header extends HTMLElement {
 
             <a>
               <li class="nav-item container-fluid">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
               </li>
             </a>
 
@@ -53,17 +53,19 @@ class Header extends HTMLElement {
             </li>
 
             <li class="nav-item container-fluid">
-              <a class="nav-link active" aria-current="page" href="#">AboutUs</a>
+              <a class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">AboutUs</a>
             </li>
 
             <li class="nav-item container-fluid">
-              <a class="nav-link active" aria-current="page" href="#">Profile</a>
+              <a class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
             </li>
 
             <li class="nav-item container-fluid" style="padding-top:5px">
               
                   <div class="col-3 w-5">
-                    <img src="/Images/icons/cart.svg" height="20px" width="20px">
+                     <a href="/Images/icons/cart.svg">
+                      <img src="/Images/icons/cart.svg" height="20px" width="20px">
+                     </a>
                   </div>
                  
             </li>
@@ -71,7 +73,9 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid" style="padding-top:5px">
               
                   <div class="col-3 w-5">
-                    <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+                     <a href="/Pages/Products.html">
+                      <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+                     </a>
                   </div>
                   
             </li><br>
@@ -79,7 +83,9 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid" style="padding-top:5px">
               
                   <div class="col-3 w-5 ">
-                    <img src="/Images/icons/logout.svg" height="20px" width="20px">
+                    <a href="/Pages/LandingPage.html">
+                      <img src="/Images/icons/logout.svg" height="20px" width="20px">
+                    </a>
                   </div>
                   
             </li>
@@ -106,13 +112,13 @@ class Header extends HTMLElement {
         </div>
 
         <div class="col d-flex justify-content-center">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/Pages/HomePage.html">
             <img src="/Images/YUMIFY.png" height="20px" width="100px">
           </a>
         </div>
 
         <div class="col d-flex justify-content-end" style="padding:0;">
-          <a class="btn" type="submit" style="padding-top: 5px;">
+          <a class="btn" type="submit" style="padding-top: 5px;" href="#">
             <img src="/Images/icons/search.svg" height="20px" width="20px">
           </a>
         </div>
@@ -128,7 +134,7 @@ class Header extends HTMLElement {
               <img src="/Images/icons/house.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
             </div>
           </div>
         </li>
@@ -151,7 +157,7 @@ class Header extends HTMLElement {
               <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              <a class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">About Us</a>
             </div>
           </div>
         </li>
@@ -162,7 +168,7 @@ class Header extends HTMLElement {
               <img src="/Images/icons/person.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a class="nav-link active" aria-current="page" href="#">Account</a>
+              <a class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
             </div>
           </div>
         </li>
@@ -173,7 +179,7 @@ class Header extends HTMLElement {
               <img src="/Images/icons/cart.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a class="nav-link active" aria-current="page" href="#">Cart</a>
+              <a class="nav-link active" aria-current="page" href="/Pages/Cart.html">Cart</a>
             </div>
           </div>
         </li>
@@ -184,7 +190,7 @@ class Header extends HTMLElement {
               <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a class="nav-link active" aria-current="page" href="#">My Products</a>
+              <a class="nav-link active" aria-current="page" href="/Pages/Products.html">My Products</a>
             </div>
           </div>
         </li><br>
@@ -195,7 +201,7 @@ class Header extends HTMLElement {
               <img src="/Images/icons/logout.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a class="nav-link active" aria-current="page" href="#">Logout</a>
+              <a class="nav-link active" aria-current="page" href="/Pages/LandingPage.html">Logout</a>
             </div>
           </div>
         </li>
@@ -220,12 +226,12 @@ class Header extends HTMLElement {
           </a>
         </div>
         <div class="col d-flex justify-content-center" style="padding-right: 0px !important;">
-           <a class="navbar-brand" href="#">
+           <a class="navbar-brand" href="/Pages/HomePage.html">
              <img src="/Images/YUMIFY.png" height="40px" width="120px">
            </a>
          </div>
          <div class="col d-flex justify-content-end" style="padding:0;">
-           <a class="btn" type="submit" style="padding-top: 5px;">
+           <a class="btn" type="submit" style="padding-top: 5px;" href="#">
              <img src="/Images/icons/search.svg" height="20px" width="20px">
            </a>
         </div>
@@ -240,7 +246,7 @@ class Header extends HTMLElement {
                <img src="/Images/icons/house.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a class="nav-link active" aria-current="page" href="#">Home</a>
+               <a class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
              </div>
            </div>
          </li>
@@ -263,7 +269,7 @@ class Header extends HTMLElement {
                <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a class="nav-link active" aria-current="page" href="#">About Us</a>
+               <a class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">About Us</a>
              </div>
            </div>
          </li>
@@ -274,7 +280,7 @@ class Header extends HTMLElement {
                <img src="/Images/icons/person.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a class="nav-link active" aria-current="page" href="#">Account</a>
+               <a class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
              </div>
            </div>
          </li>
@@ -285,7 +291,7 @@ class Header extends HTMLElement {
                <img src="/Images/icons/cart.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a class="nav-link active" aria-current="page" href="#">Cart</a>
+               <a class="nav-link active" aria-current="page" href="/Pages/Cart.html">Cart</a>
              </div>
            </div>
          </li>
@@ -296,7 +302,7 @@ class Header extends HTMLElement {
                <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a class="nav-link active" aria-current="page" href="#">My Products</a>
+               <a class="nav-link active" aria-current="page" href="/Pages/Products.html">My Products</a>
              </div>
            </div>
          </li><br>
@@ -306,7 +312,7 @@ class Header extends HTMLElement {
                <img src="/Images/icons/logout.svg" height="20px" width="20px"  >
              </div>
              <div class="col-10">
-               <a class="nav-link active" aria-current="page" href="#">Logout</a>
+               <a class="nav-link active" aria-current="page" href="/Pages/LandingPage.html">Logout</a>
              </div>
            </div>
          </li>
