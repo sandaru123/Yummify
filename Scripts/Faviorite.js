@@ -9,6 +9,8 @@ var cardslist = [
   { itemName: 'Kung Pao Chicken', itemDetail: 'This spicy stir-fry dish is a Panda Express classic', price: '100$', imagesource: '../Images/panda-express-kung-pao-chicken.jpg', rating: 2, favornot: 'fa fa-heart fa-lg',faviorite :1 }
 ];
 
+var cardItemslist = JSON.parse(localStorage.getItem("cardsDetails_Local"));
+
 // function to create the cards
 function createFaviriteCards(sortValue) {
 	// declaring some variables
@@ -149,6 +151,11 @@ $(".cash_payment").click(function(){
 
     //Update object's name property.
     cardItemslist[idInt].faviorite = 0;
+
+    localStorage.setItem("cardsDetails_Local", JSON.stringify(cardItemslist));
+    var cardItemslist121 = JSON.parse(localStorage.getItem("cardsDetails_Local"));
+
+    console.log(cardItemslist121)
 
     $("div .favoriteCardsDiv").remove();
     createFaviriteCards("Nme");

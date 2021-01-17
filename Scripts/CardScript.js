@@ -23,6 +23,9 @@ var cardItemslist = [
 	{cardid: '19', itemName: 'Munchkins', itemDetail: 'Who can resist Munchkins? Theyre tasty, cute, convenient', price: '450$', imagesource: '../Images/dunkin-donuts-munchkins.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg',faviorite :0 }
 ];
 
+var cardItemslist = JSON.parse(localStorage.getItem("cardsDetails_Local"));
+
+
 function createCards(sortValue) {
 	// declaring some variables
 	var exampleBlockA = $('#exampleBlockA'), // cache the selector of the element, increases performance
