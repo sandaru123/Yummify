@@ -10,10 +10,11 @@
    </script>
 
    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-   <script src="/JQuerryMobileAssets/jquery.min.js"></script>
-
-   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   <script src="/JQuerryMobileAssets/JqueryNew.min.js"></script>
    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+   
+   
+ 
 
    <link rel="stylesheet" href="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -111,7 +112,7 @@
 
          <div class="welcomebuttondiv w-100" style="display: flex; justify-content: space-between;">
             <div class="vertical-center">
-               <a style="text-align: center;" href="/Pages/HomePage.html" class="welcomebutton">Get Started</a>
+               <a style="text-align: center;" href="/Pages/HomePage.html" class="welcomebutton getStartedButton">Get Started</a>
             </div>
             <div class="vertical-center1">
                <a style="text-align: center;" href="#slide2" class="welcomebutton">back</a>
@@ -121,5 +122,13 @@
    </div>
 
 </body>
+
+<script>
+
+        $('.getStartedButton').on( "click", function() {
+         window.location.href = "HomePage.html";
+         });
+
+</script>
 
 </html>
