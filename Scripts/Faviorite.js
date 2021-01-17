@@ -32,7 +32,7 @@ function createFaviriteCards(sortValue) {
   for (i = 0; i < cardItemslist.length; i++) {
 
     if (cardItemslist[i].faviorite == 1) {
-    
+
       tag = '';
       tag += '<div class=" card maincardwidth favoriteCardsDiv" style="height: 200px;">';
       tag += '<div class="flexcolumn">';
@@ -60,7 +60,7 @@ function createFaviriteCards(sortValue) {
       tag += '<span class="fa fa-star starcoluryello"></span>';
       tag += '<span class="">' + cardItemslist[i].rating + '</span>';
       tag += '</div>';
-      tag += '<div style="display:flex; position: absolute; margin-right: 10px; right: 0; top: 160px;"><a class="favioriteI" id=" ' + i + ' "><i style="color: red;"  class=" ' + cardItemslist[i].favornot + ' mr-1 p-1"></i> </a> &nbsp <a class="cartFavorite"><i class="fa fa-shopping-cart fa-lg mr-1 p-1"></i></a>  </div>';
+      tag += '<div style="display:flex; position: absolute; margin-right: 10px; right: 0; top: 160px;"><a class="favioriteI" id=" ' + i + ' "><i style="color: red;"  class="fa fa-heart fa-lg mr-1 p-1"></i> </a> &nbsp <a onclick="addtocart(' + i + ')" class="cartFavorite"><i class="fa fa-shopping-cart fa-lg mr-1 p-1"></i></a>  </div>';
       tag += '</div>';
       tag += '</div>';
       tag += '</div>';
@@ -125,12 +125,6 @@ $("#placeOrder").click(function () {
   $('#subtotal_payment_summary').html(reduced_total.toString());
   $("#summaryLink").click();
 });
-
-
-$(document).on("click", ".cartFavorite", function () {
-  alert("Item Added to the Cart");
-});
-
 
 $(document).on("click", ".favioriteI", function () {
   var id = $(this).attr('id');
