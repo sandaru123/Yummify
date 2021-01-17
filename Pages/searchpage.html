@@ -114,15 +114,18 @@
 
    <script>
       $(function () {
+         localStorage.setItem('favitems', JSON.stringify([100]));
          createCards("Default");
       })
 
       function backredirect() {
          window.location.href = "HomePage.html";
       }
+
    </script>
 </body>
 <!-- body end -->
 <script src="../Scripts/CardScript.js" type="text/javascript" defer></script>
+<script src="../Scripts/addtofavlist.js" type="text/javascript" defer></script>
 
 </html>
