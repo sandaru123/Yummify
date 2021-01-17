@@ -97,7 +97,7 @@ function createCards(sortValue) {
 
 		if (!pagename == 'myproducts.html') {
 
-			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: black;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
 
 		} else {
 			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor'+i+'" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i onclick="addtocart(' + i + ')" class=" ' + icon2 + ' mr-1 p-1"></i> </div>';

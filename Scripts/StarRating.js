@@ -22,7 +22,7 @@ $(document).ready(function(){
       });
     });
     
-    
+
     /* 2. Action to perform on click */
     $('#stars li').on('click', function(){
       var onStar = parseInt($(this).data('value'), 10); // The star currently selected
