@@ -1,26 +1,26 @@
 // function to create the cards
 
-var cardItemslist22 = [
-	{cardid: '0', itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: '55$', imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart fa-lg',faviorite : 1 },
-	{cardid: '1', itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg',faviorite : 0 },
-	{cardid: '2', itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: '11$', imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart fa-lg',faviorite : 1 },
-	{cardid: '3', itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: '5$', imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '4', itemName: 'boeuf bourguignon', itemDetail: 'Beef brisket, red wine, small pearl onions, bacon, tomato paste', price: '150$', imagesource: '../Images/Boeuf-Bourguignon.jpg', rating: 5, favornot: 'fa fa-heart fa-lg',faviorite :1 },
-	{cardid: '5', itemName: 'Sonic Cherry Limeade', itemDetail: 'Tangy and sweet limeade with your choice of some favorite', price: '20$', imagesource: '../Images/sonic-cherry-limeade-slush.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '6', itemName: 'Arbys Roast Beef Sandwich', itemDetail: 'Two ingredients, roast beef and a sesame seed bun,', price: '50$', imagesource: '../Images/arbys-classic-roast-beef.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '7', itemName: 'KFC Original Recipe Chicken', itemDetail: 'Secret 11 herbs and spices and for launching ', price: '500$', imagesource: '../Images/kfc-original-bucket-fried-chicken.jpg', rating: 1, favornot: 'fa fa-heart fa-lg',faviorite :1 },
-	{cardid: '8', itemName: 'Wendys Frosty', itemDetail: 'The Frosty is considered the signature dessert at Wendy,', price: '75$', imagesource: '../Images/wendys-frosty-1.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '9', itemName: 'MC Happy Meal', itemDetail: 'Small portions, packaging, collectible toys in One.', price: '90$', imagesource: '../Images/mcdonalds-happy-meal-toys.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '10', itemName: 'Pumpkin Spice Latte', itemDetail: 'Starbucks Pumpkin Spice Latte. No other', price: '155$', imagesource: '../Images/Pumpkin-Spice-Latte.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '11', itemName: 'Burrito Supreme', itemDetail: 'Taco Bell has crowned this burrito "The Supreme', price: '55$', imagesource: '../Images/taco-bell-burrito-supreme.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '12', itemName: 'Dunkin Coffee', itemDetail: 'Forget the donuts! Rebranded as just Dunkin in 2018', price: '100$', imagesource: '../Images/dunkin-coffee-cup.jpg', rating: 3, favornot: 'fa fa-heart fa-lg',faviorite :1 },
-	{cardid: '13', itemName: 'Culvers ButterBurger', itemDetail: 'The fast-food chain has nicknamed it "The Original,"', price: '180$', imagesource: '../Images/bruger-cheddar-bites-shake-culvers-wisconsin.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '14', itemName: 'Pepperoni Pizza', itemDetail: 'pepperoni pizza is easily the most-delivered item on the menu', price: '250$', imagesource: '../Images/dominos-ultimate-pepperoni-pizza.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '15', itemName: 'Tortellini Alfredo', itemDetail: 'tortellini Alfredo the most popular pasta offering', price: '300$', imagesource: '../Images/panera-tortellini-alfredo-pasta.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '16', itemName: 'Kung Pao Chicken', itemDetail: 'This spicy stir-fry dish is a Panda Express classic', price: '100$', imagesource: '../Images/panda-express-kung-pao-chicken.jpg', rating: 2, favornot: 'fa fa-heart fa-lg',faviorite :1 },
-	{cardid: '17', itemName: 'Egg McMuffin', itemDetail: ' bacon, egg, and cheese on an English muffin', price: '500$', imagesource: '../Images/mcdonalds-egg-mcmuffin-breakfast-burrito.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '18', itemName: 'Macchiato', itemDetail: 'This foamy espresso concoction now icen coconut milk mocha', price: '235$', imagesource: '../Images/starbucks-iced-coconut-milk-mocha-macchiato.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg',faviorite :0 },
-	{cardid: '19', itemName: 'Munchkins', itemDetail: 'Who can resist Munchkins? Theyre tasty, cute, convenient', price: '450$', imagesource: '../Images/dunkin-donuts-munchkins.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg',faviorite :0 }
+var cardItemslist = [
+	{ cardid: '0', itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: '55$', imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart fa-lg', faviorite: 1, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '1', itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: '15$', imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '2', itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: '11$', imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart fa-lg', faviorite: 1, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '3', itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: '5$', imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '4', itemName: 'boeuf bourguignon', itemDetail: 'Beef brisket, red wine, small pearl onions, bacon, tomato paste', price: '150$', imagesource: '../Images/Boeuf-Bourguignon.jpg', rating: 5, favornot: 'fa fa-heart fa-lg', faviorite: 1, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '5', itemName: 'Sonic Cherry Limeade', itemDetail: 'Tangy and sweet limeade with your choice of some favorite', price: '20$', imagesource: '../Images/sonic-cherry-limeade-slush.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '6', itemName: 'Arbys Roast Beef Sandwich', itemDetail: 'Two ingredients, roast beef and a sesame seed bun,', price: '50$', imagesource: '../Images/arbys-classic-roast-beef.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '7', itemName: 'KFC Original Recipe Chicken', itemDetail: 'Secret 11 herbs and spices and for launching ', price: '500$', imagesource: '../Images/kfc-original-bucket-fried-chicken.jpg', rating: 1, favornot: 'fa fa-heart fa-lg', faviorite: 1, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '8', itemName: 'Wendys Frosty', itemDetail: 'The Frosty is considered the signature dessert at Wendy,', price: '75$', imagesource: '../Images/wendys-frosty-1.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '9', itemName: 'MC Happy Meal', itemDetail: 'Small portions, packaging, collectible toys in One.', price: '90$', imagesource: '../Images/mcdonalds-happy-meal-toys.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '10', itemName: 'Pumpkin Spice Latte', itemDetail: 'Starbucks Pumpkin Spice Latte. No other', price: '155$', imagesource: '../Images/Pumpkin-Spice-Latte.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '11', itemName: 'Burrito Supreme', itemDetail: 'Taco Bell has crowned this burrito "The Supreme', price: '55$', imagesource: '../Images/taco-bell-burrito-supreme.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '12', itemName: 'Dunkin Coffee', itemDetail: 'Forget the donuts! Rebranded as just Dunkin in 2018', price: '100$', imagesource: '../Images/dunkin-coffee-cup.jpg', rating: 3, favornot: 'fa fa-heart fa-lg', faviorite: 1, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '13', itemName: 'Culvers ButterBurger', itemDetail: 'The fast-food chain has nicknamed it "The Original,"', price: '180$', imagesource: '../Images/bruger-cheddar-bites-shake-culvers-wisconsin.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '14', itemName: 'Pepperoni Pizza', itemDetail: 'pepperoni pizza is easily the most-delivered item on the menu', price: '250$', imagesource: '../Images/dominos-ultimate-pepperoni-pizza.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '15', itemName: 'Tortellini Alfredo', itemDetail: 'tortellini Alfredo the most popular pasta offering', price: '300$', imagesource: '../Images/panera-tortellini-alfredo-pasta.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '16', itemName: 'Kung Pao Chicken', itemDetail: 'This spicy stir-fry dish is a Panda Express classic', price: '100$', imagesource: '../Images/panda-express-kung-pao-chicken.jpg', rating: 2, favornot: 'fa fa-heart fa-lg', faviorite: 1, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '17', itemName: 'Egg McMuffin', itemDetail: ' bacon, egg, and cheese on an English muffin', price: '500$', imagesource: '../Images/mcdonalds-egg-mcmuffin-breakfast-burrito.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '18', itemName: 'Macchiato', itemDetail: 'This foamy espresso concoction now icen coconut milk mocha', price: '235$', imagesource: '../Images/starbucks-iced-coconut-milk-mocha-macchiato.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+	{ cardid: '19', itemName: 'Munchkins', itemDetail: 'Who can resist Munchkins? Theyre tasty, cute, convenient', price: '450$', imagesource: '../Images/dunkin-donuts-munchkins.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg', faviorite: 0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' }
 ];
 
 var cardItemslist = JSON.parse(localStorage.getItem("cardsDetails_Local"));
@@ -44,7 +44,7 @@ function createCards(sortValue) {
 		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...", "Lorem ipsum part 3..."];
 
 
-	
+
 
 	if (sortValue == "Name") {
 		cardItemslist.sort(function (a, b) {
@@ -74,16 +74,16 @@ function createCards(sortValue) {
 		var icon1;
 		var icon2;
 		var pagename = document.location.href.match(/[^\/]+$/)[0]
-	
+
 		if (pagename == 'Products.html' || pagename == 'searchpage.html') {
 			icon1 = cardItemslist[i].favornot;
-		}else if(pagename == 'myproducts.html'){
+		} else if (pagename == 'myproducts.html') {
 			icon1 = cardItemslist[i].deleteitem;
 		}
 
-		if(pagename == 'Products.html' || pagename == 'searchpage.html'){
+		if (pagename == 'Products.html' || pagename == 'searchpage.html') {
 			icon2 = 'fa fa-shopping-cart fa-lg';
-		}else if(pagename == 'myproducts.html'){
+		} else if (pagename == 'myproducts.html') {
 			icon2 = cardItemslist[i].editmyitems;
 		}
 
@@ -114,7 +114,15 @@ function createCards(sortValue) {
 		tag += '<span class="fa fa-star starcoluryello"></span>';
 		tag += '<span class="">' + cardItemslist[i].rating + '</span>';
 		tag += '</div>';
-		tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" onclick="inifavlocalhost('+cardItemslist[i].cardid+')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" '+ icon2 +' mr-1 p-1"></i> </div>';
+
+		if (!pagename == 'myproducts.html') {
+
+			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+
+		} else {
+			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+		}
+
 		tag += '</div>';
 		tag += '</div>';
 		tag += '</div>';
