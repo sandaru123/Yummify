@@ -17,5 +17,7 @@ $(".cash_payment").click(function(){
     $("#summaryLink").click();
   });
 
-
+  $(".homepageNav").on('click', function(){
+    window.location.href = "HomePage.html";
+  });
   
