@@ -24,6 +24,10 @@ var cardItemslist = [
 
 
 // function to create the cards
+
+var cardItemslist = JSON.parse(localStorage.getItem("cardsDetails_Local"));
+
+console.log(cardItemslist);
 function createCartCards(sortValue) {
   // declaring some variables
   var exampleBlockA = $('#exampleBlockA'), // cache the selector of the element, increases performance
@@ -33,87 +37,96 @@ function createCartCards(sortValue) {
     j = 1,
 
     // the cards, in this example in an array
-    // the cards, in this example in an array
-    imagename = ["Image1", "Image2", "Image3", "Image4"],
-    imagesource = ["Images/burgers.jpg", "./images/image2.jpg", "./images/image3.jpg", ".Images/promo\ 1.jpg"],
-    itemName = ["Chorizo & Mozzarella", "Italian panettone", "Mayo deviled eggs", "Rosemary Baked Olives"],
-    itemDetail = ["Butter chicken curry or murg makhani, butter and cream sauce.", "Butter chicken curry or murg makhani is a curry, butter.", "Bake in the preheated oven for 15 minutes", "stirring halfway through the baking."],
-    titlecard = ["Image!", "Image!", "Image!", "Image!"],
-    titleimage = ["Title", "Title", "Title", "Title"],
-    text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...", "Lorem ipsum part 3..."];
+		imagename = ["Image1", "Image2", "Image3", "Image4"],
+		imagesource = ["Images/burgers.jpg", "./images/image2.jpg", "./images/image3.jpg", ".Images/promo\ 1.jpg"],
+		itemName = ["Chorizo & Mozzarella", "Italian panettone", "Mayo deviled eggs", "Rosemary Baked Olives"],
+		itemDetail = ["Butter chicken curry or murg makhani, butter and cream sauce.", "Butter chicken curry or murg makhani is a curry, butter.", "Bake in the preheated oven for 15 minutes", "stirring halfway through the baking."],
+		titlecard = ["Image!", "Image!", "Image!", "Image!"],
+		titleimage = ["Title", "Title", "Title", "Title"],
+		text = ["Lorem ipsum part 1...", "Lorem ipsum part 2...", "Lorem ipsum part 3...", "Lorem ipsum part 3..."];
+		
 
-
-  // emptying the current grid
-  exampleBlockA.empty();
-  exampleBlockB.empty();
-  exampleBlockC.empty();
+	// emptying the current grid
+	exampleBlockA.empty();
+	exampleBlockB.empty();
+	exampleBlockC.empty();
 
   var tag = '';
+  var tot_price= 0;
+  var pri__ = 0;
 
-  for (i = 0; i < cardItemslist.length; i++) {
-    if (cardItemslist[i].cart == 1) {
-      tag = '';
-      tag += '<div class=" card maincardwidth" style="height: 270.66px;">';
-      tag += '<div class="flexcolumn">';
-      tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 220px;">';
-      tag += '<div style="width: 180px;">';
-      tag += '<img class="card-image cardimageedit" alt="image" src="' + cardItemslist[i].imagesource + '" />';
-      tag += '</div>';
-      tag += '<div class="flexcolumn" style="width: 220px;margin-top: 32px;">';
-      tag += '<p style="  margin-top: -19%;padding: 0px;  text-align: end;">' + cardItemslist[i].price + '</p>';
-      tag += '<div style="height: auto;">';
-      tag += '<p style="font-size: 20px;">' + cardItemslist[i].itemName + '</p>';
-      tag += '</div>';
-      tag += '<div style="height: auto;">';
-      tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
-      tag += '<p style="font-size: 15px; margin-top: -15px;">' + cardItemslist[i].itemDetail + '</p>';
-      tag += '</div>';
-      tag += '</div>';
-      tag += '</div>';
-      tag += '<div class="flexcolumn" style="height: 50px;">';
-      tag += '<div>';
-
-      // for(s=1; s< cardItemslist[i].rating; s++){
-
-      // }
-
-      tag += '<span class="fa fa-star starcoluryello"></span>';
-      tag += '<span class="">' + cardItemslist[i].rating + '</span>';
-      // tag += '<span class="fa fa-star starcoluryello"></span>';
-      // tag += '<span class="fa fa-star starcoluryello"></span>';
-      // tag += '<span class="fa fa-star" style="color: #de7575;"></span>';
-      tag += '</div>';
-      tag += '<div></div>';
-      tag += '</div>';
-      tag += '</div>';
-      tag += '</div>';
-
-      /*	You will need to create cards in a special order.
-          The first 1/3 of the cards are placed in block A.
-          The second 1/3 of the cards are placed in block B.
-          The last 1/3 of the cards are placed in block C.
+	for (i = 0; i < cardItemslist.length; i++) {
+        if(cardItemslist[i].cart == 1){
           
-          This will make sure that the cards will fill white spots
-          when the screen is changing orientation and/or size.
-          
-          When you create new block for every card you would get
-          an interface that is lined like a table.
-      */
+          pri__= parseInt(cardItemslist[i].price,10);
+          tot_price += pri__*1;
+          tag = '';
+          tag += '<div class=" card maincardwidth cart_CardsDiv" style="height: 220px;">';
+          tag += '<div class="flexcolumn">';
+          tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 180px;">';
+          tag += '<div style="width: 180px;">';
+          tag += '<img class="card-image cardimageedit" style="height: 150px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
+          tag += '</div>';
+          tag += '<div class="flexcolumn" style="width: 220px;">';
+          tag += '<div class="flexrow" style="height: auto;">';
+          tag += '<div>';
+          tag += '<p style="font-size: 18px;">' + cardItemslist[i].itemName + '</p>';
+          tag += '</div>';
+          tag += '<div>';
+          tag += '<p>' + cardItemslist[i].price + '</p>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '<div style="height: auto;">';
+          tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
+          tag += '<p style="font-size: 15px; margin-top: -18px; color:#6c6f71">' + cardItemslist[i].itemDetail + '</p>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '<div class="flexcolumn" style="height: 50px;">';
+          tag += '<div>';
+          tag += '<span class="fa fa-star starcoluryello"></span>';
+          tag += '<span class="">' + cardItemslist[i].rating + '</span>';
+          tag += '</div>';
+          tag += '<div style="display:flex; position: absolute; margin-right: 20px; right: 0;"><a class="favioriteI" id=" ' + i + ' "><i style="color: red;"  class=" ' + cardItemslist[i].favornot + '" id="addRem_fav"></i> </a> &nbsp <a class="cartRem" id=" ' + i + ' "><i class="fa fa-shopping-cart fa-lg"></i></a>  </div>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '</div>';
 
-      if (i < (imagename.length / 3)) {
-        exampleBlockA.append(tag);
-      } else if (i < ((imagename.length / 3) * 2)) {
-        exampleBlockB.append(tag);
-      } else if (i <= ((imagename.length / 3) * 3)) {
-        exampleBlockC.append(tag);
-      }
 
-      // add a press effect to the card
-      pressEffectCard('card' + i);
-    }
+          tot_price = tot_price+ cardItemslist[i].price;
+    
+            /*	You will need to create cards in a special order.
+                The first 1/3 of the cards are placed in block A.
+                The second 1/3 of the cards are placed in block B.
+                The last 1/3 of the cards are placed in block C.
+                
+                This will make sure that the cards will fill white spots
+                when the screen is changing orientation and/or size.
+                
+                When you create new block for every card you would get
+                an interface that is lined like a table.
+            */
+    
+            if (i < (imagename.length / 3)) {
+                exampleBlockA.append(tag);
+            } else if (i < ((imagename.length / 3) * 2)) {
+                exampleBlockB.append(tag);
+            } else if (i <= ((imagename.length / 3) * 3)) {
+                exampleBlockC.append(tag);
+            }
+    
+            // add a press effect to the card
+            pressEffectCard('card' + i);
+            }
 
-
+		
   }
+  
+  localStorage.setItem("total_price_local", JSON.stringify(tot_price/2));
+  var totalPrice_ = JSON.parse(localStorage.getItem("total_price_local"));
+  
+  var totPriceStr = '$'+totalPrice_;
+  $("#total_price").html(totPriceStr);
 }
 
 // press effect card ui
@@ -164,4 +177,51 @@ $(document).ready(function () {
       createCards("Price");
     }
   });
+  });
+
+//   $(document).on("click", ".favioriteI" , function() {
+//     var id= $(this).attr('id');
+//     var idInt = parseInt(id,10);
+//     //Find index of specific object using findIndex method.    
+//     objIndex = cardItemslist.findIndex((obj => obj.id == 0));
+
+//     //Log object to Console.
+//     console.log("Before update: ", cardItemslist[objIndex])
+
+//     //Update object's name property.
+//     cardItemslist[idInt].cart = 0;
+
+//     localStorage.setItem("cardsDetails_Local", JSON.stringify(cardItemslist));
+//     var cardItemslist121 = JSON.parse(localStorage.getItem("cardsDetails_Local"));
+
+//     console.log(cardItemslist121)
+//     var vv= $('#0').hasClass('fa-heart');
+//     //var vv =  $(this).closest('.addRem_fav').hasClass('fa-heart');
+
+
+//    var vstr = vv.toString();
+//     alert(vstr);
+// });
+
+//rem cart
+
+  $(document).on("click", ".cartRem" , function() {
+    var id= $(this).attr('id');
+    var idInt = parseInt(id,10);
+    //Find index of specific object using findIndex method.    
+    objIndex = cardItemslist.findIndex((obj => obj.id == 0));
+
+    //Log object to Console.
+    console.log("Before update: ", cardItemslist[objIndex])
+
+    //Update object's name property.
+    cardItemslist[idInt].cart = 0;
+
+    localStorage.setItem("cardsDetails_Local", JSON.stringify(cardItemslist));
+    var cardItemslist121 = JSON.parse(localStorage.getItem("cardsDetails_Local"));
+
+    console.log(cardItemslist121)
+
+    $("div .cart_CardsDiv").remove();
+    createCartCards("Nme");
 });

@@ -80,9 +80,10 @@
       <div class="contentMargin">
          <div role="main" class="">
             <div style="display: block;">
+               <input type="text" class="getDetailsIndex" id="0" hidden></input>
                <div class="flex justify-between">
                   <div class="pl-5 pt-2">
-                     <h5 style="font-weight: bold;">Easy Butter Chicken</h5>
+                     <h5 style="font-weight: bold;" id="product_title">Easy Butter Chicken</h5>
                   </div>
                   <div class="flex pr-5 pt-2 pr-5">
                      <img class="mr-8 pb-1" src="/Images/icons/cart-plus.svg" height="25px" width="25px">
@@ -92,7 +93,7 @@
                </div>
 
                <div class="flex pl-5 pt-2 pr-5">
-                  <span style="font-weight: bold; color: #33D9B2;" class="pr-2">$18</span>
+                  <span style="font-weight: bold" class="pr-2" id="price_details">$18</span>
                   <div class="flex">
                      <img src="/Images/icons/star-fill.svg" height="25px" width="25px"
                         style="filter: invert(98%) sepia(44%) saturate(4452%) hue-rotate(358deg) brightness(105%) contrast(102%);">
@@ -108,10 +109,10 @@
                   <span class="ml-2" style="font-size: 12px;">13 ratings</span>
                </div>
                <div class="pl-5 pt-2 pr-5">
-                  <span style="font-weight: bold">Jenifer Rie</span>
+                  <span style="font-weight: bold" id="owner_detail">Jenifer Rie</span>
 
                   <div>
-                     <span class="fontSize_14">Fancy a healthy version of your favourite Friday night chicken curry?
+                     <span class="fontSize_14" id="description_details">Fancy a healthy version of your favourite Friday night chicken curry?
                         The chicken can be marinaded the day before so you can get ahead on your prep</span>
                   </div>
                </div>
@@ -141,7 +142,7 @@
                      </div>
 
                      <div class="flex">
-                        <button class="mr-2" id="qrCode">
+                        <button class="mr-8" id="">
                            <img src="/Images/icons/QR.svg" height="40px" width="40px">
                         </button>
                         <button class="ml-2" id="ratingPopupButton">
@@ -220,6 +221,7 @@
    </div>
 
 </body>
+<script src="../Scripts/ArrayMap.js" type="text/javascript" defer></script>
 <script src="../Scripts/ProductDetails.js" type="text/javascript" defer></script>
 <script src="/Scripts/StarRating.js"></script>
 
