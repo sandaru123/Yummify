@@ -38,14 +38,14 @@ class Header extends HTMLElement {
       <div class="container" style="padding-right: 0px !important; padding-left: 0px !important;">
         <div class="row items-center" >
           <div class="col-3" style="padding-top:8px; display: flex; height:40px; width:140px;">
-            <a class="navbarBrand" href="/Pages/HomePage.html">
-              <img src="/Images/YUMIFY.png" >
+            <a class="navbarBrand" href="HomePage.html">
+              <img src="../Images/YUMIFY.png" >
             </a>
           </div>
 
           <div class="col-2" style="padding:0;">
-            <a href="/Pages/searchpage.html">
-              <img src="/Images/icons/search.svg" height="20px" width="20px">
+            <a href="searchpage.html">
+              <img src="../Images/icons/search.svg" height="20px" width="20px">
             </a>
           </div>
         </div>
@@ -57,27 +57,27 @@ class Header extends HTMLElement {
 
             <a>
               <li class="nav-item container-fluid">
-                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
               </li>
             </a>
 
             <li class="nav-item container-fluid">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/contact.html">Contact</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="contact.html">Contact</a>
             </li>
 
             <li class="nav-item container-fluid">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">AboutUs</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Aboutus.html">AboutUs</a>
             </li>
 
             <li class="nav-item container-fluid">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="ProfilePage.html">Account</a>
             </li>
 
             <li class="nav-item container-fluid" style="padding-top:10px">
               
                   <div class="col-3 w-5">
-                     <a href="/Images/icons/cart.svg">
-                      <img src="/Images/icons/cart.svg" height="20px" width="20px">
+                     <a href="../Images/icons/cart.svg">
+                      <img src="../Images/icons/cart.svg" height="20px" width="20px">
                      </a>
                   </div>
                  
@@ -86,8 +86,8 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid" style="padding-top:10px">
               
                   <div class="col-3 w-5">
-                     <a href="/Pages/Products.html">
-                      <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+                     <a href="Products.html">
+                      <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
                      </a>
                   </div>
                   
@@ -96,8 +96,8 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid" style="padding-top:10px">
               
                   <div class="col-3 w-5 ">
-                    <a href="/Pages/LandingPage.html">
-                      <img src="/Images/icons/logout.svg" height="20px" width="20px">
+                    <a href="LandingPage.html">
+                      <img src="../Images/icons/logout.svg" height="20px" width="20px">
                     </a>
                   </div>
                   
@@ -120,19 +120,19 @@ class Header extends HTMLElement {
           <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <img src="/Images/icons/list.svg" height="20px" width="20px">
+            <img src="../Images/icons/list.svg" height="20px" width="20px">
           </a>
         </div>
 
         <div class="col d-flex justify-content-center items-center" ">
-          <a class="navbarBrand" style="margin-right:0px !important" href="/Pages/HomePage.html">
-            <img src="/Images/YUMIFY.png" height="20px" width="100px">
+          <a class="navbarBrand" style="margin-right:0px !important" href="HomePage.html">
+            <img src="../Images/YUMIFY.png" height="20px" width="100px">
           </a>
         </div>
 
         <div class="col d-flex justify-content-end" style="padding:0;">
-          <a style="padding-top: 5px;" href="/Pages/searchpage.html">
-            <img src="/Images/icons/search.svg" height="20px" width="20px">
+          <a style="padding-top: 5px;" href="searchpage.html">
+            <img src="../Images/icons/search.svg" height="20px" width="20px">
           </a>
         </div>
       </div>
@@ -144,10 +144,10 @@ class Header extends HTMLElement {
         <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
           <div class="row items-center">
             <div class="col-2 imageProperties">
-              <img src="/Images/icons/house.svg" height="20px" width="20px">
+              <img src="../Images/icons/house.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
             </div>
           </div>
         </li>
@@ -156,10 +156,10 @@ class Header extends HTMLElement {
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
           <div class="row items-center">
             <div class="col-2 imageProperties">
-              <img src="/Images/icons/contact.svg" height="20px" width="20px">
+              <img src="../Images/icons/contact.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/contact.html">Contact</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="contact.html">Contact</a>
             </div>
           </div>
         </li>
@@ -167,10 +167,10 @@ class Header extends HTMLElement {
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
           <div class="row items-center">
             <div class="col-2 imageProperties">
-              <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
+              <img src="../Images/icons/info-circle.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">About Us</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Aboutus.html">About Us</a>
             </div>
           </div>
         </li>
@@ -178,10 +178,10 @@ class Header extends HTMLElement {
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
           <div class="row items-center">
             <div class="col-2 imageProperties">
-              <img src="/Images/icons/person.svg" height="20px" width="20px">
+              <img src="../Images/icons/person.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="ProfilePage.html">Account</a>
             </div>
           </div>
         </li>
@@ -189,10 +189,10 @@ class Header extends HTMLElement {
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
           <div class="row items-center">
             <div class="col-2 imageProperties">
-              <img src="/Images/icons/cart.svg" height="20px" width="20px">
+              <img src="../Images/icons/cart.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Cart.html">Cart</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Cart.html">Cart</a>
             </div>
           </div>
         </li>
@@ -200,10 +200,10 @@ class Header extends HTMLElement {
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
           <div class="row items-center">
             <div class="col-2 imageProperties ">
-              <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+              <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Products.html">My Products</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Products.html">My Products</a>
             </div>
           </div>
         </li><br>
@@ -211,10 +211,10 @@ class Header extends HTMLElement {
         <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
           <div class="row items-center">
             <div class="col-2 imageProperties ">
-              <img src="/Images/icons/logout.svg" height="20px" width="20px">
+              <img src="../Images/icons/logout.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/LandingPage.html">Logout</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="LandingPage.html">Logout</a>
             </div>
           </div>
         </li>
@@ -235,17 +235,17 @@ class Header extends HTMLElement {
           <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <img src="/Images/icons/list.svg" height="20px" width="20px">
+            <img src="../Images/icons/list.svg" height="20px" width="20px">
           </a>
         </div>
         <div class="col d-flex justify-content-center " style="padding-right: 0px !important; margin-top:10px;">
-           <a class="navbarBrand" style="margin-right:0px !important; " href="/Pages/HomePage.html">
-             <img src="/Images/YUMIFY.png" height="30px" width="100px">
+           <a class="navbarBrand" style="margin-right:0px !important; " href="HomePage.html">
+             <img src="../Images/YUMIFY.png" height="30px" width="100px">
            </a>
          </div>
          <div class="col d-flex justify-content-end" style="padding:0;">
-           <a style="padding-top: 5px;" href="/Pages/searchpage.html">
-             <img src="/Images/icons/search.svg" height="20px" width="20px">
+           <a style="padding-top: 5px;" href="searchpage.html">
+             <img src="../Images/icons/search.svg" height="20px" width="20px">
            </a>
         </div>
      </div>
@@ -256,10 +256,10 @@ class Header extends HTMLElement {
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
            <div class="row items-center">
              <div class="col-2 imageProperties" style="vertical-align: baseline;">
-               <img src="/Images/icons/house.svg" height="20px" width="20px">
+               <img src="../Images/icons/house.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
              </div>
            </div>
          </li>
@@ -268,10 +268,10 @@ class Header extends HTMLElement {
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
            <div class="row items-center">
              <div class="col-2 imageProperties">
-               <img src="/Images/icons/contact.svg" height="20px" width="20px">
+               <img src="../Images/icons/contact.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/contact.html">Contact</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="contact.html">Contact</a>
              </div>
            </div>
          </li>
@@ -279,10 +279,10 @@ class Header extends HTMLElement {
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
            <div class="row items-center">
              <div class="col-2 imageProperties">
-               <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
+               <img src="../Images/icons/info-circle.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">About Us</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Aboutus.html">About Us</a>
              </div>
            </div>
          </li>
@@ -290,10 +290,10 @@ class Header extends HTMLElement {
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
            <div class="row items-center">
              <div class="col-2 imageProperties">
-               <img src="/Images/icons/person.svg" height="20px" width="20px">
+               <img src="../Images/icons/person.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="ProfilePage.html">Account</a>
              </div>
            </div>
          </li>
@@ -301,10 +301,10 @@ class Header extends HTMLElement {
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
            <div class="row items-center">
              <div class="col-2 imageProperties">
-               <img src="/Images/icons/cart.svg" height="20px" width="20px">
+               <img src="../Images/icons/cart.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Cart.html">Cart</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Cart.html">Cart</a>
              </div>
            </div>
          </li>
@@ -312,20 +312,20 @@ class Header extends HTMLElement {
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
            <div class="row items-center">
              <div class="col-2 imageProperties ">
-               <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+               <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Products.html">My Products</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Products.html">My Products</a>
              </div>
            </div>
          </li><br>
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
            <div class="row items-center">
              <div class="col-2 imageProperties " style=" vertical-align: text-bottom;">
-               <img src="/Images/icons/logout.svg" height="20px" width="20px"  >
+               <img src="../Images/icons/logout.svg" height="20px" width="20px"  >
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/LandingPage.html">Logout</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="LandingPage.html">Logout</a>
              </div>
            </div>
          </li>

@@ -7,7 +7,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
+        </script>
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <script src="/JQuerryMobileAssets/jquery.min.js"></script>
@@ -78,18 +78,31 @@
             <div style="margin-left: 10px;">
                 <h5 class="forntwaightbold">Your Cart</h5>
             </div>
-            <div style="position: absolute; margin-right: 30px; right: 0;">
-                <p style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i class="fa fa-filter"></i> </p>
+            <div style="position: absolute; margin-right: 30px; right: 0; ">
+                <p id="opendropwown" style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i
+                        class="fa fa-filter"></i> </p>
             </div>
+        </div>
+    </div>
 
-            <!-- <div class="ui-field-contain">
-                    <label for="select-choice-1" class="select">Shipping method:</label>
-                    <select name="select-choice-1" id="selectDropdown">
-                      <option value="Name">Sort By Name</option>
-                      <option value="Price">Sort By Price</option>
-                    </select>
-                  </div> -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="flex justify-between mb-3">
+                <span>
+                    <h3>Filter</h3>
+                </span>
+                <span class="closebutton">
+                    <img class="float-right"
+                        style="filter: invert(15%) sepia(100%) saturate(6065%) hue-rotate(357deg) brightness(98%) contrast(118%);"
+                        src="/Images/icons/close.svg" height="30px" width="30px">
+                </span>
 
+            </div>
+            <select style="margin-top: 5px;" name="select-choice-1" id="selectDropdown">
+                <option value="Name">Sort By Name</option>
+                <option value="Price">Sort By Price</option>
+            </select>
         </div>
     </div>
 
@@ -104,7 +117,8 @@
         <div>
             <div class="add_to_bill_cart " style="border-radius: 10px;">
 
-                <div class="cardsxCart" style="font-size: 14px; padding: 2%; background-color: white; border: 2px solid #33D9B2; border-radius: 10px;">
+                <div class="cardsxCart"
+                    style="font-size: 14px; padding: 2%; background-color: white; border: 2px solid #33D9B2; border-radius: 10px;">
                     <div>
                         <a href="/Pages/Products.html" class="ui-btn ui-corner-all secondary_but"
                             style="font-family: 'Fira Sans';background-color: white; text-align:center; border: solid 2px #33D9B2; color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Continue
