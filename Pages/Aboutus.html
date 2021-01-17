@@ -61,47 +61,49 @@
 <!-- body start -->
 
 <body>
-  <!-- Start of Payment -->
-  <div data-role="page" id="payment">
-    <div class="headers" data-role="header">
-      <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span
-          style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
-      </h1>
-    </div><!-- /header -->
-    <div style="height: 47px; background: #33D9B2;">
-      <i class=""></i><span>About Us</span>
-    </div>
+  <header-component></header-component>
 
-    <div class="videoDiv_aboutUs">
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-      </iframe>
-    </div>
 
-    <div role="main" class="ui-content">
-      <div style="margin: 6%;" class="aboutUs_div grid grid-cols-1 md:grid-cols-2 gap">
-        <div class="vision_div" style="display: grid;">
-          <span class="vision_span" style="font-weight: bold">
-            Vision
-          </span>
-          <span class="vision_span_details">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer.
-          </span>
-        </div>
-        <div class="mission_div" style="text-align: end;display: grid;">
-          <span class="vision_span" style="font-weight: bold">
-            Mission
-          </span>
-          <span class="vision_span_details">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
-            some form, by injected humour.
-          </span>
-        </div>
+  <!-- nav bar with back button start -->
+  <div class="flex container-fluid d-sm-none"
+    style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
+    <a class="flex" href="/Pages/HomePage.html" style="text-decoration: none; color: black">
+      <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
+    </a>
+    <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">About Us</p>
+  </div>
+  <!-- nav bar with back button end -->
+
+  <div class="videoDiv_aboutUs">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+  </div>
+
+  <div role="main" class="ui-content items-center">
+    <div style="margin: 6%;" class="aboutUs_div grid grid-cols-1 md:grid-cols-2 gap">
+      <div class="vision_div" style="display: grid;">
+        <span class="vision_span" style="font-weight: bold">
+          Vision
+        </span>
+        <span class="vision_span_details">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer.
+        </span>
       </div>
-    </div><!-- /content -->
+      <div class="mission_div" style="text-align: end;display: grid;">
+        <span class="vision_span" style="font-weight: bold">
+          Mission
+        </span>
+        <span class="vision_span_details">
+          There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+          some form, by injected humour.
+        </span>
+      </div>
+    </div>
+  </div><br><!-- /content -->
+<footer-component></footer-component>
 
-
-  </div><!-- /page -->
+  <!-- /page -->
 
 
 

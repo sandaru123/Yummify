@@ -8,12 +8,8 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
    </script>
-
    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
    <script src="/JQuerryMobileAssets/jquery.min.js"></script>
-   <script src="/JQuerryMobileAssets/Script.js"></script>
-
-   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
    <link rel="stylesheet" href="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
@@ -21,27 +17,34 @@
    <script src="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <meta charset="UTF-8">
-
    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
    <meta name="viewport"
       content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-   <script src="/JQuerryMobileAssets/jquery.min.js"></script>
-   <link rel="stylesheet" href="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
-   <script src="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
-
+   <link rel="stylesheet" href="/JQuerryMobileAssets/Style.css" />
+   <link rel="stylesheet" href="/JQuerryMobileAssets/Card.css" />
+   <link rel="stylesheet" href="/Styles/index.css" />
+   <link rel="stylesheet" href="/Styles/customcard.css" />
+   <link rel="stylesheet" href="/Styles/LandingPage.css" />
+   <link rel="stylesheet" href="/Styles/orderhistory.css" />
+   <link rel="stylesheet" href="/Styles/paymentgateaway.css" />
+   <link rel="stylesheet" href="/Styles/pointsDashboard.css" />
+   <link rel="stylesheet" href="/Styles/productdetails.css" />
+   <link rel="stylesheet" href="/Styles/products.css" />
    <link rel="stylesheet" href="/Styles/profile.css" />
-   <link rel="stylesheet" href="/Styles/tailwind.css"/>
-
-
+   <link rel="stylesheet" href="/Styles/LandingPage.css" />
+   <link rel="stylesheet" href="/Styles/spalshscreen.css" />
+   <link rel="stylesheet" href="/Styles/StarRating.css" />
+   <link rel="stylesheet" href="/Styles/tailwind.css" />
+   <link rel="stylesheet" href="/Styles/WelcomeSlider.css" />
    <!-- components -->
-   <script src="/Components/header.js" type="text/javascript" defer></script>
+   <script src="/Components/headerwithoutnav.js" type="text/javascript" defer></script>
    <script src="/Components/footer.js" type="text/javascript" defer></script>
    <script src="/Components/guestheader.js" type="text/javascript" defer></script>
-   <script src="/Components/headerwithoutnav.js" type="text/javascript" defer></script>
-
-
-
-
+   <script src="/Components/header.js" type="text/javascript" defer></script>
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+   </style>
+   <title>Yumify - Taste Home Food</title>
 </head>
 <!-- head end -->
 
@@ -128,7 +131,368 @@
       </div>
     </div> -->
 
+   <!-- tag = '';
+    tag += '<div class=" card maincardwidth" style="height: 220px;">';
+    tag += '<div class="flexcolumn">';
+    tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 180px;">';
+    tag += '<div style="width: 180px;">';
+    tag += '<img class="card-image cardimageedit" style="height: 150px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
+    tag += '</div>';
+    tag += '<div class="flexcolumn" style="width: 220px;">';
+    tag += '<div class="flexrow" style="height: auto;">';
+    tag += '<div>';
+    tag += '<p style="font-size: 18px;">' + cardItemslist[i].itemName + '</p>';
+    tag += '</div>';
+    tag += '<div>';
+    tag += '<p>' + cardItemslist[i].price + '</p>';
+    tag += '</div>';
+    tag += '</div>';
+    tag += '<div style="height: auto;">';
+    tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
+    tag += '<p style="font-size: 15px; margin-top: -18px; color:#6c6f71">' + cardItemslist[i].itemDetail + '</p>';
+    tag += '</div>';
+    tag += '</div>';
+    tag += '</div>';
+    tag += '<div class="flexcolumn" style="height: 50px;">';
+    tag += '<div>';
+    tag += '<span class="fa fa-star starcoluryello"></span>';
+    tag += '<span class="">' + cardItemslist[i].rating + '</span>';
+    tag += '</div>';
+    tag += '<div style="position: absolute; margin-right: 20px; right: 0;"> <i style="color: red;" class=" ' + icon1 + ' "></i> &nbsp <i class=" '+ icon2 +' "></i> </div>';
+    tag += '</div>';
+    tag += '</div>';
+    tag += '</div>'; -->
+
+
+    <style>
+
+      // *{
+      //   font-family: 'Fira Sans' !important;
+      // }
   
+      .nav {
+        background-color: #33D9B2;
+      }
+  
+      .imageproperties {
+         width: 20px;
+         height: 20px;
+      }
+  
+      .navbarBrand {
+        padding-top: $navbar-brand-padding-y;
+        padding-bottom: $navbar-brand-padding-y;
+        @include font-size($navbar-brand-font-size);
+        text-decoration: if($link-decoration == none, null, none);
+        white-space: nowrap;
+      }    
+  
+    </style>
+  
+    <header>
+  
+    <!-- ipad nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light nav d-none d-lg-block d-xl-none">
+      <div class="container flex">
+        <div class="container" style="padding-right: 0px !important; padding-left: 0px !important;">
+          <div class="row items-center" >
+            <div class="col-3" style="padding-top:8px; display: flex; height:40px; width:140px;">
+              <a class="navbarBrand" href="/Pages/HomePage.html">
+                <img src="/Images/YUMIFY.png" >
+              </a>
+            </div>
+  
+            <div class="col-2" style="padding:0;">
+              <a class="btn" href="/Pages/searchpage.html">
+                <img src="/Images/icons/search.svg" height="20px" width="20px">
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+              <a>
+                <li class="nav-item container-fluid">
+                  <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
+                </li>
+              </a>
+  
+              <li class="nav-item container-fluid">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/contact.html">Contact</a>
+              </li>
+  
+              <li class="nav-item container-fluid">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">AboutUs</a>
+              </li>
+  
+              <li class="nav-item container-fluid">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
+              </li>
+  
+              <li class="nav-item container-fluid" style="padding-top:10px">
+                
+                    <div class="col-3 w-5">
+                       <a href="/Images/icons/cart.svg">
+                        <img src="/Images/icons/cart.svg" height="20px" width="20px">
+                       </a>
+                    </div>
+                   
+              </li>
+  
+              <li class="nav-item container-fluid" style="padding-top:10px">
+                
+                    <div class="col-3 w-5">
+                       <a href="/Pages/Products.html">
+                        <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+                       </a>
+                    </div>
+                    
+              </li><br>
+  
+              <li class="nav-item container-fluid" style="padding-top:10px">
+                
+                    <div class="col-3 w-5 ">
+                      <a href="/Pages/LandingPage.html">
+                        <img src="/Images/icons/logout.svg" height="20px" width="20px">
+                      </a>
+                    </div>
+                    
+              </li>
+  
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ipad nav end -->
+  
+    <!-- ipad portrait and iphone landscape nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light nav d-none d-sm-none d-md-block d-lg-none">
+    <div class="container-fluid">
+  
+      <div class="container-fluid">
+        <div class="row">
+  
+          <div class="col" style="padding:0;">
+            <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <img src="/Images/icons/list.svg" height="20px" width="20px">
+            </a>
+          </div>
+  
+          <div class="col d-flex justify-content-center items-center" ">
+            <a class="navbarBrand" style="margin-right:0px !important" href="/Pages/HomePage.html">
+              <img src="/Images/YUMIFY.png" height="20px" width="100px">
+            </a>
+          </div>
+  
+          <div class="col d-flex justify-content-end" style="padding:0;">
+            <a class="btn"  style="padding-top: 5px;" href="/Pages/searchpage.html">
+              <img src="/Images/icons/search.svg" height="20px" width="20px">
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+          <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
+            <div class="row items-center">
+              <div class="col-2 imageProperties">
+                <img src="/Images/icons/house.svg" height="20px" width="20px">
+              </div>
+              <div class="col-10">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
+              </div>
+            </div>
+          </li>
+  
+  
+          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+            <div class="row items-center">
+              <div class="col-2 imageProperties">
+                <img src="/Images/icons/contact.svg" height="20px" width="20px">
+              </div>
+              <div class="col-10">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/contact.html">Contact</a>
+              </div>
+            </div>
+          </li>
+  
+          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+            <div class="row items-center">
+              <div class="col-2 imageProperties">
+                <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
+              </div>
+              <div class="col-10">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">About Us</a>
+              </div>
+            </div>
+          </li>
+  
+          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+            <div class="row items-center">
+              <div class="col-2 imageProperties">
+                <img src="/Images/icons/person.svg" height="20px" width="20px">
+              </div>
+              <div class="col-10">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
+              </div>
+            </div>
+          </li>
+  
+          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+            <div class="row items-center">
+              <div class="col-2 imageProperties">
+                <img src="/Images/icons/cart.svg" height="20px" width="20px">
+              </div>
+              <div class="col-10">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Cart.html">Cart</a>
+              </div>
+            </div>
+          </li>
+  
+          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+            <div class="row items-center">
+              <div class="col-2 imageProperties ">
+                <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+              </div>
+              <div class="col-10">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Products.html">My Products</a>
+              </div>
+            </div>
+          </li><br>
+  
+          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+            <div class="row items-center">
+              <div class="col-2 imageProperties ">
+                <img src="/Images/icons/logout.svg" height="20px" width="20px">
+              </div>
+              <div class="col-10">
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/LandingPage.html">Logout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!-- ipad portrait and iphone landscape nav end -->
+  
+   <!-- iphone nav start -->
+  <nav class="navbar navbar-expand-lg navbar-light nav d-block d-sm-none">
+    <div class="container-fluid">
+  
+      <div class="container-fluid">
+        <div class="row">
+  
+          <div class="col" style="padding:0;">
+            <a class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <img src="/Images/icons/list.svg" height="20px" width="20px">
+            </a>
+          </div>
+          <div class="col d-flex justify-content-center " style="padding-right: 0px !important; margin-top:10px;">
+             <a class="navbarBrand" style="margin-right:0px !important; " href="/Pages/HomePage.html">
+               <img src="/Images/YUMIFY.png" height="30px" width="100px">
+             </a>
+           </div>
+           <div class="col d-flex justify-content-end" style="padding:0;">
+             <a class="btn"  style="padding-top: 5px;" href="/Pages/searchpage.html">
+               <img src="/Images/icons/search.svg" height="20px" width="20px">
+             </a>
+          </div>
+       </div>
+  
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-top:20px">
+  
+           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+             <div class="row items-center">
+               <div class="col-2 imageProperties" style="vertical-align: baseline;">
+                 <img src="/Images/icons/house.svg" height="20px" width="20px">
+               </div>
+               <div class="col-10">
+                 <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/HomePage.html">Home</a>
+               </div>
+             </div>
+           </li>
+  
+  
+           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+             <div class="row items-center">
+               <div class="col-2 imageProperties">
+                 <img src="/Images/icons/contact.svg" height="20px" width="20px">
+               </div>
+               <div class="col-10">
+                 <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/contact.html">Contact</a>
+               </div>
+             </div>
+           </li>
+  
+           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+             <div class="row items-center">
+               <div class="col-2 imageProperties">
+                 <img src="/Images/icons/info-circle.svg" height="20px" width="20px">
+               </div>
+               <div class="col-10">
+                 <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Aboutus.html">About Us</a>
+               </div>
+             </div>
+           </li>
+  
+           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+             <div class="row items-center">
+               <div class="col-2 imageProperties">
+                 <img src="/Images/icons/person.svg" height="20px" width="20px">
+               </div>
+               <div class="col-10">
+                 <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/ProfilePage.html">Account</a>
+               </div>
+             </div>
+           </li>
+  
+           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+             <div class="row items-center">
+               <div class="col-2 imageProperties">
+                 <img src="/Images/icons/cart.svg" height="20px" width="20px">
+               </div>
+               <div class="col-10">
+                 <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/Cart.html">Cart</a>
+               </div>
+             </div>
+           </li>
+  
+           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+             <div class="row items-center">
+               <div class="col-2 imageProperties ">
+                 <img src="/Images/icons/bag-plus.svg" height="20px" width="20px">
+               </div>
+               <div class="col-10">
+                 <a class="nav-link active" aria-current="page" href="/Pages/Products.html">My Products</a>
+               </div>
+             </div>
+           </li><br>
+           <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
+             <div class="row items-center">
+               <div class="col-2 imageProperties " style=" vertical-align: text-bottom;">
+                 <img src="/Images/icons/logout.svg" height="20px" width="20px"  >
+               </div>
+               <div class="col-10">
+                 <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="/Pages/LandingPage.html">Logout</a>
+               </div>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+  </header>
 
    <!-- <footer-component></footer-component> -->
 </body>

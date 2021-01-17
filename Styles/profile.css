@@ -29,22 +29,22 @@
 
 .pointsCard{
   background-color:#FAFAFA;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 10px;
 }
 
 .pointCard{
   background-color:#ffffff;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 10px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=profile.css.map */

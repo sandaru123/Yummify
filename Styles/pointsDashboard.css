@@ -4,8 +4,8 @@
    .pointCard{
       background-color: #ffffff;
       border: 1px solid #33D9B2;
-      padding-left: 35px;
-      padding-right: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
       margin-left: 150px;
@@ -37,6 +37,10 @@
       margin-left: 150px;
       margin-right: 150px;
       border-radius: 10px;
+    }
+
+    .topPart{
+      margin-bottom: 30px;
     }
 
     /* yummy points card center css */
@@ -96,8 +100,8 @@
    .pointCard{
       background-color: #ffffff;
       border: 1px solid #33D9B2;
-      padding-left: 35px;
-      padding-right: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
       margin-left: 250px;
@@ -129,6 +133,10 @@
       margin-left: 250px;
       margin-right: 250px;
       border-radius: 10px;
+    }
+
+    .topPart{
+      margin-bottom: 30px;
     }
 
     /* yummy points card center css */
@@ -187,8 +195,8 @@
    .pointCard{
       background-color: #ffffff;
       border: 1px solid #33D9B2;
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
       margin-left: 150px;
@@ -221,6 +229,11 @@
       margin-right: 150px;
       border-radius: 10px;
     }
+
+    .topPart{
+      margin-bottom: 30px;
+    }
+
 
     /* yummy points card center css */
     .ScorecardPoints{
@@ -331,6 +344,7 @@
        width:50%;
     }
 
+   
 /* badges big div */
 .bigDiv{
    display: block;
