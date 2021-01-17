@@ -62,64 +62,76 @@
 <body>
     <!-- Start of Payment -->
     <div data-role="page" id="payment">
-        <div class="headers" data-role="header">
-            <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span
-                    style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
-            </h1>
-        </div><!-- /header -->
-        <div style="height: 47px; background: #33D9B2;">
-            <i class=""></i><span>Payment</span>
+        <header-component></header-component>
+
+        <!-- nav bar with back button start -->
+        <div class="flex container-fluid d-sm-none"
+          style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
+          <a class="flex" href="Cart.html" style="text-decoration: none; color: black">
+            <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
+          </a>
+          <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">Payment</p>
         </div>
+      <!-- nav bar with back button end -->
+
         <div class="summaryDiv_payment">
             <div class="padding35_payment">
-                <h2>Summary</h2>
+                <p style="font-size:18px; color: #33D9B2;">Summary</p>
                 <table style="width:100%">
-                    <tr>
-                        <td>Subtotal</td>
-                        <td style="text-align: right;" id="subtotal_payment">3000</td>
+                    <tr >
+                        <td style="font-size:13px; color: white;"></td>
+                        <td style="text-align: right; font-size:13px; color: white;" id="subtotal_payment">Amount</td>
                     </tr>
-                    <tr>
-                        <td>Promos</td>
-                        <td style="text-align: right;" id="promos_payment">200</td>
+                    <tr >
+                        <td style="font-size:13px; color: white;">Subtotal</td>
+                        <td style="text-align: right; font-size:13px; color: #33D9B2;" id="subtotal_payment">$3000</td>
                     </tr>
-                    <tr>
-                        <td>Point discount</td>
-                        <td style="text-align: right;" id="point_discount_payment">400</td>
+                    <tr  >
+                        <td style="font-size:13px; color: white;">Promos</td>
+                        <td style="text-align: right; font-size:13px; color: #33D9B2;" id="promos_payment">$200</td>
                     </tr>
-                    <tr>
-                        <td>Delivery charges</td>
-                        <td style="text-align: right;">35</td>
+                    <tr  >
+                        <td style="font-size:13px; color: white;">Point discount</td>
+                        <td style="text-align: right; font-size:13px; color: #33D9B2;" id="point_discount_payment">$400</td>
+                    </tr>
+                    <tr >
+                        <td style="font-size:13px; color: white;">Delivery charges</td>
+                        <td style="text-align: right; font-size:13px; color: #33D9B2;">$35</td>
                     </tr>
                 </table>
             </div>
-            <div style="background-color:#252525; height: 58px;">
-                <div class="padding35LeftandRight_payment">
-                    <table style="width:100%">
-                        <tr>
-                            <td>Total</td>
-                            <td style="text-align: right;" id="payment_total">3000</td>
+            <div style="background-color:#252525; height: 50px;">
+                <div class="padding35LeftandRight_payment mt-5">
+                    <table style="width:100%" >
+                        <tr class="items-center" >
+                            <td class="pt-2 pb-3" style="font-size:15px; color: white;">Total Amount</td>
+                            <td class="pt-2 pb-3" style="text-align: right; font-size:24px; color: #33D9B2;" id="payment_total">$3000</td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content paymentForm">
             <div>
                 <h5>Payment options</h5>
                 <div style="display: inline-flex; width: 100%;">
                     <button class="ui-btn ui-corner-all ui-shadow paymentOption_Card debitCredit_payment"
-                        style="margin-right: 1%;">Debit/Credit</button>
+                        style="margin-right: 1%; font-size:15px;">Debit/Credit</button>
                     <button class="ui-btn ui-corner-all ui-shadow paymentOption_Card cash_payment"
-                        style="margin-right: 1%;">Cash</button>
-                    <button class="ui-btn ui-corner-all ui-shadow paymentOption_Card paypal_payment"
-                        style="margin-right: 1%;">Paypal</button>
+                        style="margin-right: 1%; font-size:15px;">Cash</button>
+                    <a href="../Pages/paymentgateaway.html">
+                        <button class="ui-btn ui-corner-all ui-shadow paymentOption_Card paypal_payment"
+                        style="margin-right: 1%; font-size:15px;">Paypal</button>
+                    </a>
                 </div>
                 <h5 class="paymentDetailsH">Payment details</h5>
                 <div class="ui-grid-b ui-responsive paymentDetails">
                     <div class="ui-block-a" style="margin-right: 1%;"><input type="text" name="cardName_payment"
                             id="cardName_payment" value="" placeholder="Name on card"></div>
-                    <div class="ui-block-b" style="margin-right: 1%;"><input type="text" name="cardNumber_payment"
-                            id="cardNumber_payment" value="" placeholder="Card number"></div>
+                    <div class="ui-block-b items-center" style="margin-right: 1%;"><input type="text" name="cardNumber_payment"
+                            id="cardNumber_payment" value="" placeholder="Card number">
+                       
+                        </div>
                     <div class="ui-block-c">
                         <div class="ui-block-a" id="fieldTo40" style="width: 55%;"> <input type="text"
                                 name="expDate_payment" id="expDate_payment" value="" placeholder="Expiry date(YY/MM)">
@@ -146,7 +158,7 @@
                             <table style="width:100%">
                                 <tr>
                                     <td>Total Available Points</td>
-                                    <td style="text-align: right;">1250</td>
+                                    <td style="text-align: right; color:#33D9B2; font-weight: bold;;">1250 <span style="color:black; font-weight: 400;">Points</span></td>
                                 </tr>
                                 <tr>
                                     <td>Use Points</td>
@@ -178,19 +190,21 @@
 
             </div>
         </div><!-- /content -->
-
-
+        <div class="mt-5">
+            <footer-component></footer-component>
+        </div>
     </div><!-- /page -->
 
     <!-- Start of Payment -->
     <div data-role="page" id="paymentSummury">
-        <div class="headers" data-role="header">
-            <h1 style="font-family: 'Sonsie One', cursive;"><span>YUM</span><span
-                    style="color: #33D9B2;text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;">IFY</span>
-            </h1>
-        </div><!-- /header -->
-        <div style="height: 47px; background: #33D9B2;">
-            <i class=""></i><span>Payment</span>
+        <header-component></header-component>
+
+        <div class="flex container-fluid d-sm-none"
+          style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
+          <a class="flex" href="Payment.html" style="text-decoration: none; color: black">
+            <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
+          </a>
+          <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">Payment Confirmation</p>
         </div>
         <div class="summaryDiv_payment">
             <div class="padding35_payment">
@@ -266,6 +280,9 @@
             </div>
         </div><!-- /content -->
 
+        <div class="mt-5">
+            <footer-component></footer-component>
+        </div>
 
     </div><!-- /page -->
 

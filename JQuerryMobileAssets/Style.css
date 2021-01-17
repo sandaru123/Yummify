@@ -206,7 +206,7 @@ h3 {
 
 .add_to_bill_payment {
   width: 65%;
-  background-color: #e8e6e6;
+  background-color: #FAFAFA;
   margin-top: 40px;
   display: block;
   margin-left: auto;
@@ -215,6 +215,7 @@ h3 {
   height: auto;
   padding-bottom: 1%;
   margin-bottom: 7%;
+  border-radius: 10px;
 }
 
 .add_to_bill_cart {
@@ -360,6 +361,11 @@ h3 {
     margin-left: 150px;
     margin-right: 150px;
   }
+
+  .paymentForm{
+    margin-left: 45px;
+    margin-right: 45px;
+  }
 }
 /* iPhone portrait */
 @media (orientation: portrait) and (max-device-width: 414px) {
@@ -477,6 +483,11 @@ h3 {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  .paymentForm{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 /* ipad landscape */
@@ -561,6 +572,11 @@ h3 {
     margin-left: 100px;
     margin-right: 100px;
   }
+
+  .paymentForm{
+    margin-left: 45px;
+    margin-right: 45px;
+  }
 }
 /* ipad portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -640,5 +656,10 @@ h3 {
   .addProductsForm{
     margin-left: 150px;
     margin-right: 150px;
+  }
+
+  .paymentForm{
+    margin-left: 45px;
+    margin-right: 45px;
   }
 } /* ipad portrait */
