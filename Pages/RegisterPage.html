@@ -25,7 +25,8 @@
    
       <meta name="viewport"
          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-   
+
+      <link rel="stylesheet" href="/Styles/tailwind.css"/>
       <link rel="stylesheet" href="/JQuerryMobileAssets/Style.css" />
       <link rel="stylesheet" href="/JQuerryMobileAssets/Card.css" />
       <link rel="stylesheet" href="/Styles/index.css" />
@@ -40,7 +41,6 @@
       <link rel="stylesheet" href="/Styles/LandingPage.css"/>
       <link rel="stylesheet" href="/Styles/spalshscreen.css"/>
       <link rel="stylesheet" href="/Styles/StarRating.css"/>
-      <link rel="stylesheet" href="/Styles/tailwind.css"/>
       <link rel="stylesheet" href="/Styles/WelcomeSlider.css"/>
    
       <!-- components -->
@@ -60,30 +60,29 @@
      
       <headerwithoutnav-component></headerwithoutnav-component>
       <!-- nav bar with back button start -->
-      <div class="container-fluid d-block d-sm-none d-md-none" style="background-color: #33D9B2; padding-top: 5px;">
-         <div class="row">
-               <div class="col-1">
-                  <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px">
-               </div>
-               <div class="col-10">
-                  <h5 style="font-weight: bold; font-size:18px; padding-top: 5px;">Sign Up</h5>
-               </div>
+      <div class="container-fluid d-block d-sm-none" style="background-color: #33D9B2; padding-top: 10px;">
+         <div class="flex container-fluid d-sm-none"
+            style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
+            <a class="flex" href="/Pages/LandingPage.html" style="text-decoration: none; color: black">
+            <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
+            </a>
+            <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">Register</p>
          </div>
       </div>
       <!-- nav bar with back button end -->
       <div class="loginLogo">
          <img src="/Images/YUMIFY.png" height="40px" width="200px">
       </div>
-      <div role="main" class="ui-content">
+      <div role="main" class="ui-content marginMain">
          <input type="text" name="NameSignup" id="NameSignup" value="" placeholder="Name" class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
          <input type="email" name="emailSignup" id="emailSignup" value="" placeholder="Email" class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
          <input type="password" name="passwordSignup" id="passwordSignup" value="" autocomplete="off" placeholder="Password" class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
          <input type="password" name="con_passwordSignup" id="con_passwordSignup" value="" autocomplete="off" placeholder="Confirm Password" class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
 
       <a href="/Pages/RegisterPage.html" class="ui-btn ui-corner-all"
-      style="text-align:center; padding-left: 25px; padding-right:25px; font-size:14px; margin-bottom: 20px; margin-top:20px; width: 100%; height: 20%; color: black; background-color:#33D9B2;">Register</a>
+      style="font-family: 'Fira Sans'; text-align:center; padding-left: 25px; padding-right:25px; font-size:14px; margin-bottom: 20px; margin-top:20px; width: 100%; height: 20%; color: black; background-color:#33D9B2;">Register</a>
       <a href="/Pages/LoginPage.html" class="ui-btn ui-corner-all"
-         style="text-align:center; border: solid 2px #33D9B2; color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Sign in</a>
+         style="font-family: 'Fira Sans'; text-align:center; border: solid 2px #33D9B2; color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Sign in</a>
       </div><!-- /content -->
 
 

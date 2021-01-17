@@ -9,6 +9,15 @@ class HeaderWithoutNav extends HTMLElement {
      .nav {
        background-color: #33D9B2;
      }
+
+     .navbarBrand {
+      padding-top: $navbar-brand-padding-y;
+      padding-bottom: $navbar-brand-padding-y;
+      @include font-size($navbar-brand-font-size);
+      text-decoration: if($link-decoration == none, null, none);
+      white-space: nowrap;
+    }   
+
    </style>
 
    <header>
@@ -20,8 +29,8 @@ class HeaderWithoutNav extends HTMLElement {
 
          <div class="container ">
            <div class="row">
-             <div class="col-2 d-flex justify-content-end">
-               <a class="navbar-brand" href="#">
+             <div class="col d-flex justify-content-center">
+               <a class="navbarBrand" href="#">
                  <img src="/Images/YUMIFY.png" height="20px" width="100px">
                </a>
              </div>
@@ -41,7 +50,7 @@ class HeaderWithoutNav extends HTMLElement {
           <div class="row">
 
             <div class="col d-flex justify-content-center" style="padding-top:5px;">
-            <a class="navbar-brand" href="#">
+            <a class="navbarBrand" href="#">
             <img src="/Images/YUMIFY.png" height="20px" width="100px">
               </a>
             </div>
@@ -60,7 +69,7 @@ class HeaderWithoutNav extends HTMLElement {
            <div class="row">
 
              <div class="col d-flex justify-content-center">
-               <a class="navbar-brand" href="#">
+               <a class="navbarBrand" href="#">
                  <img src="/Images/YUMIFY.png" height="20px" width="100px">
                </a>
              </div>
