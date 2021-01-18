@@ -100,7 +100,7 @@ function createCards(sortValue) {
 			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: black;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
 
 		} else {
-			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor'+i+'" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i onclick="addtocart(' + i + ')" class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor'+i+'" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i id="openpopupstepper" onclick="addtocart(' + i + ')" class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
 		}
 
 		tag += '</div>';
@@ -220,8 +220,13 @@ $("#opendropwown").on('click', function () {
 	modal.style.display = "block";
 })
 
-//binding array details to the details page
 
+$(".closestrepperbutton").on('click', function () {
+	var modal = document.getElementById("productssteppermodel");
+	modal.style.display = "none";
+})
+
+//binding array details to the details page
 function gotoDetailsPage(index) {
 	indexInt= parseInt(index,10);
 	window.location.href = "ProductDetails.html";
@@ -230,7 +235,3 @@ function gotoDetailsPage(index) {
 	
 	mapDetailsPage();
 }
-
-
-
-

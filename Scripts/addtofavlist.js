@@ -27,6 +27,13 @@ function inifavlocalhost(addfavitemid) {
 
 function addtocart(addcartitemid) {
 
+    //$('#productssteppermodel').modal('show');
+
+    $('#productssteppermodel').attr('style' , 'display : block');
+
+    // var streppermodal = document.getElementById("productssteppermodel");
+	// streppermodal.style.display = "block";
+
     var id = addcartitemid;
     var idInt = parseInt(id,10);
     //Find index of specific object using findIndex method.    
@@ -42,7 +49,5 @@ function addtocart(addcartitemid) {
     var cardItemslist121 = JSON.parse(localStorage.getItem("cardsDetails_Local"));
 
     console.log(cardItemslist121)
-
-    alert("Added to Cart!!");
 
 }
