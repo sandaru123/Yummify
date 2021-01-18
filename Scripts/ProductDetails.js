@@ -37,8 +37,6 @@ window.onclick = function (event) {
 
 $(document).ready(function () {
 
-<<<<<<< Updated upstream
-=======
         ratingPopupButton.onclick = function () {
            modal.style.display = "block";
         }
@@ -52,7 +50,6 @@ $(document).ready(function () {
             modal.style.display = "none";
           }
         }
->>>>>>> Stashed changes
 });
 
 
