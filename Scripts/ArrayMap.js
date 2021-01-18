@@ -30,3 +30,36 @@ var cardItemslist = JSON.parse(localStorage.getItem("cardsDetails_Local"));
 var total_price = 100;
 
 localStorage.setItem("total_price_local", JSON.stringify(total_price));
+
+
+
+
+//Gamification
+var total_points = 100;
+localStorage.setItem("total_points_local", JSON.stringify(total_points));
+var yummyPoints = JSON.parse(localStorage.getItem("total_points_local"));
+//from favorites
+for(i = 0; i < cardItemslist1.length; i++){
+	if(cardItemslist1[i].faviorite == 1){
+			yummyPoints = yummyPoints + 50;
+			console.log('from fav :'+yummyPoints)
+	} 
+}
+
+//from cart
+for(i = 0; i < cardItemslist1.length; i++){
+	if(cardItemslist1[i].cart == 1){
+			yummyPoints = yummyPoints + 50;
+			console.log('from cart :'+yummyPoints)
+	} 
+}
+
+//from rating
+for(i = 0; i < cardItemslist1.length; i++){
+	if(cardItemslist1[i].personalrating >0 ){
+			yummyPoints = yummyPoints + 2*cardItemslist1[i].personalrating;
+			console.log('from pr :'+yummyPoints)
+	} 
+}
+
+

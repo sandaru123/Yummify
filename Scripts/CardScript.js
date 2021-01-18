@@ -68,8 +68,8 @@ function createCards(sortValue) {
 		}
 
 		tag = '';
-		tag += '<div class=" card maincardwidth" style="height: 200px;">';
-		tag += '<div class="flexcolumn">';
+		tag += '<div class=" card maincardwidth" id="'+i+'" style="height: 200px; >';
+		tag += '<div class="flexcolumn" onclick="gotoDetailsPage('+i+')">';
 		tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
 		tag += '<div style="width: 180px; height:160px;">';
 		tag += '<img class="card-image cardimageedit" style="height: 140px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
@@ -122,13 +122,30 @@ function createCards(sortValue) {
 			an interface that is lined like a table.
 		*/
 
-		if (i < (cardItemslist.length / 3)) {
+		// if (i < (cardItemslist.length / 3)) {
+		// 	exampleBlockA.append(tag);
+		// } else if (i < ((cardItemslist.length / 3) * 2)) {
+		// 	exampleBlockB.append(tag);
+		// } else if (i <= ((cardItemslist.length / 3) * 3)) {
+		// 	exampleBlockC.append(tag);
+		// }
+
+		var col_number = j/3;
+
+		//find decimal
+		var decimal = col_number - Math.floor(col_number);
+
+   	    var fixed_colNumber = decimal.toFixed(2);
+    	console.log('decimal fix: '+fixed_colNumber);
+		//append
+		if(fixed_colNumber == 0.33){
 			exampleBlockA.append(tag);
-		} else if (i < ((cardItemslist.length / 3) * 2)) {
+		}else if(fixed_colNumber < 0.7 && fixed_colNumber >0.6){
 			exampleBlockB.append(tag);
-		} else if (i <= ((cardItemslist.length / 3) * 3)) {
+		}else if(fixed_colNumber == 0.00){
 			exampleBlockC.append(tag);
 		}
+    j++;
 
 		// add a press effect to the card
 		pressEffectCard('card' + i);
@@ -202,3 +219,18 @@ $("#opendropwown").on('click', function () {
 	var modal = document.getElementById("myModal");
 	modal.style.display = "block";
 })
+
+//binding array details to the details page
+
+function gotoDetailsPage(index) {
+	indexInt= parseInt(index,10);
+	window.location.href = "ProductDetails.html";
+	//Product Details mapping perameter
+	localStorage.setItem("map_local", JSON.stringify(indexInt));
+	
+	mapDetailsPage();
+}
+
+
+
+
