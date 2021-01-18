@@ -57,7 +57,7 @@ class Header extends HTMLElement {
 
             <a>
               <li class="nav-item container-fluid">
-                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+                <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page"  onclick=" gotoHomeonclick()">Home</a>
               </li>
             </a>
 
@@ -125,7 +125,7 @@ class Header extends HTMLElement {
         </div>
 
         <div class="col d-flex justify-content-center items-center" ">
-          <a class="navbarBrand" style="margin-right:0px !important" href="HomePage.html">
+          <a class="navbarBrand" style="margin-right:0px !important"  onclick=" gotoHomeonclick()">
             <img src="../Images/YUMIFY.png" height="20px" width="100px">
           </a>
         </div>
@@ -147,7 +147,7 @@ class Header extends HTMLElement {
               <img src="../Images/icons/house.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page"  onclick=" gotoHomeonclick()" >Home</a>
             </div>
           </div>
         </li>
@@ -192,7 +192,7 @@ class Header extends HTMLElement {
               <img src="../Images/icons/cart.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Cart.html">Cart</a>
+              <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" onclick="gotoCartonclick()">Cart</a>
             </div>
           </div>
         </li>
@@ -259,7 +259,7 @@ class Header extends HTMLElement {
                <img src="../Images/icons/house.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" onclick=" gotoHomeonclick()">Home</a>
              </div>
            </div>
          </li>
@@ -304,7 +304,7 @@ class Header extends HTMLElement {
                <img src="../Images/icons/cart.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Cart.html">Cart</a>
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" onclick="gotoCartonclick()">Cart</a>
              </div>
            </div>
          </li>
@@ -340,3 +340,10 @@ class Header extends HTMLElement {
 }
 
 customElements.define("header-component", Header);
+
+function gotoCartonclick() {
+  window.location.href = "Cart.html";
+}
+function gotoHomeonclick() {
+  window.location.href = "HomePage.html";
+}

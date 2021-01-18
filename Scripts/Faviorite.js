@@ -34,8 +34,8 @@ function createFaviriteCards(sortValue) {
       
       tag = '';
       tag += '<div class=" card maincardwidth favoriteCardsDiv" style="height: 200px;">';
-      tag += '<div class="flexcolumn"  onclick="gotoDetailsPage('+i+')">';
-      tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
+      tag += '<div class="flexcolumn">';
+      tag += '<div onclick="gotoDetailsPage('+i+')" id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
       tag += '<div style="width: 180px; height:160px;">';
       tag += '<img class="card-image cardimageedit" style="height: 140px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
       tag += '</div>';

@@ -8,6 +8,10 @@ $(".cash_payment").click(function(){
     $(".paymentDetailsH").show();
   });
 
+  
+
+
+
   var reduced_total;
 
   $("#addToBill").click(function(){

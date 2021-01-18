@@ -31,7 +31,7 @@ function createCartCards(sortValue) {
   var pri__ = 0;
 
   for (i = 0; i < cardItemslist.length; i++) {
-    if (cardItemslist[i].cart == 1) {
+    if (cardItemslist[i].cart == 3) {
 
       pri__ = parseInt(cardItemslist[i].price, 10);
       tot_price += pri__ * 1;
