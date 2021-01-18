@@ -36,33 +36,33 @@ function createCartCards(sortValue) {
       pri__ = parseInt(cardItemslist[i].price, 10);
       tot_price += pri__ * 1;
       tag = '';
-      tag += '<div class=" card maincardwidth cart_CardsDiv" style="height: 220px;">';
+      tag += '<div class=" card maincardwidth cart_CardsDiv" style="height: 200px;">';
       tag += '<div class="flexcolumn">';
-      tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 180px;">';
-      tag += '<div style="width: 180px;">';
-      tag += '<img class="card-image cardimageedit" style="height: 150px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
+      tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
+      tag += '<div style="width: 180px; height:160px;">';
+      tag += '<img class="card-image cardimageedit" style="height: 140px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
       tag += '</div>';
-      tag += '<div class="flexcolumn" style="width: 220px;">';
+      tag += '<div class="flexcolumn" style="width: 200px;">';
       tag += '<div class="flexrow" style="height: auto;">';
       tag += '<div>';
-      tag += '<p style="font-size: 18px;">' + cardItemslist[i].itemName + '</p>';
+      tag += '<p style="font-size: 15px; font-weight: bold;">' + cardItemslist[i].itemName + '</p>';
       tag += '</div>';
       tag += '<div>';
-      tag += '<p>' + cardItemslist[i].price + '</p>';
+      tag += '<p style="font-size: 15px; font-weight: bold; color: #33D9B2;">' + cardItemslist[i].price + '</p>';
       tag += '</div>';
       tag += '</div>';
-      tag += '<div style="height: auto;">';
-      tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
-      tag += '<p style="font-size: 15px; margin-top: -18px; color:#6c6f71">' + cardItemslist[i].itemDetail + '</p>';
+      tag += '<div style="height: auto;" class="justify-content-end">';
+      tag += '<p style="font-size: 13px; margin-top: -10px; color:black;">by Janice Cheddar</p>';
+      tag += '<p style="font-size: 12px; margin-top: -18px; color:#6c6f71">' + cardItemslist[i].itemDetail + '</p>';
       tag += '</div>';
       tag += '</div>';
       tag += '</div>';
-      tag += '<div class="flexcolumn" style="height: 50px;">';
+      tag += '<div class="flexcolumn" style="height: 20px;">';
       tag += '<div>';
       tag += '<span class="fa fa-star starcoluryello"></span>';
       tag += '<span class="">' + cardItemslist[i].rating + '</span>';
       tag += '</div>';
-      tag += '<div style="display:flex; position: absolute; margin-right: 20px; right: 0;"><a onclick="inifavlocalhost(' + i + ')"><i style="color: red;"  class=" ' + cardItemslist[i].favornot + '" id="addRem_fav"></i> </a> &nbsp <a class="cartRem" id=" ' + i + ' "><i class="fa fa-trash fa-lg"></i></a>  </div>';
+      tag += '<div style="display:flex; position: absolute; margin-right: 10px; right: 0; top: 160px;"><a onclick="inifavlocalhost(' + i + ')"><i style="color: red;"  class=" ' + cardItemslist[i].favornot + ' mr-1 p-1" id="addRem_fav"></i> </a> &nbsp <a class="cartRem" id=" ' + i + ' "><i class="fa fa-shopping-cart fa-lg mr-1 p-1"></i></a>  </div>';
       tag += '</div>';
       tag += '</div>';
       tag += '</div>';
@@ -78,22 +78,85 @@ function createCartCards(sortValue) {
           This will make sure that the cards will fill white spots
           when the screen is changing orientation and/or size.
           
-          When you create new block for every card you would get
-          an interface that is lined like a table.
-      */
+          pri__= parseInt(cardItemslist[i].price,10);
+          tot_price += pri__*1;
+          tag = '';
+          tag += '<div class=" card maincardwidth cart_CardsDiv" style="height: 220px;">';
+          tag += '<div class="flexcolumn">';
+          tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 180px;">';
+          tag += '<div style="width: 180px;">';
+          tag += '<img class="card-image cardimageedit" style="height: 150px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
+          tag += '</div>';
+          tag += '<div class="flexcolumn" style="width: 220px;">';
+          tag += '<div class="flexrow" style="height: auto;">';
+          tag += '<div>';
+          tag += '<p style="font-size: 18px;">' + cardItemslist[i].itemName + '</p>';
+          tag += '</div>';
+          tag += '<div>';
+          tag += '<p>' + cardItemslist[i].price + '</p>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '<div style="height: auto;">';
+          tag += '<p style="font-size: 15px; margin-top: -10px;">by Janice Cheddar</p>';
+          tag += '<p style="font-size: 15px; margin-top: -18px; color:#6c6f71">' + cardItemslist[i].itemDetail + '</p>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '<div class="flexcolumn" style="height: 50px;">';
+          tag += '<div>';
+          tag += '<span class="fa fa-star starcoluryello"></span>';
+          tag += '<span class="">' + cardItemslist[i].rating + '</span>';
+          tag += '</div>';
+          tag += '<div style="display:flex; position: absolute; margin-right: 20px; right: 0;"><a class="favioriteI" id=" ' + i + ' "><i style="color: red;"  class=" ' + cardItemslist[i].favornot + '" id="addRem_fav"></i> </a> &nbsp <a class="cartRem" id=" ' + i + ' "><i class="fa fa-shopping-cart fa-lg"></i></a>  </div>';
+          tag += '</div>';
+          tag += '</div>';
+          tag += '</div>';
 
-      if (i < (imagename.length / 3)) {
-        exampleBlockA.append(tag);
-      } else if (i < ((imagename.length / 3) * 2)) {
-        exampleBlockB.append(tag);
-      } else if (i <= ((imagename.length / 3) * 3)) {
-        exampleBlockC.append(tag);
-      }
 
-      // add a press effect to the card
-      pressEffectCard('card' + i);
-    }
+          tot_price = tot_price+ cardItemslist[i].price;
+    
+            /*	You will need to create cards in a special order.
+                The first 1/3 of the cards are placed in block A.
+                The second 1/3 of the cards are placed in block B.
+                The last 1/3 of the cards are placed in block C.
+                
+                This will make sure that the cards will fill white spots
+                when the screen is changing orientation and/or size.
+                
+                When you create new block for every card you would get
+                an interface that is lined like a table.
+            */
+    
+            // if (i < (imagename.length / 3)) {
+            //     exampleBlockA.append(tag);
+            // } else if (i < ((imagename.length / 3) * 2)) {
+            //     exampleBlockB.append(tag);
+            // } else if (i <= ((imagename.length / 3) * 3)) {
+            //     exampleBlockC.append(tag);
+            // }
 
+            var col_number = j/3;
+
+            //find decimal
+            var decimal = col_number - Math.floor(col_number);
+
+            var fixed_colNumber = decimal.toFixed(2);
+            console.log('decimal fix: '+fixed_colNumber);
+            //append
+            if(fixed_colNumber == 0.33){
+              exampleBlockA.append(tag);
+            }else if(fixed_colNumber < 0.7 && fixed_colNumber >0.6){
+              exampleBlockB.append(tag);
+            }else if(fixed_colNumber == 0.00){
+              exampleBlockC.append(tag);
+            }
+            j++;
+    
+            // add a press effect to the card
+            pressEffectCard('card' + i);
+            }
+
+		
   }
 
   localStorage.setItem("total_price_local", JSON.stringify(tot_price / 2));

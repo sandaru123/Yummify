@@ -1,5 +1,4 @@
 var cardItemslist = JSON.parse(localStorage.getItem("cardsDetails_Local"));
-
 console.log(cardItemslist);
 
 // function to create the cards
@@ -32,7 +31,7 @@ function createFaviriteCards(sortValue) {
   for (i = 0; i < cardItemslist.length; i++) {
 
     if (cardItemslist[i].faviorite == 1) {
-
+      
       tag = '';
       tag += '<div class=" card maincardwidth favoriteCardsDiv" style="height: 200px;">';
       tag += '<div class="flexcolumn">';
@@ -77,14 +76,31 @@ function createFaviriteCards(sortValue) {
           an interface that is lined like a table.
       */
 
-      if (i < (imagename.length / 3)) {
-        exampleBlockA.append(tag);
-      } else if (i < ((imagename.length / 3) * 2)) {
-        exampleBlockB.append(tag);
-      } else if (i <= ((imagename.length / 3) * 3)) {
-        exampleBlockC.append(tag);
-      }
+      // if (i < (imagename.length / 3)) {
+      //   exampleBlockA.append(tag);
+      // } else if (i < ((imagename.length / 3) * 2)) {
+      //   exampleBlockB.append(tag);
+      // } else if (i <= ((imagename.length / 3) * 3)) {
+      //   exampleBlockC.append(tag);
+      // }
 
+      
+		var col_number = j/3;
+
+		//find decimal
+		var decimal = col_number - Math.floor(col_number);
+
+    var fixed_colNumber = decimal.toFixed(2);
+    console.log('decimal fix: '+fixed_colNumber);
+		//append
+		if(fixed_colNumber == 0.33){
+			exampleBlockA.append(tag);
+		}else if(fixed_colNumber < 0.7 && fixed_colNumber >0.6){
+			exampleBlockB.append(tag);
+		}else if(fixed_colNumber == 0.00){
+			exampleBlockC.append(tag);
+		}
+    j++;
       // add a press effect to the card
       pressEffectCard('card' + i);
     }
@@ -141,7 +157,7 @@ $(document).on("click", ".favioriteI", function () {
   localStorage.setItem("cardsDetails_Local", JSON.stringify(cardItemslist));
   var cardItemslist121 = JSON.parse(localStorage.getItem("cardsDetails_Local"));
 
-  console.log(cardItemslist121)
+  //console.log(cardItemslist121)
 
   $("div .favoriteCardsDiv").remove();
   createFaviriteCards("Nme");
