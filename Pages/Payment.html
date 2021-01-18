@@ -65,9 +65,9 @@
         <header-component></header-component>
 
         <!-- nav bar with back button start -->
-        <div class="flex container-fluid d-sm-none"
+        <div onclick="history.back();" class="flex container-fluid d-sm-none"
           style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
-          <a class="flex" href="Cart.html" style="text-decoration: none; color: black">
+          <a class="flex"  style="text-decoration: none; color: black">
             <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
           </a>
           <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">Payment</p>
@@ -305,6 +305,8 @@
             }
         });
     });
+
+    history.back();
 </script>
 
 </html>

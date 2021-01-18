@@ -66,9 +66,9 @@
     <!-- nav bar with back button start -->
     <div class="grid grid-cols-1 ">
         <div>
-          <div class="container-fluid d-block d-sm-none"
+          <div onclick="history.back();" class="container-fluid d-block d-sm-none"
             style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
-            <a class="flex" href="/index.html" style="text-decoration: none; color: black">
+            <a class="flex" style="text-decoration: none; color: black">
               <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
               <p class="normal " style="font-size: 18px; padding-left: 10px; ">Products</p>
             </a>
@@ -132,6 +132,8 @@
         function addproductsonclick() {
             window.location.href = "addproducts.html";
         }
+
+        history.back();
 
     </script>
 

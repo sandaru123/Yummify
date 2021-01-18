@@ -64,7 +64,7 @@
         
             <div class="flex container-fluid d-sm-none"
             style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
-            <a class="flex" href="/Pages/HomePage.html" style="text-decoration: none; color: black">
+            <a class="flex" onclick="history.back();" style="text-decoration: none; color: black">
                 <img src="/Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
             </a>
             <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">Add Product</p>
@@ -106,6 +106,7 @@
         function backredirect() {
             window.location.href = "myproducts.html";
         }
+        history.back();
     </script>
 
 </body>
