@@ -49,6 +49,7 @@
     <script src="../Components/guestheader.js" type="text/javascript" defer></script>
     <script src="../Components/header.js" type="text/javascript" defer></script>
     <script src="../Scripts/CardScript.js" type="text/javascript" defer></script>
+    <script src="../Scripts/addtofavlist.js" type="text/javascript" defer></script>
 
 
     <style>
@@ -109,6 +110,42 @@
         </div>
     </div>
 
+    <!-- Strepper Modal -->
+    <div id="productssteppermodel" class="modal">
+        <div class="modal-content">
+            <div class="flex justify-between mb-3">
+                <span class="closestrepperbutton">
+                    <img class="float-right"
+                        style="filter: invert(15%) sepia(100%) saturate(6065%) hue-rotate(357deg) brightness(98%) contrast(118%);"
+                        src="../Images/icons/close.svg" height="30px" width="30px">
+                </span>
+            </div>
+            <div style="text-align: center;">
+                <span>
+                    <h3>Select Quantity</h3>
+                </span>
+            </div>
+            <div>
+                <div class="flexrow">
+                    <div style="width: 30%; margin-left: 20px;" id="plusdiv"></div>
+                    <div> <input style="width: 50px;" type="text" name="item-quantity" id="itemquantity" value="3">
+                    </div>
+                    <div style="width: 30%; margin-left: 20px;" id="minousdiv"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flexrow">
+                    <div> <a href="#" class="ui-btn ui-corner-all"
+                            style="font-family: 'Fira Sans'; text-align:center; padding-left: 25px; padding-right:25px; margin-left: 20px; font-size:14px; margin-bottom: 20px; margin-top:20px; width: 100%; color: black; background-color:#33D9B2;">Cancel</a>
+                    </div>
+                    <div> <a onclick="alertbox()" href="#" class="ui-btn ui-corner-all"
+                            style="font-family: 'Fira Sans'; text-align:center; border: solid 2px #33D9B2; margin-left: 25px; color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; margin-top: 20px;">Set</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Content -->
     <div role="main" style="margin-bottom: 80px;" class="ui-content">
         <div id="appentcard" class="ui-grid-b ui-responsive">
@@ -124,7 +161,32 @@
 
         $(function () {
             createCards("Default");
+            $("#plusdiv").append('<i style="padding: 15px;" val="1" onclick="incbtnclick()" class="inc buttoninc fa fa-plus"></i>');
+            $("#minousdiv").append('<i style="padding: 15px;" onclick="incbtnclick()" class="dec buttoninc fa fa-minus"></i>');
         })
+
+        function incbtnclick() {
+            var $button = $(".buttoninc");
+            var oldValue = $("#itemquantity").val();
+            if (!$button.val() == 1) {
+                var newVal = parseFloat(oldValue) + 1;
+            } else {
+                // Don't allow decrementing below zero
+                if (oldValue > 0) {
+                    var newVal = parseFloat(oldValue) - 1;
+                } else {
+                    newVal = 0;
+                }
+            }
+            $("#itemquantity").val(newVal);
+        }
+
+        function alertbox() {
+            alert("Added to Cart!!");
+
+            var modal = document.getElementById("productssteppermodel");
+            modal.style.display = "none";
+        }
 
         function backredirect() {
             window.location.href = "HomePage.html";
@@ -135,4 +197,5 @@
 
 </body>
 <!-- body end -->
+
 </html>

@@ -100,7 +100,7 @@ function createCards(sortValue) {
 			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
 
 		} else {
-			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor'+i+'" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i onclick="addtocart(' + i + ')" class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor'+i+'" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i id="openpopupstepper" onclick="addtocart(' + i + ')" class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
 		}
 
 		tag += '</div>';
@@ -201,4 +201,10 @@ $(".closebutton").on('click', function () {
 $("#opendropwown").on('click', function () {
 	var modal = document.getElementById("myModal");
 	modal.style.display = "block";
+})
+
+
+$(".closestrepperbutton").on('click', function () {
+	var modal = document.getElementById("productssteppermodel");
+	modal.style.display = "none";
 })

@@ -62,7 +62,7 @@ function createCartCards(sortValue) {
       tag += '<span class="fa fa-star starcoluryello"></span>';
       tag += '<span class="">' + cardItemslist[i].rating + '</span>';
       tag += '</div>';
-      tag += '<div style="display:flex; position: absolute; margin-right: 20px; right: 0;"><a onclick="inifavlocalhost(' + i + ')"><i style="color: red;"  class=" ' + cardItemslist[i].favornot + '" id="addRem_fav"></i> </a> &nbsp <a class="cartRem" id=" ' + i + ' "><i class="fa fa-shopping-cart fa-lg"></i></a>  </div>';
+      tag += '<div style="display:flex; position: absolute; margin-right: 20px; right: 0;"><a onclick="inifavlocalhost(' + i + ')"><i style="color: red;"  class=" ' + cardItemslist[i].favornot + '" id="addRem_fav"></i> </a> &nbsp <a class="cartRem" id=" ' + i + ' "><i class="fa fa-trash fa-lg"></i></a>  </div>';
       tag += '</div>';
       tag += '</div>';
       tag += '</div>';
