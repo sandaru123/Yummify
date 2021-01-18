@@ -18,7 +18,8 @@
 
     <link rel="stylesheet" href="../JQuerryMobileAssets/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="../JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
+    <script src="/JQuerryMobileAssets/jquery.mobile-1.4.5.min.js"></script>
+    <script src="/Scripts/PaymentScript.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
@@ -183,11 +184,11 @@
                         <label class="agreementLabel_payment">I have read and agreed to tearms and conditions.</label>
                     </div>
                     <div>
-                        <button disabled href="" class="ui-btn ui-corner-all primary_but"
+                        <button  href="" class="ui-btn ui-corner-all primary_but"
                             style="text-align:center; padding-left: 25px; padding-right:25px; font-size:14px; margin-bottom: 40px; margin-top:20px; width: 100%; height: 20%;"
                             id="placeOrder">Place Order</button>
                     </div>
-                    <a id="summaryLink" type="hidden" href="#paymentSummury"></a>
+                    <a id="summaryLink" type="hidden" ></a>
 
                 </div>
 
@@ -323,21 +324,26 @@
 </body>
 <!-- body end -->
 <script src="/Scripts/CardScript.js"></script>
+
 <script>
     createCards();
 </script>
 <script src="JQuerryMobileAssets\Script.js"></script>
-<script src="/Scripts/PaymentScript.js"></script>
+
 <script type="text/javascript">
     $(function () {
         $("#agreeCheckbox_payment").click(function () {
-            if ($(this).is(":checked")) {
+    if ($(this).is(":checked")) {
 
-                $("#placeOrder").removeAttr('disabled')
-            } else {
-                $("#placeOrder").prop("disabled", true);
-            }
-        });
+        $("#placeOrder").removeAttr('disabled')
+    } else {
+        $("#placeOrder").prop("disabled", true);
+    }
+});
+
+$("#summaryLink").on("click",function () {
+    window.location.href="#paymentSummury";
+});
     });
 
     // modal function
@@ -345,21 +351,22 @@
     var btn = document.getElementById("myBtn");
     var span = document.getElementsByClassName("close")[0];
 
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
+    // btn.onclick = function () {
+    //     modal.style.display = "block";
+    // }
 
     span.onclick = function () {
         modal.style.display = "none";
+       // window.location.href="orderhistory.html";
     }
 
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    // window.onclick = function (event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";
+    //     }
+    // }
 
-    history.back();
+  //  history.back();
 </script>
 
 </html>
