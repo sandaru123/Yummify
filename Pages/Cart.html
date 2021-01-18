@@ -131,7 +131,7 @@
                             <span style="font-size: 16px; color: #33D9B2" id="total_price">$253.00</span>
                         </div>
                         <div>
-                            <a href="/Pages/Payment.html" class="ui-btn ui-corner-all primary_but"
+                            <a onclick="gotopaymenthtml()" href="#" class="ui-btn ui-corner-all primary_but"
                                 style="font-family: 'Fira Sans';text-align:center; padding-left: 25px; padding-right:25px; font-size:14px;width: 100%; height: 75%;">Confirm</a>
                         </div>
                     </div>
@@ -151,13 +151,17 @@
     <script src="../Scripts/Cart.js"></script>
     <script src="../Scripts/CardScript.js"></script>
     <script src="../Scripts/addtofavlist.js"></script>
-    <script src="/Scripts/PaymentScript.js"></script>
+    <script src="../Scripts/PaymentScript.js"></script>
     
 <script></script>
     <script>
         $(function () {
             createCartCards("Default");
         })
+
+        function gotopaymenthtml(){
+            window.location.href = "Payment.html"; 
+        }
 
         // function backredirect() {
         //     window.location.href = "HomePage.html";
