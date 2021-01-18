@@ -48,7 +48,7 @@ function createCartCards(sortValue) {
       tag += '<p style="font-size: 15px; font-weight: bold;">' + cardItemslist[i].itemName + '</p>';
       tag += '</div>';
       tag += '<div>';
-      tag += '<p style="font-size: 15px; font-weight: bold; color: #33D9B2;">' + cardItemslist[i].price + '$</p>';
+      tag += '<p style="font-size: 15px; font-weight: bold; color: #33D9B2;">$' + cardItemslist[i].price + '</p>';
       tag += '</div>';
       tag += '</div>';
       tag += '<div style="height: auto;" class="justify-content-end">';
