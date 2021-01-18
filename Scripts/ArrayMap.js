@@ -1,5 +1,6 @@
 var cardItemslist1 = [
 	{ owner: 'Shinen Bagayaro',Description:'Other than adding Chicken to this recipe I followed it as it was and omg !! what an amazing recipe. I served it for 4 people although it says serves 6. To be honest we would have found the portions too small had we had less',itemName: 'Chorizo & Mozzarella', itemDetail: 'Butter chicken curry or murg makhani, butter and cream sauce.', price: 55, imagesource: '../Images/burgers.jpg', rating: 4, favornot: 'fa fa-heart fa-lg',faviorite : 1 , cart:3, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg', personalrating:3},
+<<<<<<< Updated upstream
 	{ itemName: 'Italian panettone', itemDetail: 'Bake in the preheated oven for 15 minutes', price: 15, imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg',faviorite : 0, cart:3, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
 	{ itemName: 'Mayo deviled eggs', itemDetail: 'stirring halfway through the baking.', price: 11, imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart fa-lg',faviorite : 1, cart:3,editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
 	{ itemName: 'Rosemary Baked Olives', itemDetail: 'Butter chicken curry or murg makhani is a curry', price: 5, imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0, cart:2, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
@@ -7,6 +8,15 @@ var cardItemslist1 = [
 	{ itemName: 'Sonic Cherry Limeade', itemDetail: 'Tangy and sweet limeade with your choice of some favorite', price: 20, imagesource: '../Images/sonic-cherry-limeade-slush.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg',faviorite :0, cart:3, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
 	{ itemName: 'Arbys Roast Beef Sandwich', itemDetail: 'Two ingredients, roast beef and a sesame seed bun,', price: 50, imagesource: '../Images/arbys-classic-roast-beef.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg',faviorite :0, cart:3, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
 	{ itemName: 'KFC Original Recipe Chicken', itemDetail: 'Secret 11 herbs and spices and for launching ', price: 500, imagesource: '../Images/kfc-original-bucket-fried-chicken.jpg', rating: 1, favornot: 'fa fa-heart fa-lg',faviorite :1, cart:2, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
+=======
+	{ itemName: 'Italian panettone', Description:'Panettone is an Italian type of sweet bread originally from Milan, usually prepared and enjoyed for Christmas and New Year in Western, Southern, and Southeastern Europe as well as in Latin America, Eritrea, Australia, the United States and Canada.',itemDetail: 'Bake in the preheated oven for 15 minutes', price: 15, imagesource: '../Images/desserts.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg',faviorite : 0,cart:2, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg',personalrating:2 },
+	{ itemName: 'Mayo deviled eggs', Description:'Other than adding Chicken to this recipe I followed it as it was and omg !! what an amazing recipe. I served it for 4 people although it says serves 6. To be honest we would have found the portions too small had we had less',itemDetail: 'stirring halfway through the baking.', price: 11, imagesource: '../Images/drinks.jpg', rating: 3, favornot: 'fa fa-heart fa-lg',faviorite : 1, editmyitems: 'fa fa-pencil-square-o fa-lg', cart:3,deleteitem: 'fa fa-trash fa-lg',personalrating:5 },
+	{ itemName: 'Rosemary Baked Olives', Description:'Other than adding Chicken to this recipe I followed it as it was and omg !! what an amazing recipe. I served it for 4 people although it says serves 6. To be honest we would have found the portions too small had we had less',itemDetail: 'Butter chicken curry or murg makhani is a curry', price: 5, imagesource: '../Images/indian.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0, editmyitems: 'fa fa-pencil-square-o fa-lg', cart:2,deleteitem: 'fa fa-trash fa-lg',personalrating:4},
+	{ itemName: 'boeuf bourguignon', Description:'Other than adding Chicken to this recipe I followed it as it was and omg !! what an amazing recipe. I served it for 4 people although it says serves 6. To be honest we would have found the portions too small had we had less',itemDetail: 'Beef brisket, red wine, small pearl onions, bacon, tomato paste', price: 150, imagesource: '../Images/Boeuf-Bourguignon.jpg', rating: 5, favornot: 'fa fa-heart fa-lg',faviorite :1,cart:3, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' ,personalrating:3},
+	{ itemName: 'Sonic Cherry Limeade', Description:'Other than adding Chicken to this recipe I followed it as it was and omg !! what an amazing recipe. I served it for 4 people although it says serves 6. To be honest we would have found the portions too small had we had less',itemDetail: 'Tangy and sweet limeade with your choice of some favorite', price: 20, imagesource: '../Images/sonic-cherry-limeade-slush.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg',faviorite :0, cart:2,editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg',personalrating:4 },
+	{ itemName: 'Arbys Roast Beef Sandwich', Description:'Other than adding Chicken to this recipe I followed it as it was and omg !! what an amazing recipe. I served it for 4 people although it says serves 6. To be honest we would have found the portions too small had we had less',itemDetail: 'Two ingredients, roast beef and a sesame seed bun,', price: 50, imagesource: '../Images/arbys-classic-roast-beef.jpg', rating: 5, favornot: 'fa fa-heart-o fa-lg',faviorite :0,cart:3, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg',personalrating:5 },
+	{ itemName: 'KFC Original Recipe Chicken', Description:'Other than adding Chicken to this recipe I followed it as it was and omg !! what an amazing recipe. I served it for 4 people although it says serves 6. To be honest we would have found the portions too small had we had less',itemDetail: 'Secret 11 herbs and spices and for launching ', price: 500, imagesource: '../Images/kfc-original-bucket-fried-chicken.jpg', rating: 1, favornot: 'fa fa-heart fa-lg',faviorite :1, cart:2, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg',personalrating:2 },
+>>>>>>> Stashed changes
 //	{ itemName: 'Wendys Frosty', itemDetail: 'The Frosty is considered the signature dessert at Wendy,', price: 75, imagesource: '../Images/wendys-frosty-1.jpg', rating: 2, favornot: 'fa fa-heart-o fa-lg',faviorite :0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg' },
 //	{ itemName: 'MC Happy Meal', itemDetail: 'Small portions, packaging, collectible toys in One.', price: 90, imagesource: '../Images/mcdonalds-happy-meal-toys.jpg', rating: 4, favornot: 'fa fa-heart-o fa-lg',faviorite :0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg'  },
 	//{ itemName: 'Pumpkin Spice Latte', itemDetail: 'Starbucks Pumpkin Spice Latte. No other', price: 155, imagesource: '../Images/Pumpkin-Spice-Latte.jpg', rating: 3, favornot: 'fa fa-heart-o fa-lg',faviorite :0, editmyitems: 'fa fa-pencil-square-o fa-lg', deleteitem: 'fa fa-trash fa-lg'  },
@@ -37,29 +47,6 @@ localStorage.setItem("total_price_local", JSON.stringify(total_price));
 //Gamification
 var total_points = 100;
 localStorage.setItem("total_points_local", JSON.stringify(total_points));
-var yummyPoints = JSON.parse(localStorage.getItem("total_points_local"));
-//from favorites
-for(i = 0; i < cardItemslist1.length; i++){
-	if(cardItemslist1[i].faviorite == 1){
-			yummyPoints = yummyPoints + 50;
-			console.log('from fav :'+yummyPoints)
-	} 
-}
 
-//from cart
-for(i = 0; i < cardItemslist1.length; i++){
-	if(cardItemslist1[i].cart == 1){
-			yummyPoints = yummyPoints + 50;
-			console.log('from cart :'+yummyPoints)
-	} 
-}
-
-//from rating
-for(i = 0; i < cardItemslist1.length; i++){
-	if(cardItemslist1[i].personalrating >0 ){
-			yummyPoints = yummyPoints + 2*cardItemslist1[i].personalrating;
-			console.log('from pr :'+yummyPoints)
-	} 
-}
 
 

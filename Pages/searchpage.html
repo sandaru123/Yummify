@@ -115,7 +115,7 @@
    <script>
       $(function () {
          localStorage.setItem('favitems', JSON.stringify([100]));
-         createCards("Default");
+         createSearchCards("Default");
       })
 
       // function backredirect() {
@@ -125,7 +125,18 @@
    </script>
 </body>
 <!-- body end -->
-<script src="../Scripts/CardScript.js" type="text/javascript" defer></script>
+<script src="../Scripts/ArrayMap.js" type="text/javascript" defer></script>
 <script src="../Scripts/addtofavlist.js" type="text/javascript" defer></script>
 
+<script src="../Scripts/SearchPage.js" type="text/javascript" defer></script>
+<script>
+   $("#Search").keyup(function() {
+    //  var searchValue = $(this).text();
+
+     // var searchValue = $(this).text('#Search');
+
+      var searchValue = 'ita';
+      createSearchCards(searchValue); 
+         });
+</script>
 </html>
