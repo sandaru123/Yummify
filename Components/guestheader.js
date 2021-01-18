@@ -15,82 +15,65 @@ class GuestHeader extends HTMLElement {
 
      <!-- ipad nav strat -->
      <nav class="navbar navbar-expand-lg navbar-light nav d-none d-lg-block d-xl-none">
-       <div class="container-fluid">
-
-         <div class="container ">
-           <div class="row">
-             <div class="col-3 d-flex justify-content-end">
-               <a class="navbar-brand" href="HomePage.html">
-                 <img src="../Images/YUMIFY.png" height="20px" width="100px">
-               </a>
-             </div>
-
-             <div class="col-1">
-               <a class="btn" type="submit" style="padding-bottom: 5px;">
-                 <img src="../Images/icons/search.svg" height="20px" width="20px">
-               </a>
-             </div>
-
-             <div class="col-8">
-               <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                 aria-label="Toggle navigation">
-                 <img src="../Images/icons/list.svg" height="20px" width="20px">
-               </button>
-             </div>
-
-
+     <div class="container flex">
+       <div class="container" style="padding-right: 0px !important; padding-left: 0px !important;">
+         <div class="row items-center" >
+           <div class="col-3" style="padding-top:8px; display: flex; height:40px; width:140px;">
+             <a class="navbarBrand" href="HomePage.html">
+               <img src="../Images/YUMIFY.png" >
+             </a>
+           </div>
+ 
+           <div class="col-2" style="padding:0;">
+             <a href="searchpage.html">
+               <img src="../Images/icons/search.svg" height="20px" width="20px">
+             </a>
            </div>
          </div>
-
-         <div>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-               <a>
-                 <li class="nav-item container-fluid">
-                   <a class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
-                 </li>
-               </a>
-
-               <li class="nav-item container-fluid">
-                 <a class="nav-link active" aria-current="page" href="#">Contact</a>
-               </li>
-
-               <li class="nav-item container-fluid">
-                 <a class="nav-link active" aria-current="page" href="Aboutus.html">AboutUs</a>
-               </li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-               <li class="nav-item container-fluid" style="padding-top:5px">
-                 <a>
-                   <div class="row ">
-                     <div class="col-2 ">
-                       <img src="../Images/icons/signup.svg" height="20px" width="20px">
-                     </div>
-                     <div class="col-10 d-block d-sm-none">
-                       <a class="nav-link active" aria-current="page" href="RegisterPage.html">Signup</a>
-                     </div>
-                   </div>
-                 </a>
-               </li>
-
-               <li class="nav-item container-fluid" style="padding-top:5px">
-                 <a>
-                   <div class="row ">
-                     <div class="col-2 ">
-                       <img src="/Images/icons/login.svg" height="20px" width="20px">
-                     </div>
-                     <div class="col-10 d-block d-sm-none">
-                       <a class="nav-link active" aria-current="page" href="LoginPage.html">Login</a>
-                     </div>
-                   </div>
-                 </a>
-               </li>
-           </div>
-         </div>
-
        </div>
-     </nav>
+ 
+       <div>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ 
+             <a>
+               <li class="nav-item container-fluid">
+                 <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+               </li>
+             </a>
+ 
+             <li class="nav-item container-fluid">
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+             </li>
+ 
+             <li class="nav-item container-fluid">
+               <a style="font-family: 'Fira Sans' !important;" class="nav-link active" aria-current="page" href="Aboutus.html">AboutUs</a>
+             </li>
+  
+             <li class="nav-item container-fluid" style="padding-top:10px">
+               
+                   <div class="col-3 w-5">
+                      <a href="RegisterPage.html">
+                       <img src="../Images/icons/signup.svg" height="20px" width="20px">
+                      </a>
+                   </div>
+                   
+             </li><br>
+ 
+             <li class="nav-item container-fluid" style="padding-top:10px">
+               
+                   <div class="col-3 w-5 ">
+                     <a href="LoginPage.html">
+                       <img src="../Images/icons/login.svg" height="20px" width="20px">
+                     </a>
+                   </div>
+                   
+             </li>
+ 
+         </div>
+       </div>
+     </div>
+   </nav>
      <!-- ipad landscape nav end -->
 
      <!-- ipad portrait nav start -->
@@ -131,7 +114,7 @@ class GuestHeader extends HTMLElement {
                   <img src="../Images/icons/house.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10" >
-                  <a class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
+                  <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="HomePage.html">Home</a>
                 </div>
               </div>
             </li>
@@ -143,7 +126,7 @@ class GuestHeader extends HTMLElement {
                   <img src="../Images/icons/contact.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
-                  <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                  <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="#">Contact</a>
                 </div>
               </div>
             </li>
@@ -154,7 +137,7 @@ class GuestHeader extends HTMLElement {
                   <img src="../Images/icons/info-circle.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
-                  <a class="nav-link active" aria-current="page" href="Aboutus.html">About Us</a>
+                  <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="Aboutus.html">About Us</a>
                 </div>
               </div>
             </li><br><br>
@@ -165,7 +148,7 @@ class GuestHeader extends HTMLElement {
                   <img src="../Images/icons/signup.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
-                  <a class="nav-link active" aria-current="page" href="RegisterPage.html">Signup</a>
+                  <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="RegisterPage.html">Signup</a>
                 </div>
               </div>
             </li>
@@ -176,7 +159,7 @@ class GuestHeader extends HTMLElement {
                   <img src="../Images/icons/login.svg" height="20px" width="20px">
                 </div>
                 <div class="col-10">
-                  <a class="nav-link active" aria-current="page" href="LoginPage.html">Login</a>
+                  <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="LoginPage.html">Login</a>
                 </div>
               </div>
             </li>
@@ -224,7 +207,7 @@ class GuestHeader extends HTMLElement {
                    <img src="../Images/icons/house.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                   <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="../index.html">Home</a>
                  </div>
                </div>
              </li>
@@ -236,7 +219,7 @@ class GuestHeader extends HTMLElement {
                    <img src="../Images/icons/contact.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                   <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="#">Contact</a>
                  </div>
                </div>
              </li>
@@ -247,7 +230,7 @@ class GuestHeader extends HTMLElement {
                    <img src="../Images/icons/info-circle.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="Aboutus.html">About Us</a>
+                   <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="Aboutus.html">About Us</a>
                  </div>
                </div>
              </li><br><br>
@@ -258,7 +241,7 @@ class GuestHeader extends HTMLElement {
                    <img src="../Images/icons/signup.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="RegisterPage.html">Signup</a>
+                   <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="RegisterPage.html">Signup</a>
                  </div>
                </div>
              </li>
@@ -269,7 +252,7 @@ class GuestHeader extends HTMLElement {
                    <img src="../Images/icons/login.svg" height="20px" width="20px">
                  </div>
                  <div class="col-10">
-                   <a class="nav-link active" aria-current="page" href="LoginPage.html">Login</a>
+                   <a style="font-family: 'Fira Sans';" class="nav-link active" aria-current="page" href="LoginPage.html">Login</a>
                  </div>
                </div>
              </li>

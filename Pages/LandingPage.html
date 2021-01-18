@@ -74,10 +74,12 @@
          <a href="/Pages/LoginPage.html" class="ui-btn ui-corner-all"
             style="font-family: 'Fira Sans'; text-align:center; border: solid 2px #33D9B2; background-color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Sign
             in</a>
-         <a href="" class="ui-btn ui-corner-all"
+         <div onclick=" backredirect()">
+            <a class="ui-btn ui-corner-all"
             style="font-family: 'Fira Sans'; text-align:center; color: #33D9B2; border: solid 2px #33D9B2; background-color: white; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Browse
             as a Guest</a>
 
+         </div>
       </div>
 
       <!-- iphone landscape -->
@@ -88,9 +90,11 @@
          <a href="/Pages/LoginPage.html" class="ui-btn ui-corner-all"
             style="font-family: 'Fira Sans';  text-align:center; border: solid 2px #33D9B2; background-color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Sign
             in</a>
-         <a href="" class="ui-btn ui-corner-all"
+         <div onclick=" backredirect()">
+            <a class="ui-btn ui-corner-all"
             style="font-family: 'Fira Sans'; text-align:center; color: #33D9B2; border: solid 2px #33D9B2; background-color: white; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Browse
             as a Guest</a>
+         </div>
 
       </div>
 
@@ -102,9 +106,11 @@
          <a href="/Pages/LoginPage.html" class="ui-btn ui-corner-all"
             style="font-family: 'Fira Sans';  text-align:center; border: solid 2px #33D9B2; background-color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 3rem;">Sign
             in</a>
-         <a href="" class="ui-btn ui-corner-all"
+         <div onclick=" backredirect()">
+            <a class="ui-btn ui-corner-all"
             style="font-family: 'Fira Sans';  text-align:center; color: #33D9B2; border: solid 2px #33D9B2; background-color: white; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 3rem;">Browse
             as a Guest</a>
+         </div>
 
       </div>
 
@@ -116,14 +122,20 @@
          <a href="/Pages/LoginPage.html" class="ui-btn ui-corner-all"
             style="font-family: 'Fira Sans';  text-align:center; border: solid 2px #33D9B2; background-color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 3rem;">Sign
             in</a>
-            <a href="" class="ui-btn ui-corner-all"
+           <div onclick=" backredirect()">
+            <a class="ui-btn ui-corner-all"
             style="font-family: 'Fira Sans';  text-align:center; color: #33D9B2; border: solid 2px #33D9B2; background-color: white; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 3rem;">Browse
             as a Guest</a>
+           </div>
 
 
       </div>
 
 
 </body>
-
+   <script>
+      function backredirect() {
+            window.location.href = "GuestHome.html";
+        }
+   </script>
 </html>
