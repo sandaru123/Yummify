@@ -1,13 +1,23 @@
-
+var modal = document.getElementById("RatingModalDetails");
+var btn = document.getElementById("ratingPopupButton");
+var span = document.getElementsByClassName("close")[0];
 
 $(document).ready(function () {
 
-    // Attach Button click event listener 
-   $("#ratingPopupButton").click(function(){
 
-        // show Modal
-        $('#RatingModalDetails').modal('show');
-   });
+     btn.onclick = function () {
+          modal.style.display = "block";
+        }
+ 
+        span.onclick = function () {
+          modal.style.display = "none";
+        }
+ 
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
 });
 
 
@@ -20,9 +30,4 @@ function mapDetailsPage() {
 	$('#price_details').html('$'+cardItemslist[indexInt].price);
 	$('#owner_detail').html(cardItemslist[indexInt].owner);
 	$('#description_details').html(cardItemslist[indexInt].description);
-
-	
 }
-
-
-
