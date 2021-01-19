@@ -59,7 +59,7 @@ function createFaviriteCards(sortValue) {
       tag += '<span class="fa fa-star starcoluryello"></span>';
       tag += '<span class="">' + cardItemslist[i].rating + '</span>';
       tag += '</div>';
-      tag += '<div style="display:flex; position: absolute; margin-right: 10px; right: 0; top: 160px;"><a class="favioriteI" id=" ' + i + ' "><i style="color: black;"  class="fa fa-trash-o fa-lg mr-3 p-1"></i> </a> &nbsp <a onclick="addtocart(' + i + ')" class="cartFavorite"><i class="fa fa-pencil fa-lg mr-1 p-1"></i></a>  </div>';
+      tag += '<div style="display:flex; position: absolute; margin-right: 10px; right: 0; top: 160px;"><a class="favioriteI" id=" ' + i + ' "><i style="color: black;"  class="fa fa-trash-o fa-lg mr-3 p-1"></i> </a> &nbsp <a onclick="addtocart(' + i + ')" class="cartFavorite"><i class="fa fa-cart-plus fa-lg mr-1 p-1"></i></a>  </div>';
       tag += '</div>';
       tag += '</div>';
       tag += '</div>';

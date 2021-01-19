@@ -64,7 +64,7 @@ function createCards(sortValue) {
 		}
 
 		if (pagename == 'Products.html' || pagename == 'searchpage.html') {
-			icon2 = 'fa fa-shopping-cart fa-lg';
+			icon2 = 'fa fa-cart-plus fa-lg';
 		} else if (pagename == 'myproducts.html') {
 			icon2 = cardItemslist[i].editmyitems;
 		}
@@ -98,12 +98,12 @@ function createCards(sortValue) {
 		tag += '<span class="">' + cardItemslist[i].rating + '</span>';
 		tag += '</div>';
 		tag += '<div>';
-		if (!pagename == 'myproducts.html') {
+		if (pagename != 'myproducts.html') {
 
-			tag += '<div style=" margin-right: 10px; right: 0px; top: 160px;"> <i style="color: black;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + '  "></i> </div>';
+			tag += '<div style=" margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i style="color: black;" class=" ' + icon2 + '  "></i> </div>';
 
 		} else {
-			tag += '<div style=" margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor' + i + '" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i id="openpopupstepper" onclick="addtocart(' + i + ')" class=" ' + icon2 + '  "></i> </div>';
+			tag += '<div style=" margin-right: 10px; right: 0px; top: 160px;"> <i style="color: black;" id="changebtncolor' + i + '" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i style="color: black;" id="openpopupstepper" onclick="addtocart(' + i + ')" class=" ' + icon2 + '  "></i> </div>';
 		}
 		tag += '</div>';
 		tag += '</div>';

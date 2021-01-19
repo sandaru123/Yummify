@@ -65,7 +65,7 @@ function createSearchCards(searchValue) {
 		}
 
 		if (pagename == 'Products.html' || pagename == 'searchpage.html') {
-			icon2 = 'fa fa-shopping-cart fa-lg';
+			icon2 = 'fa fa-cart-plus fa-lg';
 		} else if (pagename == 'myproducts.html') {
 			icon2 = cardItemslist[i].editmyitems;
 		}
@@ -93,18 +93,23 @@ function createSearchCards(searchValue) {
 		tag += '</div>';
 		tag += '</div>';
 		tag += '<div class="flexcolumn" style="height: 20px;">';
+		tag += '<div class="flex items-center justify-between mb-2">';
 		tag += '<div>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
+		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
 		tag += '<span class="">' + cardItemslist[i].rating + '</span>';
 		tag += '</div>';
+		tag += '<div>';
 
 		if (!pagename == 'myproducts.html') {
 
-			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: black;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+			tag += '<div style="margin-right: 10px; right: 0px; top: 160px;"> <i style="color: black;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' "></i> </div>';
 
 		} else {
-			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor'+i+'" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i onclick="addtocart(' + i + ')" class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+			tag += '<div style="margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor'+i+'" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i onclick="addtocart(' + i + ')" class=" ' + icon2 + ' "></i> </div>';
 		}
+
+		tag += '</div>';
+		tag += '</div>';
 
 		tag += '</div>';
 		tag += '</div>';

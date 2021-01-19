@@ -138,16 +138,16 @@
                         <div class="mt-2">
                            <a href="tel:94796523140">
                               <img src="../Images/icons/telephone-fill.svg" height="20px" width="20px"
-                                 style="filter: invert(76%) sepia(76%) saturate(440%) hue-rotate(101deg) brightness(92%) contrast(84%);">
+                                 style="filter: invert(0%) sepia(3%) saturate(0%) hue-rotate(66deg) brightness(91%) contrast(101%);">
                            </a>
                         </div>
                      </div>
 
                      <div class="flex">
-                        <a class="mr-8" id="qRpopupButton">
+                        <a class="mr-8" id="qRButton" onclick="document.getElementById('QRModal').style.display='block'">
                            <img src="../Images/icons/QR.svg" height="40px" width="40px">
                         </a>
-                        <a class="ml-2" id="ratingPopupButton">
+                        <a class="ml-2" id="ratingPopupButton" onclick="document.getElementById('RatingModalDetails').style.display='block'">
                            <img src="../Images/icons/rateBtn.svg" height="60px" width="60px">
                         </a>
                      </div>
@@ -168,9 +168,9 @@
          <div class="modal-content ">
             <div class="flex justify-between items-center">
                <h4 class="modal-title" id="myModalLabel">Rate the Product</h4>
-               <img
+               <img onclick="document.getElementById('RatingModalDetails').style.display='none'"
                   style="filter: invert(12%) sepia(82%) saturate(7088%) hue-rotate(358deg) brightness(101%) contrast(112%);"
-                  class="close" id="closeBtn" src="../Images/icons/close.svg" height="30px" width="30px">
+                  id="closeBtn" src="../Images/icons/close.svg" height="30px" width="30px">
             </div>
             <div class="mt-3 mb-3">
                <section class='rating-widget'>
@@ -241,7 +241,7 @@
                               <img src="../Images/QR.png" height="150px" width="150px">
                            </div>
 
-                           <button class="close2 mt-5" style="color:#33D9B2">Cancel</button>
+                           <button onclick="document.getElementById('QRModal').style.display='none'" class="mt-5" style="color:#33D9B2">Cancel</button>
                         </div>
                      </section>
                   </div>

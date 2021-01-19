@@ -86,7 +86,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid" style="padding-top:10px">
               
                   <div class="col-3 w-5">
-                     <a href="Products.html">
+                     <a href="myproducts.html">
                       <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
                      </a>
                   </div>
@@ -204,7 +204,7 @@ class Header extends HTMLElement {
               <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
             </div>
             <div class="col-10">
-              <a style="font-family: 'Fira Sans' !important; font-weight:bold ;" class="nav-link active" aria-current="page" href="Products.html">My Products</a>
+              <a style="font-family: 'Fira Sans' !important; font-weight:bold ;" class="nav-link active" aria-current="page" href="myproducts.html">My Products</a>
             </div>
           </div>
         </li><br>
@@ -316,7 +316,7 @@ class Header extends HTMLElement {
                <img src="../Images/icons/bag-plus.svg" height="20px" width="20px">
              </div>
              <div class="col-10">
-               <a style="font-family: 'Fira Sans' !important; font-weight:bold ;" class="nav-link active" aria-current="page" href="Products.html">My Products</a>
+               <a style="font-family: 'Fira Sans' !important; font-weight:bold ;" class="nav-link active" aria-current="page" href="myproducts.html">My Products</a>
              </div>
            </div>
          </li><br>

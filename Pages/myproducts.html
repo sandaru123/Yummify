@@ -75,20 +75,20 @@
           </div>
     <!-- nav bar with back button end -->
 
-    <div style="margin-bottom: -40px;" class="ui-content">
+    <div  class="ui-content" style="padding-bottom: 0px !important;">
         <div class="ui-grid-b ui-responsive flexcolumn" style="padding: 10px;">
             <div>
                 <div style="float: right;">
                     <p id="opendropwown" style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i
-                            class="fa fa-filter"></i> </p>
+                            class="fa fa-filter fa-lg"></i> </p>
                 </div>
             </div>
-            <div class="flexrow">
-                <div style="margin-left: 10px;">
+            <div class="flexrow flex items-center justify-between mt-2">
+                <div >
                     <h5 class="forntwaightbold">Bakery</h5>
                 </div>
                 <div onclick="addproductsonclick()"
-                    style="position: absolute; margin-right: 30px; right: 0; margin-top: 6px;">
+                    style="">
                     <i class="fa fa-plus-circle fa-lg"></i>
                 </div>
 
@@ -125,15 +125,13 @@
             createCards("Default");
         })
 
-        function backredirect() {
-            window.location.href = "HomePage.html";
-        }
+        // function backredirect() {
+        //     window.location.href = "HomePage.html";
+        // }
 
         function addproductsonclick() {
             window.location.href = "addproducts.html";
         }
-
-        history.back();
 
     </script>
 
