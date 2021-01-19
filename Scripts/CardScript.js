@@ -63,9 +63,11 @@ function createCards(sortValue) {
 
 		if (pagename == 'Products.html' || pagename == 'searchpage.html') {
 			icon2 = 'fa fa-shopping-cart fa-lg';
-		} else if (pagename == 'myproducts.html') {
+		} else if (pagename == 'Cart.html') {
+			icon2 = 'fa fa-trash-o fa-lg';
+		} 	else if (pagename == 'myproducts.html') {
 			icon2 = cardItemslist[i].editmyitems;
-		}
+		} 
 
 		tag = '';
 		tag += '<div class=" card maincardwidth" id="'+i+'" style="height: 200px; >';

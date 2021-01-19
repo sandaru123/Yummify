@@ -77,16 +77,16 @@
 
     <div style="margin-bottom: -40px;" class="ui-content">
         <div class="ui-grid-b ui-responsive flexcolumn" style="padding: 10px;">
-            <div>
+            <div class="mb-3">
                 <div style="float: right;">
-                    <p style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i class="fa fa-filter"></i> </p>
+                    <p style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i class="fa fa-filter fa-lg"></i> </p>
                 </div>
             </div>
-            <div class="flexrow">
+            <div class="flexrow items-center mb-3 justify-between">
                 <div style="margin-left: 10px;">
-                    <h5 class="forntwaightbold">Favorites</h5>
+                    <h5 class="bold" style="font-size:20px">Favourites</h5>
                 </div>
-                <div id="opendropwown" style="position: absolute; margin-right: 30px; right: 0; margin-top: 6px;">
+                <div id="opendropwown">
                     <i class="fa fa-share-alt fa-lg"></i>
                 </div>
             </div>
@@ -96,12 +96,15 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="closebutton">&times;</span>
-            <input type="email" name="email" id="emailaddressfav" value="" placeholder="Enter Email to Share"
-                class="text_box" style="border: none; font-size:14px; padding-left: 15px;">
+            <div class="flex justify-between items-center mb-3">
+                <p class="bold ml-2" style="font-size:15px">Send Favourites</p>
+                <img style="filter: invert(12%) sepia(82%) saturate(7088%) hue-rotate(358deg) brightness(101%) contrast(112%);"class="closebutton" src="../Images/icons/close.svg" height="20px" width="20px">
+               </div>
+            <input type="email" name="email" id="emailaddressfav" data-role="none" value="" placeholder="Enter Email to Share"
+                class="text_box" style="border: 2px solid #33D9B2; border-radius: 10px; font-size:14px; padding-left: 15px;">
             <p id="emailalertbox" style="color: red;"></p>
-            <a href="#" onclick="emaifavlist()" class="ui-btn ui-corner-all"
-                style="text-align:center; padding-left: 25px; padding-right:25px; font-size:14px; margin-bottom: 20px; margin-top:20px; width: 100%; height: 20%; color: black; background-color:#33D9B2;">Email
+            <a href="#" onclick="emaifavlist()" class="ui-btn"
+                style="font-family: 'Fira Sans'; text-align:center; padding-left: 25px; border-radius: 10px;padding-right:25px; font-size:14px; margin-bottom: 20px; margin-top:20px; width: 100%; height: 20%; color: black; background-color:#33D9B2;">Email
                 List</a>
         </div>
     </div>

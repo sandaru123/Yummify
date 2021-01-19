@@ -37,14 +37,14 @@ class Header extends HTMLElement {
     <div class="container flex">
       <div class="container" style="padding-right: 0px !important; padding-left: 0px !important;">
         <div class="row items-center" >
-          <div class="col-3" style="padding-top:8px; display: flex; height:40px; width:140px;">
-            <a class="navbarBrand" href="HomePage.html">
+          <div  onclick=" gotoHomeonclick()" class="col-3" style="padding-top:8px; display: flex; height:40px; width:140px;">
+            <a class="navbarBrand" href="">
               <img src="../Images/YUMIFY.png" >
             </a>
           </div>
 
-          <div class="col-2" style="padding:0;">
-            <a href="searchpage.html">
+          <div onclick="gotoSearchonclick()" class="col-2" style="padding:0;">
+            <a href="">
               <img src="../Images/icons/search.svg" height="20px" width="20px">
             </a>
           </div>
@@ -110,6 +110,7 @@ class Header extends HTMLElement {
   <!-- ipad nav end -->
 
   <!-- ipad portrait and iphone landscape nav start -->
+
   <nav class="navbar navbar-expand-lg navbar-light nav d-none d-sm-none d-md-block d-lg-none">
   <div class="container-fluid">
 
@@ -130,8 +131,8 @@ class Header extends HTMLElement {
           </a>
         </div>
 
-        <div class="col d-flex justify-content-end" style="padding:0;">
-          <a style="padding-top: 5px;" href="searchpage.html">
+        <div onclick="gotoSearchonclick()" class="col d-flex justify-content-end" style="padding:0;">
+          <a style="padding-top: 5px;" href="">
             <img src="../Images/icons/search.svg" height="20px" width="20px">
           </a>
         </div>
@@ -238,13 +239,13 @@ class Header extends HTMLElement {
             <img src="../Images/icons/list.svg" height="20px" width="20px">
           </a>
         </div>
-        <div class="col d-flex justify-content-center " style="padding-right: 0px !important; margin-top:10px;">
-           <a class="navbarBrand" style="margin-right:0px !important; " href="HomePage.html">
+        <div onclick=" gotoHomeonclick()" class="col d-flex justify-content-center " style="padding-right: 0px !important; margin-top:10px;">
+           <a class="navbarBrand" style="margin-right:0px !important; " href="">
              <img src="../Images/YUMIFY.png" height="30px" width="100px">
            </a>
          </div>
-         <div class="col d-flex justify-content-end" style="padding:0;">
-           <a style="padding-top: 5px;" href="searchpage.html">
+         <div onclick=" gotoSearchonclick()" class="col d-flex justify-content-end" style="padding:0;">
+           <a style="padding-top: 5px;" href="">
              <img src="../Images/icons/search.svg" height="20px" width="20px">
            </a>
         </div>
@@ -344,6 +345,11 @@ customElements.define("header-component", Header);
 function gotoCartonclick() {
   window.location.href = "Cart.html";
 }
+
+function gotoSearchonclick() {
+  window.location.href = "searchpage.html";
+}
+
 function gotoHomeonclick() {
   window.location.href = "HomePage.html";
 }
