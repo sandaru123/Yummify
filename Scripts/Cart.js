@@ -58,11 +58,15 @@ function createCartCards(sortValue) {
       tag += '</div>';
       tag += '</div>';
       tag += '<div class="flexcolumn" style="height: 20px;">';
+      tag += '<div class="flex items-center justify-between pb-2">';
       tag += '<div>';
-      tag += '<span class="fa fa-star starcoluryello"></span>';
+      tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
       tag += '<span class="">' + cardItemslist[i].rating + '</span>';
       tag += '</div>';
-      tag += '<div style="display:flex; position: absolute; margin-right: 10px; right: 0; top: 160px;"><a onclick="inifavlocalhost(' + i + ')"><i style="color: red;"  class=" ' + cardItemslist[i].favornot + ' mr-1 p-1" id="addRem_fav"></i> </a> &nbsp <a class="cartRem" id=" ' + i + ' "><i class="fa fa-shopping-cart fa-lg mr-1 p-1"></i></a>  </div>';
+      tag += '<div>';
+      tag += '<div style=" margin-right: 10px; right: 0; top: 160px;"><a onclick="inifavlocalhost(' + i + ')"><i style="color: red;"  class=" ' + cardItemslist[i].favornot + ' mr-1 p-1" id="addRem_fav"></i> </a> &nbsp <a class="cartRem" id=" ' + i + ' "><i class="fa fa-trash-o fa-lg "></i></a>  </div>';
+      tag += '</div>';
+      tag += '</div>';
       tag += '</div>';
       tag += '</div>';
       tag += '</div>';

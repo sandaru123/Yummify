@@ -22,13 +22,15 @@ function createCards(sortValue) {
 
 	if (sortValue == "Name") {
 		cardItemslist.sort(function (a, b) {
-			var a1 = a.itemName.toString(), b1 = b.itemName.toString();
+			var a1 = a.itemName.toString(),
+				b1 = b.itemName.toString();
 			if (a1 == b1) return 0;
 			return a1 > b1 ? 1 : -1;
 		});
 	} else if (sortValue == "Price") {
 		cardItemslist.sort(function (a, b) {
-			var a1 = a.price, b1 = b.price;
+			var a1 = a.price,
+				b1 = b.price;
 			if (a1 == b1) return 0;
 			return a1 > b1 ? 1 : -1;
 		});
@@ -50,29 +52,27 @@ function createCards(sortValue) {
 		var pagename = document.location.href.match(/[^\/]+$/)[0]
 
 		if (pagename == 'Products.html' || pagename == 'searchpage.html') {
-			
-			if(cardItemslist[i].faviorite == 1){
+
+			if (cardItemslist[i].faviorite == 1) {
 				icon1 = 'fa fa-heart fa-lg';
-			}else{
+			} else {
 				icon1 = 'fa fa-heart-o fa-lg';
 			}
-			
+
 		} else if (pagename == 'myproducts.html') {
 			icon1 = cardItemslist[i].deleteitem;
 		}
 
 		if (pagename == 'Products.html' || pagename == 'searchpage.html') {
 			icon2 = 'fa fa-shopping-cart fa-lg';
-		} else if (pagename == 'Cart.html') {
-			icon2 = 'fa fa-trash-o fa-lg';
-		} 	else if (pagename == 'myproducts.html') {
+		} else if (pagename == 'myproducts.html') {
 			icon2 = cardItemslist[i].editmyitems;
-		} 
+		}
 
 		tag = '';
-		tag += '<div class=" card maincardwidth" id="'+i+'" style="height: 200px; >';
+		tag += '<div class=" card maincardwidth" id="' + i + '" style="height: 200px; >';
 		tag += '<div class="flexcolumn" ">';
-		tag += '<div onclick="gotoDetailsPage('+i+')" id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
+		tag += '<div onclick="gotoDetailsPage(' + i + ')" id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
 		tag += '<div style="width: 180px; height:160px;">';
 		tag += '<img class="card-image cardimageedit" style="height: 140px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
 		tag += '</div>';
@@ -92,18 +92,21 @@ function createCards(sortValue) {
 		tag += '</div>';
 		tag += '</div>';
 		tag += '<div class="flexcolumn" style="height: 20px;">';
+		tag += '<div class="flex items-center justify-between mb-2">';
 		tag += '<div>';
-		tag += '<span class="fa fa-star starcoluryello"></span>';
+		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
 		tag += '<span class="">' + cardItemslist[i].rating + '</span>';
 		tag += '</div>';
-
+		tag += '<div>';
 		if (!pagename == 'myproducts.html') {
 
-			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: black;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+			tag += '<div style=" margin-right: 10px; right: 0px; top: 160px;"> <i style="color: black;" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i class=" ' + icon2 + '  "></i> </div>';
 
 		} else {
-			tag += '<div style="position: absolute; margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor'+i+'" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i id="openpopupstepper" onclick="addtocart(' + i + ')" class=" ' + icon2 + ' mr-1 p-1"></i> </div>';
+			tag += '<div style=" margin-right: 10px; right: 0px; top: 160px;"> <i style="color: red;" id="changebtncolor' + i + '" onclick="inifavlocalhost(' + i + ')" class=" ' + icon1 + ' mr-1 p-1"></i> &nbsp <i id="openpopupstepper" onclick="addtocart(' + i + ')" class=" ' + icon2 + '  "></i> </div>';
 		}
+		tag += '</div>';
+		tag += '</div>';
 
 		tag += '</div>';
 		tag += '</div>';
@@ -132,22 +135,22 @@ function createCards(sortValue) {
 		// 	exampleBlockC.append(tag);
 		// }
 
-		var col_number = j/3;
+		var col_number = j / 3;
 
 		//find decimal
 		var decimal = col_number - Math.floor(col_number);
 
-   	    var fixed_colNumber = decimal.toFixed(2);
-    	console.log('decimal fix: '+fixed_colNumber);
+		var fixed_colNumber = decimal.toFixed(2);
+		console.log('decimal fix: ' + fixed_colNumber);
 		//append
-		if(fixed_colNumber == 0.33){
+		if (fixed_colNumber == 0.33) {
 			exampleBlockA.append(tag);
-		}else if(fixed_colNumber < 0.7 && fixed_colNumber >0.6){
+		} else if (fixed_colNumber < 0.7 && fixed_colNumber > 0.6) {
 			exampleBlockB.append(tag);
-		}else if(fixed_colNumber == 0.00){
+		} else if (fixed_colNumber == 0.00) {
 			exampleBlockC.append(tag);
 		}
-    j++;
+		j++;
 
 		// add a press effect to the card
 		pressEffectCard('card' + i);
@@ -230,10 +233,10 @@ $(".closestrepperbutton").on('click', function () {
 
 //binding array details to the details page
 function gotoDetailsPage(index) {
-	indexInt= parseInt(index,10);
+	indexInt = parseInt(index, 10);
 	window.location.href = "ProductDetails.html";
 	//Product Details mapping perameter
 	localStorage.setItem("map_local", JSON.stringify(indexInt));
-	
+
 	mapDetailsPage();
 }
