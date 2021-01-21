@@ -21,11 +21,15 @@ window.onclick = function (event) {
 $(document).ready(function () {
 
         ratingPopupButton.onclick = function () {
-           modal.style.display = "block";
+          rateModal.style.display = "block";
         }
  
-        closeBtn.onclick = function () {
-          modal.style.display = "none";
+        // closeBtn.onclick = function () {
+        //   modal.style.display = "none";
+        // }
+      
+        closeBtnRate.onclick = function () {
+          rateModal.style.display = "none";
         }
  
         window.onclick = function (event) {
@@ -34,6 +38,9 @@ $(document).ready(function () {
           }
         }
 });
+
+
+
 
 
 function mapDetailsPage() {

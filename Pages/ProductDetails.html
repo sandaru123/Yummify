@@ -155,8 +155,23 @@
 
                </div>
             </div>
+            <div style="width: auto;height: 1.3px; background-color: #40A78F; margin: 3% auto;"></div>
+               <div class="items-center userRatingRecordDiv" style="border-width: thin;border-color: #B1B1AA;border-radius: 3px; display: none;">
+                  <div class="block items-center fontSize12_14" style="background-color:#DADADA; width: 100%; padding: 1% 1% 1% 2%">
+                     <div class='flex items-center fontSize12_14' style="background-color:#DADADA; width: 100%; padding: 1% 1% 1% 2%">
+                        <span style="font-weight:bold"><i class='fa fa-user-o fa-fw' style="font-weight:bold"></i>User Name</span>
+                        <span> <i class='fa fa-star fa-fw'></i><span class="userRate">4</span></span><span style="position: absolute;right: 10%;">now</span>
+                     </div>
+                     <span style="text-align: center; margin:2% auto 2% 10%;" class="userComment">Looks Yummy..</span>
+                  </div>
+               
+          </div>
          </div>
+         
+
       </div>
+
+      
       <!-- /content -->
 
       <div class="mt-10">
@@ -170,7 +185,7 @@
                <h4 class="modal-title" id="myModalLabel">Rate the Product</h4>
                <img onclick="document.getElementById('RatingModalDetails').style.display='none'"
                   style="filter: invert(12%) sepia(82%) saturate(7088%) hue-rotate(358deg) brightness(101%) contrast(112%);"
-                  id="closeBtn" src="../Images/icons/close.svg" height="30px" width="30px">
+                  id="closeBtnRate" src="../Images/icons/close.svg" height="30px" width="30px">
             </div>
             <div class="mt-3 mb-3">
                <section class='rating-widget'>
@@ -209,7 +224,7 @@
                               <div class='text-message'></div>
                            </div>
                            <div>
-                              <textarea class="" placeholder="Comment"
+                              <textarea class="getComment" placeholder="Comment"
                                  style="border: none; font-size:14px; padding-left: 15px; margin-bottom: 20px;"></textarea>
                            </div>
                            <button id="ratingSubmit">Submit</button>
