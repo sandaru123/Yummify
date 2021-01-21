@@ -36,7 +36,7 @@ function createCartCards(sortValue) {
       pri__ = parseInt(cardItemslist[i].price, 10);
       tot_price += pri__ * 1;
       tag = '';
-      tag += '<div class=" card maincardwidth cart_CardsDiv" style="height: 200px;">';
+      tag += '<div class=" card maincardwidth cart_CardsDiv" style="height: 210px;">';
       tag += '<div class="flexcolumn">';
       tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
       tag += '<div style="width: 180px; height:160px;">';
