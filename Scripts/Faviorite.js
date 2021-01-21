@@ -33,7 +33,7 @@ function createFaviriteCards(sortValue) {
     if (cardItemslist[i].faviorite == 1) {
       
       tag = '';
-      tag += '<div class=" card maincardwidth favoriteCardsDiv" style="height: 200px;">';
+      tag += '<div class=" card maincardwidth favoriteCardsDiv" style="height: 210px;">';
       tag += '<div class="flexcolumn">';
       tag += '<div onclick="gotoDetailsPage('+i+')" id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
       tag += '<div style="width: 180px; height:160px;">';
@@ -55,7 +55,7 @@ function createFaviriteCards(sortValue) {
       tag += '</div>';
       tag += '</div>';
       tag += '<div class="flexcolumn" style="height: 20px;">';
-      tag += '<div>';
+      tag += '<div class="pb-2">';
       tag += '<span class="fa fa-star starcoluryello"></span>';
       tag += '<span class="">' + cardItemslist[i].rating + '</span>';
       tag += '</div>';
