@@ -94,7 +94,7 @@ function createCards(sortValue) {
 		tag += '<div class="flexcolumn" style="height: 20px;">';
 		tag += '<div class="flex items-center justify-between pb-2">';
 		tag += '<div>';
-		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
+		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>&nbsp';
 		tag += '<span class="">' + cardItemslist[i].rating + '</span>';
 		tag += '</div>';
 		tag += '<div>';

@@ -71,7 +71,7 @@ function createSearchCards(searchValue) {
 		}
 
 		tag = '';
-		tag += '<div class=" card maincardwidth" id="'+i+'" style="height: 200px; >';
+		tag += '<div class=" card maincardwidth" id="'+i+'" style="height: 210px; >';
 		tag += '<div class="flexcolumn" onclick="gotoDetailsPage('+i+')">';
 		tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
 		tag += '<div style="width: 180px; height:160px;">';
@@ -83,7 +83,7 @@ function createSearchCards(searchValue) {
 		tag += '<p style="font-size: 15px; font-weight: bold;">' + cardItemslist[i].itemName + '</p>';
 		tag += '</div>';
 		tag += '<div>';
-		tag += '<p style="font-size: 15px; font-weight: bold; color: #33D9B2;">' + cardItemslist[i].price + '</p>';
+		tag += '<p style="font-size: 15px; font-weight: bold; color: #33D9B2;">$' + cardItemslist[i].price + '</p>';
 		tag += '</div>';
 		tag += '</div>';
 		tag += '<div style="height: auto;" class="justify-content-end">';
@@ -95,7 +95,7 @@ function createSearchCards(searchValue) {
 		tag += '<div class="flexcolumn" style="height: 20px;">';
 		tag += '<div class="flex items-center justify-between mb-2">';
 		tag += '<div>';
-		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>';
+		tag += '<span class="fa fa-star fa-lg starcoluryello"></span>&nbsp';
 		tag += '<span class="">' + cardItemslist[i].rating + '</span>';
 		tag += '</div>';
 		tag += '<div>';
