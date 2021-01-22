@@ -76,7 +76,7 @@ class Header extends HTMLElement {
             <li class="nav-item container-fluid" style="padding-top:10px">
               
                   <div class="col-3 w-5">
-                     <a href="../Images/icons/cart.svg">
+                     <a href="Cart.html">
                       <img src="../Images/icons/cart.svg" height="20px" width="20px">
                      </a>
                   </div>
