@@ -49,7 +49,13 @@
     <script src="../Components/guestheader.js" type="text/javascript" defer></script>
     <script src="../Components/header.js" type="text/javascript" defer></script>
    
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
@@ -66,9 +72,9 @@
 
     <!-- nav bar with back button start -->
     <div class="container-fluid d-block d-sm-none" style="background-color: #33D9B2; padding-bottom: 10px;">
-        <div class="flex container-fluid d-sm-none"
+        <div onclick="history.back();" class="flex container-fluid d-sm-none"
             style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
-            <a class="flex"  style="text-decoration: none; color: black">
+            <a class="flex" style="text-decoration: none; color: black">
                 <img src="../Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
             </a>
             <p class="normal" style="font-size: 18px; padding-left: 10px; font-weight: 500;">Products</p>
@@ -76,14 +82,14 @@
     </div>
     <!-- nav bar with back button end -->
 
-    <div style="margin-bottom: -40px;" class="ui-content">
+    <div style="margin-bottom: -20px;" class="ui-content">
         <div class="ui-grid-b ui-responsive flexrow items-center" style="padding: 10px;">
             <div style="margin-left: 10px;">
                 <h5 class="forntwaightbold">Products</h5>
             </div>
             <div style="position: absolute; margin-right: 30px; right: 0; ">
                 <p id="opendropwown" style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i
-                        class="fa fa-filter"></i> </p>
+                        class="fa fa-filter fa-lg"></i> </p>
             </div>
         </div>
     </div>

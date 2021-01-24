@@ -49,9 +49,27 @@ $(document).ready(function(){
       
     });
     
-    $("#ratingSubmit").on("click",function(){
-        $('#commentSection').append("<div class='item'><p>" + ratingValue.toString() + " stars.</p></div>");
-       })
+
+       $('#ratingSubmit').on('click', function(){
+
+        if(ratingValue!=0){
+          $('#commentSection').append("<div class='item'><p>" + ratingValue.toString() + " stars.</p></div>");
+          $('.userRate').html(ratingValue.toString());
+
+          var indexInt = JSON.parse(localStorage.getItem("map_local"));
+          var cardItemslist = JSON.parse(localStorage.getItem("cardsDetails_Local"));
+          cardItemslist[indexInt].personalrating = ratingValue;
+
+          localStorage.setItem("cardsDetails_Local", JSON.stringify(cardItemslist));
+
+          var com = $('.getComment').val();
+          $('.userComment').html(com);
+          $('.userRatingRecordDiv').show();
+         rateModal.style.display = "none";
+        }else{
+          responseMessageError('Cannot Submit Without Rate');
+        }
+      })
     
 });
   
@@ -59,6 +77,11 @@ $(document).ready(function(){
   function responseMessage(msg) {
     $('.success-box').fadeIn(200);  
     $('.success-box div.text-message').html("<span>" + msg + "</span>");
+  }
+
+  function responseMessageError(msg) {
+    $('.success-box').fadeIn(200);  
+    $('.success-box div.text-message').html("<span style='color:red'>" + msg + "</span>");
   }
 
 

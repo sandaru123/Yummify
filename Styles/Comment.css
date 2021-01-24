@@ -1,0 +1,32 @@
+.replyDivMain{
+    margin:2% auto 2% 10%;
+}
+
+.replyDiv{
+    border-width: thin;
+    border-color: #B1B1AA;
+    border-radius: 5px;
+}
+
+.replyDiv3{
+    background-color:#FAFAFA; 
+    width: 100%; 
+    padding: 1% 1% 1% 1%
+}
+
+.iconSpan{
+    font-weight:bold; font-size: 15px;
+}
+
+.iconI{
+    font-weight:bold;
+     filter: invert(46%) sepia(8%) saturate(10%) hue-rotate(338deg) brightness(94%) contrast(84%);
+}
+
+.dateSpan{
+    position: absolute;right: 10%; font-size: 13px;
+}
+
+.commentSpan{
+    text-align: center; margin:2% auto 2% 10%; font-size: 13px;
+}

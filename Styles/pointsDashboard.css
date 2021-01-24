@@ -1,7 +1,7 @@
   /* ipad portrait */
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
 
-   .pointCard{
+   .pointLeaderboardCard{
       background-color: #ffffff;
       border: 1px solid #33D9B2;
       padding-left: 10px;
@@ -97,7 +97,7 @@
  /* ipad landscape */
 @media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape){
 
-   .pointCard{
+   .pointLeaderboardCard{
       background-color: #ffffff;
       border: 1px solid #33D9B2;
       padding-left: 10px;
@@ -192,18 +192,18 @@
 /* iPhone landscape */
 @media (orientation: landscape) and (max-device-width : 812px){
 
-   .pointCard{
-      background-color: #ffffff;
-      border: 1px solid #33D9B2;
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      margin-left: 150px;
-      margin-right: 150px;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
+   .pointLeaderboardCard{
+      background-color: #ffffff !important;
+      border: 1px solid #33D9B2 !important;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+      margin-left: 150px !important;
+      margin-right: 150px !important;
+      border-radius: 10px !important;
+      display: flex !important;
+      flex-direction: column !important;
     }
 
     /* yummy points card */
@@ -290,7 +290,7 @@
  /* iPhone portrait */
  @media (orientation: portrait) and (max-device-width : 414px){
  
-   .pointCard{
+   .pointLeaderboardCard{
       background-color: #ffffff;
       border: 1px solid #33D9B2;
       padding-left: 10px;

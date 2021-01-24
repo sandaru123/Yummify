@@ -33,7 +33,7 @@ function createFaviriteCards(sortValue) {
     if (cardItemslist[i].faviorite == 1) {
       
       tag = '';
-      tag += '<div class=" card maincardwidth favoriteCardsDiv" style="height: 200px;">';
+      tag += '<div class=" card maincardwidth favoriteCardsDiv" style="height: 210px;">';
       tag += '<div class="flexcolumn">';
       tag += '<div onclick="gotoDetailsPage('+i+')" id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
       tag += '<div style="width: 180px; height:160px;">';
@@ -55,11 +55,11 @@ function createFaviriteCards(sortValue) {
       tag += '</div>';
       tag += '</div>';
       tag += '<div class="flexcolumn" style="height: 20px;">';
-      tag += '<div>';
-      tag += '<span class="fa fa-star starcoluryello"></span>';
+      tag += '<div class="pb-2">';
+      tag += '<span class="fa fa-star starcoluryello"></span>&nbsp';
       tag += '<span class="">' + cardItemslist[i].rating + '</span>';
       tag += '</div>';
-      tag += '<div style="display:flex; position: absolute; margin-right: 10px; right: 0; top: 160px;"><a class="favioriteI" id=" ' + i + ' "><i style="color: red;"  class="fa fa-heart fa-lg mr-1 p-1"></i> </a> &nbsp <a onclick="addtocart(' + i + ')" class="cartFavorite"><i class="fa fa-shopping-cart fa-lg mr-1 p-1"></i></a>  </div>';
+      tag += '<div style="display:flex; position: absolute; margin-right: 10px; right: 0; top: 160px;"><a class="favioriteI" id=" ' + i + ' "><i style="color: black;"  class="fa fa-trash-o fa-lg mr-3 p-1"></i> </a> &nbsp <a onclick="addtocart(' + i + ')" class="cartFavorite"><i class="fa fa-cart-plus fa-lg mr-1 p-1"></i></a>  </div>';
       tag += '</div>';
       tag += '</div>';
       tag += '</div>';

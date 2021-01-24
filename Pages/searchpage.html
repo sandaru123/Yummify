@@ -6,8 +6,8 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"></script>
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+   </script>
    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
    <script src="../JQuerryMobileAssets/jquery.min.js"></script>
    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -36,11 +36,21 @@
    <link rel="stylesheet" href="../Styles/StarRating.css" />
    <link rel="stylesheet" href="../Styles/tailwind.css" />
    <link rel="stylesheet" href="../Styles/WelcomeSlider.css" />
+
    <!-- components -->
    <script src="../Components/headerwithoutnav.js" type="text/javascript" defer></script>
    <script src="../Components/footer.js" type="text/javascript" defer></script>
    <script src="../Components/guestheader.js" type="text/javascript" defer></script>
    <script src="../Components/header.js" type="text/javascript" defer></script>
+
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../Images/favicon/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+
    <style>
       @import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
    </style>
@@ -66,14 +76,14 @@
       <input type="text" name="Search" id="Search" value="" placeholder="Search" class="text_box" data-role="none"
          style="border: none !important; border-radius: 5px; font-size:14px; padding-left: 15px; margin-bottom: -20px; box-shadow: 0px 4px 3px 0px #adacac;">
    </div>
-   <div style="margin-bottom: -20px;" class="ui-content">
+   <div class="ui-content mt-3">
       <div class="ui-grid-b ui-responsive flexrow" style="padding: 10px;">
          <div style="margin-left: 10px;">
             <h5 class="forntwaightbold">Results</h5>
          </div>
          <div style="position: absolute; margin-right: 30px; right: 0; ">
             <p id="opendropwown" style="margin-top: 5px;" class="forntwaightbold">filter &nbsp; <i
-                  class="fa fa-filter"></i> </p>
+                  class="fa fa-filter fa-lg"></i> </p>
          </div>
       </div>
    </div>
@@ -121,16 +131,6 @@
       // function backredirect() {
       //    window.location.href = "HomePage.html";
       // }
-
-      $("#Search").keyup(function () {
-      //  var searchValue = $(this).text();
-
-      // var searchValue = $(this).text('#Search');
-
-      var searchValue = 'ita';
-      createSearchCards(searchValue);
-   });
-
    </script>
 </body>
 <!-- body end -->
@@ -138,5 +138,19 @@
 <script src="../Scripts/addtofavlist.js" type="text/javascript" defer></script>
 
 <script src="../Scripts/SearchPage.js" type="text/javascript" defer></script>
+<<<<<<< HEAD
 
+=======
+<script>
+   $("#Search").keyup(function () {
+      //  var searchValue = $(this).text();
+
+      // var searchValue = $(this).text('#Search');
+
+      var searchValue = 'ita';
+      createSearchCards(searchValue);
+   });
+</script>
+
+>>>>>>> 849f9f5ca0b5a37f4d888d72033e451a4c946412
 </html>

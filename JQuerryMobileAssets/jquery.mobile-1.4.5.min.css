@@ -974,8 +974,8 @@ html .ui-panel-page-container-a {
 html .ui-bar-a a,
 html .ui-body-a a,
 html body .ui-group-theme-a a {
-	color: #3388cc /*{a-link-color}*/;
-	font-weight: bold;
+	/* color: #3388cc /*{a-link-color}*/
+	/* font-weight: bold; */
 }
 .ui-page-theme-a a:visited,
 html .ui-bar-a a:visited,
@@ -1475,7 +1475,10 @@ div.ui-mobile-viewport {
 	border-width: 0;
 	overflow: visible;
 	overflow-x: hidden;
-	padding: 12px;
+	/* padding-top: 12px; */
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 12px;
 }
 /* Corner styling for dialogs and popups */
 .ui-corner-all > .ui-header:first-child,
