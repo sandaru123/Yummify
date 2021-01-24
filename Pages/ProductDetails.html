@@ -42,6 +42,7 @@
    <link rel="stylesheet" href="../Styles/StarRating.css" />
    <link rel="stylesheet" href="../Styles/tailwind.css" />
    <link rel="stylesheet" href="../Styles/WelcomeSlider.css" />
+   <link rel="stylesheet" href="../Styles/Comment.css" />
 
    <!-- components -->
    <script src="../Components/headerwithoutnav.js" type="text/javascript" defer></script>
@@ -207,9 +208,19 @@
                      Yummy..</span>
 
                   <!-- reply button -->
-                  <a>
+                  <a class="addReply">
                      <h4 style="text-decoration: underline; color: #33D9B2; margin:2% auto 2% 10%;">Reply</h4>
                   </a>
+
+                  <div class="flex justify-between items-center mt-3 addRplyCmnt" style="display: none;">
+                     <input type="text" class="commentinReply" data-role="none" placeholder="Add a Comment"
+                        style="padding-right: 10px; padding-left: 10px; height: 45px; border-width: thin;border-color: #B1B1AA;border-radius: 5px;width: 100%; font-size:15px; font-family: 'Fira Sans';">
+                     <a>
+                        <span><i class="fa fa-paper-plane-o fa-lg pl-2 pr-2 commentButtonInReply"
+                              style="filter: invert(88%) sepia(10%) saturate(2409%) hue-rotate(99deg) brightness(91%) contrast(85%);"
+                              aria-hidden="true"></i></span>
+                     </a>
+                  </div>
 
                </div>
             </div>
@@ -232,10 +243,24 @@
                      class="">Yummy..</span>
 
                   <!-- reply button -->
-                  <a>
-                     <h4 style="text-decoration: underline; color: #33D9B2; margin:2% auto 2% 10%;">Reply</h4>
+                  <a class="addReply">
+                     <h4 style="text-decoration: underline; color: #33D9B2; margin:2% auto 2% 10%;" >Reply</h4>
                   </a>
 
+
+                  <div class="flex justify-between items-center mt-3 addRplyCmnt" style="display: none;">
+                     <input type="text" class="commentinReply" data-role="none" placeholder="Add a Comment"
+                        style="padding-right: 10px; padding-left: 10px; height: 45px; border-width: thin;border-color: #B1B1AA;border-radius: 5px;width: 100%; font-size:15px; font-family: 'Fira Sans';">
+                     <a>
+                        <span><i class="fa fa-paper-plane-o fa-lg pl-2 pr-2 commentButtonInReply"
+                              style="filter: invert(88%) sepia(10%) saturate(2409%) hue-rotate(99deg) brightness(91%) contrast(85%);"
+                              aria-hidden="true"></i></span>
+                     </a>
+                  </div>
+                  
+                  <div class="appendReplyDiv">
+
+                  </div>
                   <!-- reply section -->
                   <div style="margin:2% auto 2% 10%;">
 
@@ -252,6 +277,21 @@
                      </div>
 
                   </div>
+
+
+                  <!-- reply section with classes -->
+                  <div class="replyDivMain" style="display: none;">
+
+                     <div class="mr-3 p-2 replyDiv">
+                        <div class='flex items-center fontSize12_14 replyDiv3'>
+                           <span class="iconSpan"><i class='fa fa-user-circle-o fa-fw iconI'></i>Ralph Donnie</span>
+                           <span class="dateSpan">now</span>
+                        </div>
+                        <span class="commentSpan">Ignore the above comment I was drunk 2</span>
+                     </div>
+
+                  </div>
+
                </div>
             </div>
 
@@ -265,7 +305,6 @@
                         aria-hidden="true"></i></span>
                </a>
             </div>
-
          </div>
       </div>
       <!-- /content -->

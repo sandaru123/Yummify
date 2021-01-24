@@ -28,16 +28,25 @@ $(document).ready(function () {
         //   modal.style.display = "none";
         // }
       
-        closeBtnRate.onclick = function () {
-          rateModal.style.display = "none";
-        }
+        // closeBtnRate.onclick = function () {
+        //   rateModal.style.display = "none";
+        // }
  
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
+        // window.onclick = function (event) {
+        //   if (event.target == modal) {
+        //     modal.style.display = "none";
+        //   }
+        // }
+
+        $('.addReply').on('click',function(){
+           $(this).closest('.userRatingRecordDiv').find('.addRplyCmnt').show();   
+           $(this).closest('.userRatingRecordDiv').find('.replyDivMain').show();    
+           $('.replyDivMain').appendTo('.appendReplyDiv'); 
+        })
+
 });
+
+
 
 
 
@@ -46,7 +55,7 @@ $(document).ready(function () {
 function mapDetailsPage() {
   var indexInt = JSON.parse(localStorage.getItem("map_local"));
   var cardItemslist = JSON.parse(localStorage.getItem("cardsDetails_Local"));
-  console.log(indexInt)
+  console.log('map local'+indexInt)
   $('.product_details_Img').attr('src', cardItemslist[indexInt].imagesource);
   $('#product_title').html(cardItemslist[indexInt].itemName);
   $('#price_details').html('$' + cardItemslist[indexInt].price);
