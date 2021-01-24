@@ -53,7 +53,7 @@
    <header-component></header-component>
    <!-- nav bar with back button start -->
    <div class="container-fluid d-block d-sm-none" style="background-color: #33D9B2; padding-bottom: 10px;">
-      <div onclick="history.back();" class="flex container-fluid d-sm-none"
+      <div class="flex container-fluid d-sm-none"
          style="background-color: #33D9B2; padding-top: 10px; padding-bottom: 5px;">
          <a class="flex" style="text-decoration: none; color: black">
             <img src="../Images/icons/arrow-left-short.svg" height="20px" width="20px" class="pr-1 ">
@@ -121,7 +121,16 @@
       // function backredirect() {
       //    window.location.href = "HomePage.html";
       // }
-      history.back();
+
+      $("#Search").keyup(function () {
+      //  var searchValue = $(this).text();
+
+      // var searchValue = $(this).text('#Search');
+
+      var searchValue = 'ita';
+      createSearchCards(searchValue);
+   });
+
    </script>
 </body>
 <!-- body end -->
@@ -129,14 +138,5 @@
 <script src="../Scripts/addtofavlist.js" type="text/javascript" defer></script>
 
 <script src="../Scripts/SearchPage.js" type="text/javascript" defer></script>
-<script>
-   $("#Search").keyup(function() {
-    //  var searchValue = $(this).text();
 
-     // var searchValue = $(this).text('#Search');
-
-      var searchValue = 'ita';
-      createSearchCards(searchValue); 
-         });
-</script>
 </html>

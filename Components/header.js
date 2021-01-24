@@ -244,7 +244,7 @@ class Header extends HTMLElement {
            </a>
          </div>
          <div class="col d-flex justify-content-end" style="padding:0;">
-           <a style="padding-top: 5px;" href="searchpage.html">
+           <a style="padding-top: 5px;" onclick="gotosearchpage()">
              <img src="../Images/icons/search.svg" height="20px" width="20px">
            </a>
         </div>
@@ -346,4 +346,8 @@ function gotoCartonclick() {
 }
 function gotoHomeonclick() {
   window.location.href = "HomePage.html";
+}
+
+function gotosearchpage(){
+  window.location.href = "searchpage.html";
 }
