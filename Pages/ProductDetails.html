@@ -7,7 +7,7 @@
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-   </script>
+      </script>
 
    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
    <script src="../JQuerryMobileAssets/jquery.min.js"></script>
@@ -86,6 +86,43 @@
          </div>
       </div>
 
+
+      <!-- Strepper Modal -->
+      <div id="productssteppermodel" class="modal">
+         <div class="modal-content">
+            <div class="flex justify-between mb-3">
+               <span class="closestrepperbutton">
+                  <img class="float-right"
+                     style="filter: invert(15%) sepia(100%) saturate(6065%) hue-rotate(357deg) brightness(98%) contrast(118%);"
+                     src="../Images/icons/close.svg" height="30px" width="30px">
+               </span>
+            </div>
+            <div style="text-align: center;">
+               <span>
+                  <h3>Select Quantity</h3>
+               </span>
+            </div>
+            <div>
+               <div class="flexrow">
+                  <div class="buttoninc" value="1" style="width: 30%; margin-left: 20px;" id="plusdiv"> <i style="margin-left:20px; margin-top:15px;" class="fa fa-plus"></i> </div>
+                  <div> <input style="width: 50px;" type="text" name="item-quantity" id="itemquantity" value="1">
+                  </div>
+                  <div class="buttoninc" value="0" style="width: 30%; margin-left: 20px;" id="minousdiv"> <i style="margin-top: 15px; margin-left: 15px;" class="fa fa-minus"></i> </div>
+               </div>
+            </div>
+            <div>
+               <div class="flexrow">
+                  <div> <a href="#" class="ui-btn ui-corner-all closestrepperbutton"
+                        style="font-family: 'Fira Sans'; text-align:center; padding-left: 25px; padding-right:25px; margin-left: 20px; font-size:14px; margin-bottom: 20px; margin-top:20px; width: 100%; color: black; background-color:#33D9B2;">Cancel</a>
+                  </div>
+                  <div> <a onclick="alertbox()" href="#" class="ui-btn ui-corner-all"
+                        style="font-family: 'Fira Sans'; text-align:center; border: solid 2px #33D9B2; margin-left: 25px; color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; margin-top: 20px;">Set</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
       <div class="contentMargin mb-10">
          <div role="main" class="">
             <div style="display: block;">
@@ -95,7 +132,8 @@
                      <h5 style="font-weight: bold;" id="product_title">Easy Butter Chicken</h5>
                   </div>
                   <div class="flex pr-5 pt-2 pr-5">
-                     <img class="mr-8 pb-1" src="../Images/icons/cart-plus.svg" height="25px" width="25px">
+                     <img class="mr-8 pb-1" src="../Images/icons/cart-plus.svg" id="openstepper" height="25px"
+                        width="25px">
                      <img src="../Images/icons/heart.svg" height="25px" width="25px">
                   </div>
 
@@ -181,9 +219,11 @@
                            style="font-weight:bold; filter: invert(46%) sepia(8%) saturate(10%) hue-rotate(338deg) brightness(94%) contrast(84%);"></i>Username</span>
                      <span style="font-size: 13px;"> <i class='fa fa-star fa-fw'
                            style="filter: invert(82%) sepia(73%) saturate(408%) hue-rotate(352deg) brightness(91%) contrast(85%);"></i><span
-                           class="userRate">4</span></span><span style="position: absolute;right: 10%; font-size: 13px;">now</span>
+                           class="userRate">4</span></span><span
+                        style="position: absolute;right: 10%; font-size: 13px;">now</span>
                   </div>
-                  <span style="text-align: center; margin:2% auto 2% 10%; font-size: 13px;" class="userComment">Looks Yummy..</span>
+                  <span style="text-align: center; margin:2% auto 2% 10%; font-size: 13px;" class="userComment">Looks
+                     Yummy..</span>
                </div>
             </div>
 
@@ -239,12 +279,11 @@
                            class="">4</span></span><span
                         style="position: absolute;right: 10%; font-size: 13px;">now</span>
                   </div>
-                  <span style="text-align: center; margin:2% auto 2% 10%; font-size: 13px;"
-                     class="">Yummy..</span>
+                  <span style="text-align: center; margin:2% auto 2% 10%; font-size: 13px;" class="">Yummy..</span>
 
                   <!-- reply button -->
                   <a class="addReply">
-                     <h4 style="text-decoration: underline; color: #33D9B2; margin:2% auto 2% 10%;" >Reply</h4>
+                     <h4 style="text-decoration: underline; color: #33D9B2; margin:2% auto 2% 10%;">Reply</h4>
                   </a>
 
 
@@ -257,7 +296,7 @@
                               aria-hidden="true"></i></span>
                      </a>
                   </div>
-                  
+
                   <div class="appendReplyDiv">
 
                   </div>
@@ -272,8 +311,8 @@
                               Donnie</span>
                            <span style="position: absolute;right: 10%; font-size: 13px;">now</span>
                         </div>
-                        <span style="text-align: center; margin:2% auto 2% 10%; font-size: 13px;"
-                           class="">Ignore the above comment I was drunk</span>
+                        <span style="text-align: center; margin:2% auto 2% 10%; font-size: 13px;" class="">Ignore the
+                           above comment I was drunk</span>
                      </div>
 
                   </div>
@@ -407,6 +446,57 @@
    $(function () {
       mapDetailsPage();
    })
+
+   function incbtnclick() {
+      var $button = $(".buttoninc");
+      var oldValue = $("#itemquantity").val();
+      if (!$button.val() == 1) {
+         var newVal = parseFloat(oldValue) + 1;
+      } else {
+         // Don't allow decrementing below zero
+         if (oldValue > 0) {
+            var newVal = parseFloat(oldValue) - 1;
+         } else {
+            newVal = 0;
+         }
+      }
+      $("#itemquantity").val(newVal);
+   }
+
+   function alertbox() {
+      alert("Added to Cart!!");
+
+      var modal = document.getElementById("productssteppermodel");
+      modal.style.display = "none";
+   }
+
+   $("#openstepper").on('click', function () {
+      var modal = document.getElementById("productssteppermodel");
+      modal.style.display = "block";
+   })
+
+   $(".closestrepperbutton").on('click', function () {
+      var modal = document.getElementById("productssteppermodel");
+      modal.style.display = "none";
+   })
+
+   $(".buttoninc").on('click', function () {
+      var $button = $(this);
+      var oldValue = $("#itemquantity").val();
+      if (!$button.val() == 1) {
+         var newVal = parseFloat(oldValue) + 1;
+      } else {
+         // Don't allow decrementing below zero
+         if (oldValue > 0) {
+            var newVal = parseFloat(oldValue) - 1;
+         } else {
+            newVal = 0;
+         }
+      }
+      $("#itemquantity").val(newVal);
+   })
+
+
 </script>
 
 </html>
