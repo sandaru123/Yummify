@@ -97,10 +97,11 @@
                   name="password" id="password" value="" autocomplete="off" placeholder="Password" class="text_box"
                   style="border: none; font-size:14px; padding-left: 15px;">
             </div>
-
-            <a href="../Pages/WelcomeSlider.html" class="ui-btn ui-corner-all primary_but"
-               style="font-family: 'Fira Sans'; background-color: #33D9B2; text-align:center; padding-left: 25px; padding-right:25px; font-size:14px; margin-bottom: 40px; margin-top:20px; width: 100%; height: 20%;">Login</a>
-            <a href="" class="ui-btn ui-corner-all secondary_but"
+            <!-- href="../Pages/WelcomeSlider.html" -->
+                  <a class="ui-btn ui-corner-all primary_but login_Button"
+                  style="font-family: 'Fira Sans'; background-color: #33D9B2; text-align:center; padding-left: 25px; padding-right:25px; font-size:14px; margin-bottom: 40px; margin-top:20px; width: 100%; height: 20%;">Login</a>
+               
+           <a href="" class="ui-btn ui-corner-all secondary_but"
                style="font-family: 'Fira Sans'; text-align:center; border: solid 2px #33D9B2; color: #33D9B2; padding-left: 25px; padding-right:25px; font-size:14px; width: 100%; height: 20%;">Forgot
                Password</a>
             <a href="../Pages/RegisterPage.html" class="ui-btn ui-corner-all secondary_but"
@@ -112,9 +113,16 @@
 
 
    </div>
+   <script>
+
+         $(document).ready(function () {
+            $('.login_Button').on('click',function(){
+                  window.location.href='/Pages/WelcomeSlider.html';
+               });
+         });
+     
+   </script>
 </body>
-<script>
-   history.back();
-</script>
+
 
 </html>
