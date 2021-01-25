@@ -72,12 +72,12 @@ function createCards(sortValue) {
 		tag = '';
 		tag += '<div class=" card maincardwidth" id="' + i + '" style="height: 210px; >';
 		tag += '<div class="flexcolumn" ">';
-		tag += '<div onclick="gotoDetailsPage(' + i + ')" id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
+		tag += '<div id="card' + (i + 1) + '" class="flexrow" style="height: 160px;">';
 		tag += '<div style="width: 180px; height:160px;">';
-		tag += '<img class="card-image cardimageedit" style="height: 140px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
+		tag += '<img onclick="gotoDetailsPage(' + i + ')" class="card-image cardimageedit" style="height: 140px;" alt="image" src="' + cardItemslist[i].imagesource + '" />';
 		tag += '</div>';
 		tag += '<div class=" flexcolumn" style="width: 200px;">';
-		tag += '<div class="flexrow" style="height: auto;">';
+		tag += '<div onclick="gotoDetailsPage(' + i + ')" class="flexrow" style="height: auto;">';
 		tag += '<div>';
 		tag += '<p style="font-size: 15px; font-weight: bold;">' + cardItemslist[i].itemName + '</p>';
 		tag += '</div>';
@@ -86,8 +86,8 @@ function createCards(sortValue) {
 		tag += '</div>';
 		tag += '</div>';
 		tag += '<div style="height: auto;" class="justify-content-end">';
-		tag += '<p style="font-size: 13px; margin-top: -10px; color:black;">by Janice Cheddar</p>';
-		tag += '<p style="font-size: 12px; margin-top: -18px; color:#6c6f71">' + cardItemslist[i].itemDetail + '</p>';
+		tag += '<p onclick="gotoDetailsPage(' + i + ')" style="font-size: 13px; margin-top: -10px; color:black;">by Janice Cheddar</p>';
+		tag += '<p onclick="gotoDetailsPage(' + i + ')" style="font-size: 12px; margin-top: -18px; color:#6c6f71">' + cardItemslist[i].itemDetail + '</p>';
 		tag += '</div>';
 		tag += '</div>';
 		tag += '</div>';
