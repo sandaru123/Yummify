@@ -6,6 +6,30 @@
       margin-right: 3rem;
    }
 
+   .plusdivclass{
+      width: 20%; 
+      margin-left: 150px;
+   }
+
+   .minousdivclass{
+      width: 30%; 
+      margin-left: 50px;
+   }
+
+   .plusfa{
+      margin-left:20px; 
+      margin-top:15px;
+   }
+
+   .minusfa{
+      margin-top: 15px; 
+      margin-left: 15px;
+   }
+
+   
+   .btnflex{
+      padding-left: 150px;
+   }
 
 }
 
@@ -17,6 +41,31 @@
       margin-right: 3rem;
    }
 
+   .plusdivclass{
+      width: 20%; 
+      margin-left: 200px;
+   }
+
+   .minousdivclass{
+      width: 30%; 
+      margin-left: 80px;
+   }
+
+   .plusfa{
+      margin-left:20px; 
+      margin-top:15px;
+   }
+
+   .minusfa{
+      margin-top: 15px; 
+      margin-left: 15px;
+   }
+
+   
+   .btnflex{
+      padding-left: 250px;
+   }
+
 }
 
 /* iPhone landscape */
@@ -26,6 +75,31 @@
       margin-top: 2rem;
       margin-left: 3rem;
       margin-right: 3rem;
+   }
+
+   .plusdivclass{
+      width: 20%; 
+      margin-left: 150px;
+   }
+
+   .minousdivclass{
+      width: 30%; 
+      margin-left: 50px;
+   }
+
+   .plusfa{
+      margin-left:20px; 
+      margin-top:15px;
+   }
+
+   .minusfa{
+      margin-top: 15px; 
+      margin-left: 15px;
+   }
+
+   
+   .btnflex{
+      padding-left: 180px;
    }
 
 }
@@ -46,6 +120,26 @@
    .mapDiv {
       height: 176px;
       width: 207px;
+   }
+
+   .plusdivclass{
+      width: 30%; 
+      margin-left: 20px;
+   }
+
+   .minousdivclass{
+      width: 30%; 
+      margin-left: 20px;
+   }
+
+   .plusfa{
+      margin-left:20px; 
+      margin-top:15px;
+   }
+
+   .minusfa{
+      margin-top: 15px; 
+      margin-left: 15px;
    }
 
 }
