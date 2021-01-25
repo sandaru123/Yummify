@@ -48,6 +48,7 @@ class Header extends HTMLElement {
               <img src="../Images/icons/search.svg" height="20px" width="20px">
             </a>
           </div>
+     
         </div>
       </div>
 
@@ -142,6 +143,7 @@ class Header extends HTMLElement {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+    
         <li class="nav-item container-fluid listMDStyles" style="padding-top:20px">
           <div class="row items-center">
             <div class="col-2 imageProperties">
@@ -254,6 +256,8 @@ class Header extends HTMLElement {
      <div class="collapse navbar-collapse" id="navbarSupportedContent">
        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="padding-top:20px">
 
+      
+
          <li class="nav-item container-fluid listMDStyles" style="padding-top:5px">
            <div class="row items-center">
              <div class="col-2 imageProperties" style="vertical-align: baseline;">
@@ -354,6 +358,6 @@ function gotoHomeonclick() {
   window.location.href = "HomePage.html";
 }
 
-function gotosearchpage(){
+function gotosearchpage() {
   window.location.href = "searchpage.html";
 }
